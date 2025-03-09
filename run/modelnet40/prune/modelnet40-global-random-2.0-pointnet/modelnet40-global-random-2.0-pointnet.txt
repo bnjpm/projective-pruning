@@ -1,0 +1,161 @@
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: mode: prune
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: model: pointnet
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: verbose: False
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: dataset: modelnet40
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: dataroot: data
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: batch_size: 32
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: total_epochs: 100
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: lr_decay_milestones: 50,80
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: lr_decay_gamma: 0.1
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: lr: 0.01
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: restore: run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: output_dir: run/modelnet40/prune/modelnet40-global-random-2.0-pointnet
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: finetune: True
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: last_epochs: 100
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: reps: 1
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: method: random
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: speed_up: 2.0
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: max_pruning_ratio: 1.0
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: soft_keeping_ratio: 0.0
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: reg: 1e-05
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: delta_reg: 0.0001
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: weight_decay: 0.0005
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: seed: 1
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: global_pruning: True
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: sl_total_epochs: 100
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: sl_lr: 0.01
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: sl_lr_decay_milestones: 60,80
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: sl_reg_warmup: 0
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: sl_restore: None
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: iterative_steps: 400
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: logger: <Logger modelnet40-global-random-2.0-pointnet (DEBUG)>
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: device: cuda
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: num_classes: 40
+[02/22 11:54:08] modelnet40-global-random-2.0-pointnet INFO: Loading model from run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/22 11:54:09] modelnet40-global-random-2.0-pointnet INFO: Pruning...
+[02/22 11:54:11] modelnet40-global-random-2.0-pointnet INFO: PointNet(
+  (conv1): Conv1d(3, 4, kernel_size=(1,), stride=(1,), bias=False)
+  (conv2): Conv1d(4, 4, kernel_size=(1,), stride=(1,), bias=False)
+  (conv3): Conv1d(4, 4, kernel_size=(1,), stride=(1,), bias=False)
+  (conv4): Conv1d(4, 68, kernel_size=(1,), stride=(1,), bias=False)
+  (conv5): Conv1d(68, 1988, kernel_size=(1,), stride=(1,), bias=False)
+  (bn1): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn2): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn3): BatchNorm1d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn4): BatchNorm1d(68, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn5): BatchNorm1d(1988, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear1): Linear(in_features=1988, out_features=452, bias=False)
+  (bn6): BatchNorm1d(452, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dp1): Dropout(p=0.5, inplace=False)
+  (linear2): Linear(in_features=452, out_features=40, bias=True)
+)
+[02/22 11:54:12] modelnet40-global-random-2.0-pointnet INFO: Params: 1.35 M => 1.06 M (78.11%)
+[02/22 11:54:12] modelnet40-global-random-2.0-pointnet INFO: FLOPs: 291.33 M => 143.90 M (49.40%, 2.02X )
+[02/22 11:54:12] modelnet40-global-random-2.0-pointnet INFO: Acc: 0.8861 => 0.0405
+[02/22 11:54:12] modelnet40-global-random-2.0-pointnet INFO: Val Loss: 0.3951 => 16.5222
+[02/22 11:54:12] modelnet40-global-random-2.0-pointnet INFO: Finetuning...
+[02/22 11:54:26] modelnet40-global-random-2.0-pointnet INFO: Epoch 0/100, Acc=0.1029, Val Loss=3.1296, lr=0.0100
+[02/22 11:54:40] modelnet40-global-random-2.0-pointnet INFO: Epoch 1/100, Acc=0.1791, Val Loss=2.7938, lr=0.0100
+[02/22 11:54:52] modelnet40-global-random-2.0-pointnet INFO: Epoch 2/100, Acc=0.2257, Val Loss=2.6634, lr=0.0100
+[02/22 11:55:06] modelnet40-global-random-2.0-pointnet INFO: Epoch 3/100, Acc=0.3720, Val Loss=2.1805, lr=0.0100
+[02/22 11:55:19] modelnet40-global-random-2.0-pointnet INFO: Epoch 4/100, Acc=0.5134, Val Loss=1.8120, lr=0.0100
+[02/22 11:55:32] modelnet40-global-random-2.0-pointnet INFO: Epoch 5/100, Acc=0.4801, Val Loss=1.7724, lr=0.0100
+[02/22 11:55:45] modelnet40-global-random-2.0-pointnet INFO: Epoch 6/100, Acc=0.5758, Val Loss=1.4895, lr=0.0100
+[02/22 11:55:58] modelnet40-global-random-2.0-pointnet INFO: Epoch 7/100, Acc=0.4412, Val Loss=1.9742, lr=0.0100
+[02/22 11:56:11] modelnet40-global-random-2.0-pointnet INFO: Epoch 8/100, Acc=0.5142, Val Loss=1.6001, lr=0.0100
+[02/22 11:56:24] modelnet40-global-random-2.0-pointnet INFO: Epoch 9/100, Acc=0.5498, Val Loss=1.4844, lr=0.0100
+[02/22 11:56:38] modelnet40-global-random-2.0-pointnet INFO: Epoch 10/100, Acc=0.5531, Val Loss=1.5376, lr=0.0100
+[02/22 11:56:51] modelnet40-global-random-2.0-pointnet INFO: Epoch 11/100, Acc=0.6374, Val Loss=1.3022, lr=0.0100
+[02/22 11:57:04] modelnet40-global-random-2.0-pointnet INFO: Epoch 12/100, Acc=0.5369, Val Loss=1.6110, lr=0.0100
+[02/22 11:57:17] modelnet40-global-random-2.0-pointnet INFO: Epoch 13/100, Acc=0.5725, Val Loss=1.3864, lr=0.0100
+[02/22 11:57:30] modelnet40-global-random-2.0-pointnet INFO: Epoch 14/100, Acc=0.5928, Val Loss=1.3481, lr=0.0100
+[02/22 11:57:44] modelnet40-global-random-2.0-pointnet INFO: Epoch 15/100, Acc=0.5271, Val Loss=1.6305, lr=0.0100
+[02/22 11:57:57] modelnet40-global-random-2.0-pointnet INFO: Epoch 16/100, Acc=0.6374, Val Loss=1.3243, lr=0.0100
+[02/22 11:58:10] modelnet40-global-random-2.0-pointnet INFO: Epoch 17/100, Acc=0.6248, Val Loss=1.2697, lr=0.0100
+[02/22 11:58:23] modelnet40-global-random-2.0-pointnet INFO: Epoch 18/100, Acc=0.5604, Val Loss=1.4252, lr=0.0100
+[02/22 11:58:37] modelnet40-global-random-2.0-pointnet INFO: Epoch 19/100, Acc=0.6645, Val Loss=1.2490, lr=0.0100
+[02/22 11:58:49] modelnet40-global-random-2.0-pointnet INFO: Epoch 20/100, Acc=0.6422, Val Loss=1.1921, lr=0.0100
+[02/22 11:59:03] modelnet40-global-random-2.0-pointnet INFO: Epoch 21/100, Acc=0.5746, Val Loss=1.3619, lr=0.0100
+[02/22 11:59:16] modelnet40-global-random-2.0-pointnet INFO: Epoch 22/100, Acc=0.6187, Val Loss=1.2938, lr=0.0100
+[02/22 11:59:29] modelnet40-global-random-2.0-pointnet INFO: Epoch 23/100, Acc=0.6365, Val Loss=1.2551, lr=0.0100
+[02/22 11:59:42] modelnet40-global-random-2.0-pointnet INFO: Epoch 24/100, Acc=0.6098, Val Loss=1.2734, lr=0.0100
+[02/22 11:59:56] modelnet40-global-random-2.0-pointnet INFO: Epoch 25/100, Acc=0.6053, Val Loss=1.3177, lr=0.0100
+[02/22 12:00:09] modelnet40-global-random-2.0-pointnet INFO: Epoch 26/100, Acc=0.6001, Val Loss=1.2689, lr=0.0100
+[02/22 12:00:22] modelnet40-global-random-2.0-pointnet INFO: Epoch 27/100, Acc=0.5936, Val Loss=1.3966, lr=0.0100
+[02/22 12:00:36] modelnet40-global-random-2.0-pointnet INFO: Epoch 28/100, Acc=0.4546, Val Loss=1.9557, lr=0.0100
+[02/22 12:00:49] modelnet40-global-random-2.0-pointnet INFO: Epoch 29/100, Acc=0.5304, Val Loss=1.6012, lr=0.0100
+[02/22 12:01:01] modelnet40-global-random-2.0-pointnet INFO: Epoch 30/100, Acc=0.4538, Val Loss=1.8685, lr=0.0100
+[02/22 12:01:14] modelnet40-global-random-2.0-pointnet INFO: Epoch 31/100, Acc=0.6860, Val Loss=1.0737, lr=0.0100
+[02/22 12:01:28] modelnet40-global-random-2.0-pointnet INFO: Epoch 32/100, Acc=0.6515, Val Loss=1.1123, lr=0.0100
+[02/22 12:01:40] modelnet40-global-random-2.0-pointnet INFO: Epoch 33/100, Acc=0.7087, Val Loss=1.0596, lr=0.0100
+[02/22 12:01:54] modelnet40-global-random-2.0-pointnet INFO: Epoch 34/100, Acc=0.5632, Val Loss=1.5059, lr=0.0100
+[02/22 12:02:07] modelnet40-global-random-2.0-pointnet INFO: Epoch 35/100, Acc=0.5960, Val Loss=1.2243, lr=0.0100
+[02/22 12:02:20] modelnet40-global-random-2.0-pointnet INFO: Epoch 36/100, Acc=0.7204, Val Loss=0.8949, lr=0.0100
+[02/22 12:02:33] modelnet40-global-random-2.0-pointnet INFO: Epoch 37/100, Acc=0.7208, Val Loss=0.8859, lr=0.0100
+[02/22 12:02:46] modelnet40-global-random-2.0-pointnet INFO: Epoch 38/100, Acc=0.7545, Val Loss=0.8446, lr=0.0100
+[02/22 12:03:00] modelnet40-global-random-2.0-pointnet INFO: Epoch 39/100, Acc=0.5823, Val Loss=1.2828, lr=0.0100
+[02/22 12:03:13] modelnet40-global-random-2.0-pointnet INFO: Epoch 40/100, Acc=0.7419, Val Loss=0.8599, lr=0.0100
+[02/22 12:03:26] modelnet40-global-random-2.0-pointnet INFO: Epoch 41/100, Acc=0.7403, Val Loss=0.8332, lr=0.0100
+[02/22 12:03:39] modelnet40-global-random-2.0-pointnet INFO: Epoch 42/100, Acc=0.7366, Val Loss=0.8795, lr=0.0100
+[02/22 12:03:52] modelnet40-global-random-2.0-pointnet INFO: Epoch 43/100, Acc=0.7699, Val Loss=0.7719, lr=0.0100
+[02/22 12:04:06] modelnet40-global-random-2.0-pointnet INFO: Epoch 44/100, Acc=0.7200, Val Loss=0.8001, lr=0.0100
+[02/22 12:04:19] modelnet40-global-random-2.0-pointnet INFO: Epoch 45/100, Acc=0.7759, Val Loss=0.7618, lr=0.0100
+[02/22 12:04:32] modelnet40-global-random-2.0-pointnet INFO: Epoch 46/100, Acc=0.7265, Val Loss=0.8291, lr=0.0100
+[02/22 12:04:46] modelnet40-global-random-2.0-pointnet INFO: Epoch 47/100, Acc=0.7492, Val Loss=0.8157, lr=0.0100
+[02/22 12:05:00] modelnet40-global-random-2.0-pointnet INFO: Epoch 48/100, Acc=0.7504, Val Loss=0.8048, lr=0.0100
+[02/22 12:05:13] modelnet40-global-random-2.0-pointnet INFO: Epoch 49/100, Acc=0.7925, Val Loss=0.6961, lr=0.0100
+[02/22 12:05:26] modelnet40-global-random-2.0-pointnet INFO: Epoch 50/100, Acc=0.8274, Val Loss=0.5945, lr=0.0010
+[02/22 12:05:40] modelnet40-global-random-2.0-pointnet INFO: Epoch 51/100, Acc=0.8294, Val Loss=0.5825, lr=0.0010
+[02/22 12:05:53] modelnet40-global-random-2.0-pointnet INFO: Epoch 52/100, Acc=0.8298, Val Loss=0.5841, lr=0.0010
+[02/22 12:06:06] modelnet40-global-random-2.0-pointnet INFO: Epoch 53/100, Acc=0.8213, Val Loss=0.5843, lr=0.0010
+[02/22 12:06:19] modelnet40-global-random-2.0-pointnet INFO: Epoch 54/100, Acc=0.8306, Val Loss=0.5743, lr=0.0010
+[02/22 12:06:33] modelnet40-global-random-2.0-pointnet INFO: Epoch 55/100, Acc=0.8278, Val Loss=0.5703, lr=0.0010
+[02/22 12:06:45] modelnet40-global-random-2.0-pointnet INFO: Epoch 56/100, Acc=0.8278, Val Loss=0.5688, lr=0.0010
+[02/22 12:06:58] modelnet40-global-random-2.0-pointnet INFO: Epoch 57/100, Acc=0.8383, Val Loss=0.5594, lr=0.0010
+[02/22 12:07:11] modelnet40-global-random-2.0-pointnet INFO: Epoch 58/100, Acc=0.8310, Val Loss=0.5659, lr=0.0010
+[02/22 12:07:25] modelnet40-global-random-2.0-pointnet INFO: Epoch 59/100, Acc=0.8331, Val Loss=0.5720, lr=0.0010
+[02/22 12:07:38] modelnet40-global-random-2.0-pointnet INFO: Epoch 60/100, Acc=0.8375, Val Loss=0.5577, lr=0.0010
+[02/22 12:07:51] modelnet40-global-random-2.0-pointnet INFO: Epoch 61/100, Acc=0.8400, Val Loss=0.5595, lr=0.0010
+[02/22 12:08:04] modelnet40-global-random-2.0-pointnet INFO: Epoch 62/100, Acc=0.8367, Val Loss=0.5501, lr=0.0010
+[02/22 12:08:17] modelnet40-global-random-2.0-pointnet INFO: Epoch 63/100, Acc=0.8327, Val Loss=0.5538, lr=0.0010
+[02/22 12:08:30] modelnet40-global-random-2.0-pointnet INFO: Epoch 64/100, Acc=0.8476, Val Loss=0.5416, lr=0.0010
+[02/22 12:08:43] modelnet40-global-random-2.0-pointnet INFO: Epoch 65/100, Acc=0.8444, Val Loss=0.5524, lr=0.0010
+[02/22 12:08:56] modelnet40-global-random-2.0-pointnet INFO: Epoch 66/100, Acc=0.8371, Val Loss=0.5569, lr=0.0010
+[02/22 12:09:09] modelnet40-global-random-2.0-pointnet INFO: Epoch 67/100, Acc=0.8375, Val Loss=0.5494, lr=0.0010
+[02/22 12:09:23] modelnet40-global-random-2.0-pointnet INFO: Epoch 68/100, Acc=0.8375, Val Loss=0.5396, lr=0.0010
+[02/22 12:09:36] modelnet40-global-random-2.0-pointnet INFO: Epoch 69/100, Acc=0.8274, Val Loss=0.5552, lr=0.0010
+[02/22 12:09:49] modelnet40-global-random-2.0-pointnet INFO: Epoch 70/100, Acc=0.8404, Val Loss=0.5327, lr=0.0010
+[02/22 12:10:02] modelnet40-global-random-2.0-pointnet INFO: Epoch 71/100, Acc=0.8387, Val Loss=0.5334, lr=0.0010
+[02/22 12:10:15] modelnet40-global-random-2.0-pointnet INFO: Epoch 72/100, Acc=0.8416, Val Loss=0.5370, lr=0.0010
+[02/22 12:10:29] modelnet40-global-random-2.0-pointnet INFO: Epoch 73/100, Acc=0.8436, Val Loss=0.5372, lr=0.0010
+[02/22 12:10:42] modelnet40-global-random-2.0-pointnet INFO: Epoch 74/100, Acc=0.8424, Val Loss=0.5350, lr=0.0010
+[02/22 12:10:55] modelnet40-global-random-2.0-pointnet INFO: Epoch 75/100, Acc=0.8197, Val Loss=0.5510, lr=0.0010
+[02/22 12:11:08] modelnet40-global-random-2.0-pointnet INFO: Epoch 76/100, Acc=0.8375, Val Loss=0.5416, lr=0.0010
+[02/22 12:11:21] modelnet40-global-random-2.0-pointnet INFO: Epoch 77/100, Acc=0.8428, Val Loss=0.5260, lr=0.0010
+[02/22 12:11:34] modelnet40-global-random-2.0-pointnet INFO: Epoch 78/100, Acc=0.8391, Val Loss=0.5295, lr=0.0010
+[02/22 12:11:47] modelnet40-global-random-2.0-pointnet INFO: Epoch 79/100, Acc=0.8448, Val Loss=0.5242, lr=0.0010
+[02/22 12:11:59] modelnet40-global-random-2.0-pointnet INFO: Epoch 80/100, Acc=0.8456, Val Loss=0.5167, lr=0.0001
+[02/22 12:12:13] modelnet40-global-random-2.0-pointnet INFO: Epoch 81/100, Acc=0.8452, Val Loss=0.5113, lr=0.0001
+[02/22 12:12:26] modelnet40-global-random-2.0-pointnet INFO: Epoch 82/100, Acc=0.8460, Val Loss=0.5114, lr=0.0001
+[02/22 12:12:40] modelnet40-global-random-2.0-pointnet INFO: Epoch 83/100, Acc=0.8485, Val Loss=0.5119, lr=0.0001
+[02/22 12:12:53] modelnet40-global-random-2.0-pointnet INFO: Epoch 84/100, Acc=0.8497, Val Loss=0.5110, lr=0.0001
+[02/22 12:13:06] modelnet40-global-random-2.0-pointnet INFO: Epoch 85/100, Acc=0.8485, Val Loss=0.5157, lr=0.0001
+[02/22 12:13:20] modelnet40-global-random-2.0-pointnet INFO: Epoch 86/100, Acc=0.8485, Val Loss=0.5108, lr=0.0001
+[02/22 12:13:33] modelnet40-global-random-2.0-pointnet INFO: Epoch 87/100, Acc=0.8485, Val Loss=0.5078, lr=0.0001
+[02/22 12:13:46] modelnet40-global-random-2.0-pointnet INFO: Epoch 88/100, Acc=0.8493, Val Loss=0.5085, lr=0.0001
+[02/22 12:14:00] modelnet40-global-random-2.0-pointnet INFO: Epoch 89/100, Acc=0.8448, Val Loss=0.5089, lr=0.0001
+[02/22 12:14:13] modelnet40-global-random-2.0-pointnet INFO: Epoch 90/100, Acc=0.8444, Val Loss=0.5112, lr=0.0001
+[02/22 12:14:26] modelnet40-global-random-2.0-pointnet INFO: Epoch 91/100, Acc=0.8501, Val Loss=0.5062, lr=0.0001
+[02/22 12:14:40] modelnet40-global-random-2.0-pointnet INFO: Epoch 92/100, Acc=0.8476, Val Loss=0.5072, lr=0.0001
+[02/22 12:14:53] modelnet40-global-random-2.0-pointnet INFO: Epoch 93/100, Acc=0.8468, Val Loss=0.5078, lr=0.0001
+[02/22 12:15:07] modelnet40-global-random-2.0-pointnet INFO: Epoch 94/100, Acc=0.8444, Val Loss=0.5089, lr=0.0001
+[02/22 12:15:21] modelnet40-global-random-2.0-pointnet INFO: Epoch 95/100, Acc=0.8456, Val Loss=0.5119, lr=0.0001
+[02/22 12:15:34] modelnet40-global-random-2.0-pointnet INFO: Epoch 96/100, Acc=0.8501, Val Loss=0.5081, lr=0.0001
+[02/22 12:15:48] modelnet40-global-random-2.0-pointnet INFO: Epoch 97/100, Acc=0.8505, Val Loss=0.5053, lr=0.0001
+[02/22 12:16:02] modelnet40-global-random-2.0-pointnet INFO: Epoch 98/100, Acc=0.8517, Val Loss=0.5064, lr=0.0001
+[02/22 12:16:15] modelnet40-global-random-2.0-pointnet INFO: Epoch 99/100, Acc=0.8513, Val Loss=0.5056, lr=0.0001
+[02/22 12:16:15] modelnet40-global-random-2.0-pointnet INFO: Best Acc=0.8517
+[02/22 12:16:15] modelnet40-global-random-2.0-pointnet INFO: Params: 1.06 M
+[02/22 12:16:15] modelnet40-global-random-2.0-pointnet INFO: ops: 143.90 M
+[02/22 12:16:16] modelnet40-global-random-2.0-pointnet INFO: Acc: 0.8513 Val Loss: 0.5056
+

@@ -1,0 +1,41 @@
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: mode: prune
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: model: mobilenetv2
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: verbose: False
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: dataset: cifar100
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: dataroot: data
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: batch_size: 128
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: total_epochs: 100
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: lr_decay_milestones: 60,80
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: lr_decay_gamma: 0.1
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: lr: 0.01
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: restore: run/cifar100/pretrain/cifar100_mobilenetv2.pth
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: output_dir: run/cifar100/prune/cifar100-global-group_sl-3.0-mobilenetv2
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: finetune: True
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: last_epochs: 100
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: reps: 1
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: method: group_sl
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: speed_up: 3.0
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: max_pruning_ratio: 1.0
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: soft_keeping_ratio: 0.0
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: reg: 1e-05
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: delta_reg: 0.0001
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: weight_decay: 0.0005
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: seed: 1
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: global_pruning: True
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: sl_total_epochs: 100
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: sl_lr: 0.01
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: sl_lr_decay_milestones: 60,80
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: sl_reg_warmup: 0
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: sl_restore: None
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: iterative_steps: 400
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: logger: <Logger cifar100-global-group_sl-3.0-mobilenetv2 (DEBUG)>
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: device: cuda
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: num_classes: 100
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Loading model from run/cifar100/pretrain/cifar100_mobilenetv2.pth
+[02/26 21:52:27] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Regularizing...
+[02/26 21:53:38] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Epoch 0/100, Acc=0.6030, Val Loss=1.4118, lr=0.0100
+[02/26 21:54:49] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Epoch 1/100, Acc=0.5980, Val Loss=1.4358, lr=0.0100
+[02/26 21:56:01] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Epoch 2/100, Acc=0.6052, Val Loss=1.4156, lr=0.0100
+[02/26 21:57:13] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Epoch 3/100, Acc=0.5992, Val Loss=1.4396, lr=0.0100
+[02/26 21:58:25] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Epoch 4/100, Acc=0.6129, Val Loss=1.3701, lr=0.0100
+[02/26 21:59:36] cifar100-global-group_sl-3.0-mobilenetv2 INFO: Epoch 5/100, Acc=0.6052, Val Loss=1.3965, lr=0.0100

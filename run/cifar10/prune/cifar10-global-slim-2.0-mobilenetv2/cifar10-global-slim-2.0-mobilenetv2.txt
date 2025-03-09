@@ -1,0 +1,475 @@
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: mode: prune
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: model: mobilenetv2
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: verbose: False
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: dataset: cifar10
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: dataroot: data
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: batch_size: 128
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: total_epochs: 100
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: lr_decay_milestones: 60,80
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: lr_decay_gamma: 0.1
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: lr: 0.01
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: restore: run/cifar10/pretrain/cifar10_mobilenetv2.pth
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: output_dir: run/cifar10/prune/cifar10-global-slim-2.0-mobilenetv2
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: finetune: True
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: last_epochs: 100
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: reps: 1
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: method: slim
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: speed_up: 2.0
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: max_pruning_ratio: 1.0
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: soft_keeping_ratio: 0.0
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: reg: 1e-05
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: delta_reg: 0.0001
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: weight_decay: 0.0005
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: seed: 1
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: global_pruning: True
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: sl_total_epochs: 100
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: sl_lr: 0.01
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: sl_lr_decay_milestones: 60,80
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: sl_reg_warmup: 0
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: sl_restore: None
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: iterative_steps: 400
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: logger: <Logger cifar10-global-slim-2.0-mobilenetv2 (DEBUG)>
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: device: cuda
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: num_classes: 10
+[02/23 21:18:24] cifar10-global-slim-2.0-mobilenetv2 INFO: Loading model from run/cifar10/pretrain/cifar10_mobilenetv2.pth
+[02/23 21:18:25] cifar10-global-slim-2.0-mobilenetv2 INFO: Regularizing...
+[02/23 21:19:06] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 0/100, Acc=0.8527, Val Loss=0.4365, lr=0.0100
+[02/23 21:19:33] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 1/100, Acc=0.8519, Val Loss=0.4381, lr=0.0100
+[02/23 21:20:01] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 2/100, Acc=0.8566, Val Loss=0.4242, lr=0.0100
+[02/23 21:20:29] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 3/100, Acc=0.8474, Val Loss=0.4567, lr=0.0100
+[02/23 21:20:57] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 4/100, Acc=0.8531, Val Loss=0.4475, lr=0.0100
+[02/23 21:21:25] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 5/100, Acc=0.8559, Val Loss=0.4162, lr=0.0100
+[02/23 21:21:53] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 6/100, Acc=0.8622, Val Loss=0.4001, lr=0.0100
+[02/23 21:22:21] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 7/100, Acc=0.8618, Val Loss=0.4110, lr=0.0100
+[02/23 21:22:49] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 8/100, Acc=0.8661, Val Loss=0.4083, lr=0.0100
+[02/23 21:23:17] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 9/100, Acc=0.8614, Val Loss=0.4175, lr=0.0100
+[02/23 21:23:45] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 10/100, Acc=0.8582, Val Loss=0.4323, lr=0.0100
+[02/23 21:24:13] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 11/100, Acc=0.8730, Val Loss=0.3771, lr=0.0100
+[02/23 21:24:41] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 12/100, Acc=0.8664, Val Loss=0.3991, lr=0.0100
+[02/23 21:25:09] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 13/100, Acc=0.8653, Val Loss=0.3996, lr=0.0100
+[02/23 21:25:37] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 14/100, Acc=0.8723, Val Loss=0.3860, lr=0.0100
+[02/23 21:26:05] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 15/100, Acc=0.8677, Val Loss=0.4009, lr=0.0100
+[02/23 21:26:33] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 16/100, Acc=0.8692, Val Loss=0.4023, lr=0.0100
+[02/23 21:27:01] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 17/100, Acc=0.8690, Val Loss=0.4024, lr=0.0100
+[02/23 21:27:29] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 18/100, Acc=0.8763, Val Loss=0.3730, lr=0.0100
+[02/23 21:27:57] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 19/100, Acc=0.8773, Val Loss=0.3710, lr=0.0100
+[02/23 21:28:26] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 20/100, Acc=0.8785, Val Loss=0.3617, lr=0.0100
+[02/23 21:28:53] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 21/100, Acc=0.8630, Val Loss=0.4226, lr=0.0100
+[02/23 21:29:21] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 22/100, Acc=0.8710, Val Loss=0.3946, lr=0.0100
+[02/23 21:29:49] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 23/100, Acc=0.8702, Val Loss=0.3888, lr=0.0100
+[02/23 21:30:17] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 24/100, Acc=0.8723, Val Loss=0.3808, lr=0.0100
+[02/23 21:30:45] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 25/100, Acc=0.8783, Val Loss=0.3640, lr=0.0100
+[02/23 21:31:12] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 26/100, Acc=0.8678, Val Loss=0.3925, lr=0.0100
+[02/23 21:31:40] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 27/100, Acc=0.8726, Val Loss=0.3839, lr=0.0100
+[02/23 21:32:09] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 28/100, Acc=0.8671, Val Loss=0.4030, lr=0.0100
+[02/23 21:32:37] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 29/100, Acc=0.8736, Val Loss=0.3932, lr=0.0100
+[02/23 21:33:05] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 30/100, Acc=0.8783, Val Loss=0.3782, lr=0.0100
+[02/23 21:33:33] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 31/100, Acc=0.8718, Val Loss=0.3969, lr=0.0100
+[02/23 21:34:02] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 32/100, Acc=0.8775, Val Loss=0.3677, lr=0.0100
+[02/23 21:34:30] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 33/100, Acc=0.8780, Val Loss=0.3742, lr=0.0100
+[02/23 21:34:58] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 34/100, Acc=0.8708, Val Loss=0.3958, lr=0.0100
+[02/23 21:35:27] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 35/100, Acc=0.8733, Val Loss=0.3850, lr=0.0100
+[02/23 21:35:55] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 36/100, Acc=0.8800, Val Loss=0.3652, lr=0.0100
+[02/23 21:36:23] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 37/100, Acc=0.8761, Val Loss=0.3855, lr=0.0100
+[02/23 21:36:51] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 38/100, Acc=0.8844, Val Loss=0.3594, lr=0.0100
+[02/23 21:37:19] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 39/100, Acc=0.8750, Val Loss=0.3829, lr=0.0100
+[02/23 21:37:47] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 40/100, Acc=0.8797, Val Loss=0.3682, lr=0.0100
+[02/23 21:38:14] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 41/100, Acc=0.8803, Val Loss=0.3725, lr=0.0100
+[02/23 21:38:42] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 42/100, Acc=0.8800, Val Loss=0.3701, lr=0.0100
+[02/23 21:39:10] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 43/100, Acc=0.8770, Val Loss=0.3772, lr=0.0100
+[02/23 21:39:38] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 44/100, Acc=0.8814, Val Loss=0.3582, lr=0.0100
+[02/23 21:40:05] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 45/100, Acc=0.8829, Val Loss=0.3526, lr=0.0100
+[02/23 21:40:33] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 46/100, Acc=0.8793, Val Loss=0.3608, lr=0.0100
+[02/23 21:41:01] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 47/100, Acc=0.8777, Val Loss=0.3704, lr=0.0100
+[02/23 21:41:29] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 48/100, Acc=0.8794, Val Loss=0.3729, lr=0.0100
+[02/23 21:41:57] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 49/100, Acc=0.8835, Val Loss=0.3612, lr=0.0100
+[02/23 21:42:24] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 50/100, Acc=0.8842, Val Loss=0.3495, lr=0.0100
+[02/23 21:42:52] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 51/100, Acc=0.8833, Val Loss=0.3626, lr=0.0100
+[02/23 21:43:20] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 52/100, Acc=0.8755, Val Loss=0.3842, lr=0.0100
+[02/23 21:43:49] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 53/100, Acc=0.8807, Val Loss=0.3738, lr=0.0100
+[02/23 21:44:17] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 54/100, Acc=0.8764, Val Loss=0.3744, lr=0.0100
+[02/23 21:44:45] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 55/100, Acc=0.8779, Val Loss=0.3677, lr=0.0100
+[02/23 21:45:14] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 56/100, Acc=0.8854, Val Loss=0.3527, lr=0.0100
+[02/23 21:45:42] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 57/100, Acc=0.8849, Val Loss=0.3526, lr=0.0100
+[02/23 21:46:11] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 58/100, Acc=0.8808, Val Loss=0.3663, lr=0.0100
+[02/23 21:46:39] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 59/100, Acc=0.8839, Val Loss=0.3499, lr=0.0100
+[02/23 21:47:07] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 60/100, Acc=0.8936, Val Loss=0.3179, lr=0.0010
+[02/23 21:47:36] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 61/100, Acc=0.8975, Val Loss=0.3131, lr=0.0010
+[02/23 21:48:05] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 62/100, Acc=0.8979, Val Loss=0.3124, lr=0.0010
+[02/23 21:48:33] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 63/100, Acc=0.8984, Val Loss=0.3172, lr=0.0010
+[02/23 21:49:01] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 64/100, Acc=0.8979, Val Loss=0.3156, lr=0.0010
+[02/23 21:49:29] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 65/100, Acc=0.8985, Val Loss=0.3161, lr=0.0010
+[02/23 21:49:57] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 66/100, Acc=0.8995, Val Loss=0.3138, lr=0.0010
+[02/23 21:50:26] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 67/100, Acc=0.8989, Val Loss=0.3119, lr=0.0010
+[02/23 21:50:54] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 68/100, Acc=0.8996, Val Loss=0.3147, lr=0.0010
+[02/23 21:51:22] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 69/100, Acc=0.8982, Val Loss=0.3177, lr=0.0010
+[02/23 21:51:50] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 70/100, Acc=0.8989, Val Loss=0.3138, lr=0.0010
+[02/23 21:52:18] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 71/100, Acc=0.8981, Val Loss=0.3166, lr=0.0010
+[02/23 21:52:46] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 72/100, Acc=0.8989, Val Loss=0.3167, lr=0.0010
+[02/23 21:53:14] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 73/100, Acc=0.8991, Val Loss=0.3183, lr=0.0010
+[02/23 21:53:42] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 74/100, Acc=0.8988, Val Loss=0.3169, lr=0.0010
+[02/23 21:54:10] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 75/100, Acc=0.8992, Val Loss=0.3190, lr=0.0010
+[02/23 21:54:37] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 76/100, Acc=0.8991, Val Loss=0.3197, lr=0.0010
+[02/23 21:55:06] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 77/100, Acc=0.8981, Val Loss=0.3215, lr=0.0010
+[02/23 21:55:34] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 78/100, Acc=0.8993, Val Loss=0.3220, lr=0.0010
+[02/23 21:56:02] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 79/100, Acc=0.8989, Val Loss=0.3203, lr=0.0010
+[02/23 21:56:30] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 80/100, Acc=0.8995, Val Loss=0.3176, lr=0.0001
+[02/23 21:56:58] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 81/100, Acc=0.8979, Val Loss=0.3200, lr=0.0001
+[02/23 21:57:26] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 82/100, Acc=0.8989, Val Loss=0.3181, lr=0.0001
+[02/23 21:57:53] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 83/100, Acc=0.8995, Val Loss=0.3199, lr=0.0001
+[02/23 21:58:21] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 84/100, Acc=0.8990, Val Loss=0.3191, lr=0.0001
+[02/23 21:58:49] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 85/100, Acc=0.8988, Val Loss=0.3187, lr=0.0001
+[02/23 21:59:18] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 86/100, Acc=0.8999, Val Loss=0.3201, lr=0.0001
+[02/23 21:59:45] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 87/100, Acc=0.8994, Val Loss=0.3191, lr=0.0001
+[02/23 22:00:14] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 88/100, Acc=0.8983, Val Loss=0.3188, lr=0.0001
+[02/23 22:00:42] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 89/100, Acc=0.8977, Val Loss=0.3190, lr=0.0001
+[02/23 22:01:10] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 90/100, Acc=0.9005, Val Loss=0.3179, lr=0.0001
+[02/23 22:01:39] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 91/100, Acc=0.8985, Val Loss=0.3182, lr=0.0001
+[02/23 22:02:07] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 92/100, Acc=0.8986, Val Loss=0.3195, lr=0.0001
+[02/23 22:02:35] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 93/100, Acc=0.8983, Val Loss=0.3179, lr=0.0001
+[02/23 22:03:04] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 94/100, Acc=0.8985, Val Loss=0.3185, lr=0.0001
+[02/23 22:03:32] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 95/100, Acc=0.8985, Val Loss=0.3199, lr=0.0001
+[02/23 22:04:00] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 96/100, Acc=0.8990, Val Loss=0.3192, lr=0.0001
+[02/23 22:04:29] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 97/100, Acc=0.8994, Val Loss=0.3187, lr=0.0001
+[02/23 22:04:57] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 98/100, Acc=0.8992, Val Loss=0.3194, lr=0.0001
+[02/23 22:05:25] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 99/100, Acc=0.8989, Val Loss=0.3196, lr=0.0001
+[02/23 22:05:25] cifar10-global-slim-2.0-mobilenetv2 INFO: Best Acc=0.9005
+[02/23 22:05:25] cifar10-global-slim-2.0-mobilenetv2 INFO: Loading the sparse model from run/cifar10/prune/cifar10-global-slim-2.0-mobilenetv2/reg_cifar10_mobilenetv2_slim_1e-05.pth...
+[02/23 22:05:28] cifar10-global-slim-2.0-mobilenetv2 INFO: Pruning...
+[02/23 22:05:47] cifar10-global-slim-2.0-mobilenetv2 INFO: MobileNetV2(
+  (pre): Sequential(
+    (0): Conv2d(3, 7, kernel_size=(1, 1), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(7, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU6(inplace=True)
+  )
+  (stage1): LinearBottleNeck(
+    (residual): Sequential(
+      (0): Conv2d(7, 17, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(17, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU6(inplace=True)
+      (3): Conv2d(17, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=17)
+      (4): BatchNorm2d(17, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU6(inplace=True)
+      (6): Conv2d(17, 16, kernel_size=(1, 1), stride=(1, 1))
+      (7): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (stage2): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(16, 69, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(69, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(69, 69, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=69)
+        (4): BatchNorm2d(69, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(69, 24, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(24, 74, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(74, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(74, 74, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=74)
+        (4): BatchNorm2d(74, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(74, 24, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage3): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(24, 50, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(50, 50, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=50)
+        (4): BatchNorm2d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(50, 32, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(32, 69, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(69, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(69, 69, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=69)
+        (4): BatchNorm2d(69, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(69, 32, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32)
+        (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage4): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(32, 40, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(40, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(40, 40, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=40)
+        (4): BatchNorm2d(40, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(40, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 51, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(51, 51, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=51)
+        (4): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(51, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 31, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(31, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(31, 31, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=31)
+        (4): BatchNorm2d(31, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(31, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (3): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 12, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(12, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=12)
+        (4): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(12, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage5): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 73, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(73, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(73, 73, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=73)
+        (4): BatchNorm2d(73, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(73, 96, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576)
+        (4): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(96, 576, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(576, 576, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=576)
+        (4): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(576, 96, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage6): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(96, 144, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144)
+        (4): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(144, 160, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(160, 7, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(7, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(7, 7, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=7)
+        (4): BatchNorm2d(7, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(7, 160, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(160, 525, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(525, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(525, 525, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=525)
+        (4): BatchNorm2d(525, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(525, 160, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage7): LinearBottleNeck(
+    (residual): Sequential(
+      (0): Conv2d(160, 418, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(418, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU6(inplace=True)
+      (3): Conv2d(418, 418, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=418)
+      (4): BatchNorm2d(418, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU6(inplace=True)
+      (6): Conv2d(418, 320, kernel_size=(1, 1), stride=(1, 1))
+      (7): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv1): Sequential(
+    (0): Conv2d(320, 1280, kernel_size=(1, 1), stride=(1, 1))
+    (1): BatchNorm2d(1280, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU6(inplace=True)
+  )
+  (conv2): Conv2d(1280, 10, kernel_size=(1, 1), stride=(1, 1))
+)
+[02/23 22:05:50] cifar10-global-slim-2.0-mobilenetv2 INFO: Params: 2.25 M => 1.14 M (50.78%)
+[02/23 22:05:50] cifar10-global-slim-2.0-mobilenetv2 INFO: FLOPs: 68.29 M => 33.95 M (49.72%, 2.01X )
+[02/23 22:05:50] cifar10-global-slim-2.0-mobilenetv2 INFO: Acc: 0.9005 => 0.9004
+[02/23 22:05:50] cifar10-global-slim-2.0-mobilenetv2 INFO: Val Loss: 0.3179 => 0.3179
+[02/23 22:05:50] cifar10-global-slim-2.0-mobilenetv2 INFO: Finetuning...
+[02/23 22:06:18] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 0/100, Acc=0.8863, Val Loss=0.3445, lr=0.0100
+[02/23 22:06:46] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 1/100, Acc=0.8848, Val Loss=0.3530, lr=0.0100
+[02/23 22:07:15] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 2/100, Acc=0.8781, Val Loss=0.3626, lr=0.0100
+[02/23 22:07:43] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 3/100, Acc=0.8747, Val Loss=0.3751, lr=0.0100
+[02/23 22:08:11] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 4/100, Acc=0.8808, Val Loss=0.3607, lr=0.0100
+[02/23 22:08:39] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 5/100, Acc=0.8822, Val Loss=0.3589, lr=0.0100
+[02/23 22:09:07] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 6/100, Acc=0.8839, Val Loss=0.3534, lr=0.0100
+[02/23 22:09:35] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 7/100, Acc=0.8781, Val Loss=0.3871, lr=0.0100
+[02/23 22:10:03] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 8/100, Acc=0.8824, Val Loss=0.3565, lr=0.0100
+[02/23 22:10:31] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 9/100, Acc=0.8790, Val Loss=0.3622, lr=0.0100
+[02/23 22:10:59] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 10/100, Acc=0.8780, Val Loss=0.3776, lr=0.0100
+[02/23 22:11:27] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 11/100, Acc=0.8746, Val Loss=0.3849, lr=0.0100
+[02/23 22:11:55] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 12/100, Acc=0.8822, Val Loss=0.3618, lr=0.0100
+[02/23 22:12:23] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 13/100, Acc=0.8763, Val Loss=0.3723, lr=0.0100
+[02/23 22:12:51] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 14/100, Acc=0.8773, Val Loss=0.3723, lr=0.0100
+[02/23 22:13:18] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 15/100, Acc=0.8642, Val Loss=0.4169, lr=0.0100
+[02/23 22:13:46] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 16/100, Acc=0.8672, Val Loss=0.4040, lr=0.0100
+[02/23 22:14:14] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 17/100, Acc=0.8725, Val Loss=0.3835, lr=0.0100
+[02/23 22:14:42] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 18/100, Acc=0.8765, Val Loss=0.3721, lr=0.0100
+[02/23 22:15:10] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 19/100, Acc=0.8561, Val Loss=0.4336, lr=0.0100
+[02/23 22:15:38] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 20/100, Acc=0.8655, Val Loss=0.4050, lr=0.0100
+[02/23 22:16:06] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 21/100, Acc=0.8791, Val Loss=0.3647, lr=0.0100
+[02/23 22:16:34] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 22/100, Acc=0.8736, Val Loss=0.3821, lr=0.0100
+[02/23 22:17:02] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 23/100, Acc=0.8664, Val Loss=0.4070, lr=0.0100
+[02/23 22:17:31] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 24/100, Acc=0.8642, Val Loss=0.4108, lr=0.0100
+[02/23 22:17:59] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 25/100, Acc=0.8785, Val Loss=0.3669, lr=0.0100
+[02/23 22:18:27] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 26/100, Acc=0.8592, Val Loss=0.4175, lr=0.0100
+[02/23 22:18:56] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 27/100, Acc=0.8765, Val Loss=0.3715, lr=0.0100
+[02/23 22:19:24] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 28/100, Acc=0.8682, Val Loss=0.4047, lr=0.0100
+[02/23 22:19:52] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 29/100, Acc=0.8698, Val Loss=0.3891, lr=0.0100
+[02/23 22:20:21] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 30/100, Acc=0.8661, Val Loss=0.4040, lr=0.0100
+[02/23 22:20:49] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 31/100, Acc=0.8710, Val Loss=0.3888, lr=0.0100
+[02/23 22:21:17] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 32/100, Acc=0.8731, Val Loss=0.3791, lr=0.0100
+[02/23 22:21:46] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 33/100, Acc=0.8546, Val Loss=0.4437, lr=0.0100
+[02/23 22:22:14] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 34/100, Acc=0.8647, Val Loss=0.4052, lr=0.0100
+[02/23 22:22:42] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 35/100, Acc=0.8508, Val Loss=0.4561, lr=0.0100
+[02/23 22:23:10] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 36/100, Acc=0.8683, Val Loss=0.3970, lr=0.0100
+[02/23 22:23:38] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 37/100, Acc=0.8681, Val Loss=0.4006, lr=0.0100
+[02/23 22:24:06] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 38/100, Acc=0.8561, Val Loss=0.4312, lr=0.0100
+[02/23 22:24:34] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 39/100, Acc=0.8579, Val Loss=0.4160, lr=0.0100
+[02/23 22:25:02] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 40/100, Acc=0.8708, Val Loss=0.3892, lr=0.0100
+[02/23 22:25:31] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 41/100, Acc=0.8648, Val Loss=0.3956, lr=0.0100
+[02/23 22:25:59] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 42/100, Acc=0.8575, Val Loss=0.4293, lr=0.0100
+[02/23 22:26:27] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 43/100, Acc=0.8630, Val Loss=0.3968, lr=0.0100
+[02/23 22:26:56] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 44/100, Acc=0.8609, Val Loss=0.4082, lr=0.0100
+[02/23 22:27:24] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 45/100, Acc=0.8639, Val Loss=0.4231, lr=0.0100
+[02/23 22:27:52] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 46/100, Acc=0.8755, Val Loss=0.3814, lr=0.0100
+[02/23 22:28:21] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 47/100, Acc=0.8642, Val Loss=0.4142, lr=0.0100
+[02/23 22:28:49] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 48/100, Acc=0.8706, Val Loss=0.3872, lr=0.0100
+[02/23 22:29:18] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 49/100, Acc=0.8533, Val Loss=0.4400, lr=0.0100
+[02/23 22:29:46] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 50/100, Acc=0.8547, Val Loss=0.4256, lr=0.0100
+[02/23 22:30:14] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 51/100, Acc=0.8613, Val Loss=0.4119, lr=0.0100
+[02/23 22:30:43] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 52/100, Acc=0.8605, Val Loss=0.4037, lr=0.0100
+[02/23 22:31:11] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 53/100, Acc=0.8631, Val Loss=0.4061, lr=0.0100
+[02/23 22:31:40] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 54/100, Acc=0.8720, Val Loss=0.3948, lr=0.0100
+[02/23 22:32:08] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 55/100, Acc=0.8558, Val Loss=0.4222, lr=0.0100
+[02/23 22:32:37] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 56/100, Acc=0.8501, Val Loss=0.4434, lr=0.0100
+[02/23 22:33:05] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 57/100, Acc=0.8615, Val Loss=0.4222, lr=0.0100
+[02/23 22:33:34] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 58/100, Acc=0.8695, Val Loss=0.3998, lr=0.0100
+[02/23 22:34:02] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 59/100, Acc=0.8644, Val Loss=0.4078, lr=0.0100
+[02/23 22:34:31] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 60/100, Acc=0.8971, Val Loss=0.3075, lr=0.0010
+[02/23 22:34:59] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 61/100, Acc=0.8984, Val Loss=0.2996, lr=0.0010
+[02/23 22:35:28] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 62/100, Acc=0.9022, Val Loss=0.2948, lr=0.0010
+[02/23 22:35:57] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 63/100, Acc=0.9027, Val Loss=0.2949, lr=0.0010
+[02/23 22:36:25] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 64/100, Acc=0.9005, Val Loss=0.2941, lr=0.0010
+[02/23 22:36:54] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 65/100, Acc=0.9002, Val Loss=0.2953, lr=0.0010
+[02/23 22:37:22] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 66/100, Acc=0.9008, Val Loss=0.2969, lr=0.0010
+[02/23 22:37:50] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 67/100, Acc=0.9007, Val Loss=0.2960, lr=0.0010
+[02/23 22:38:19] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 68/100, Acc=0.9030, Val Loss=0.2945, lr=0.0010
+[02/23 22:38:47] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 69/100, Acc=0.9022, Val Loss=0.2977, lr=0.0010
+[02/23 22:39:15] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 70/100, Acc=0.9056, Val Loss=0.2945, lr=0.0010
+[02/23 22:39:44] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 71/100, Acc=0.9022, Val Loss=0.2979, lr=0.0010
+[02/23 22:40:12] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 72/100, Acc=0.9032, Val Loss=0.3001, lr=0.0010
+[02/23 22:40:40] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 73/100, Acc=0.9057, Val Loss=0.2960, lr=0.0010
+[02/23 22:41:08] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 74/100, Acc=0.9042, Val Loss=0.2973, lr=0.0010
+[02/23 22:41:36] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 75/100, Acc=0.9029, Val Loss=0.3021, lr=0.0010
+[02/23 22:42:04] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 76/100, Acc=0.9036, Val Loss=0.3016, lr=0.0010
+[02/23 22:42:32] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 77/100, Acc=0.9008, Val Loss=0.3047, lr=0.0010
+[02/23 22:43:00] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 78/100, Acc=0.9032, Val Loss=0.3012, lr=0.0010
+[02/23 22:43:28] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 79/100, Acc=0.9035, Val Loss=0.2981, lr=0.0010
+[02/23 22:43:56] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 80/100, Acc=0.9033, Val Loss=0.2981, lr=0.0001
+[02/23 22:44:24] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 81/100, Acc=0.9048, Val Loss=0.2965, lr=0.0001
+[02/23 22:44:52] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 82/100, Acc=0.9046, Val Loss=0.2955, lr=0.0001
+[02/23 22:45:20] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 83/100, Acc=0.9037, Val Loss=0.3000, lr=0.0001
+[02/23 22:45:49] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 84/100, Acc=0.9041, Val Loss=0.2969, lr=0.0001
+[02/23 22:46:18] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 85/100, Acc=0.9053, Val Loss=0.2971, lr=0.0001
+[02/23 22:46:46] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 86/100, Acc=0.9046, Val Loss=0.2977, lr=0.0001
+[02/23 22:47:15] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 87/100, Acc=0.9039, Val Loss=0.2974, lr=0.0001
+[02/23 22:47:44] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 88/100, Acc=0.9026, Val Loss=0.2979, lr=0.0001
+[02/23 22:48:12] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 89/100, Acc=0.9047, Val Loss=0.2960, lr=0.0001
+[02/23 22:48:40] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 90/100, Acc=0.9039, Val Loss=0.2967, lr=0.0001
+[02/23 22:49:09] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 91/100, Acc=0.9058, Val Loss=0.2995, lr=0.0001
+[02/23 22:49:37] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 92/100, Acc=0.9049, Val Loss=0.2975, lr=0.0001
+[02/23 22:50:05] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 93/100, Acc=0.9064, Val Loss=0.2974, lr=0.0001
+[02/23 22:50:34] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 94/100, Acc=0.9051, Val Loss=0.2972, lr=0.0001
+[02/23 22:51:02] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 95/100, Acc=0.9043, Val Loss=0.2978, lr=0.0001
+[02/23 22:51:30] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 96/100, Acc=0.9057, Val Loss=0.2981, lr=0.0001
+[02/23 22:51:58] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 97/100, Acc=0.9061, Val Loss=0.2967, lr=0.0001
+[02/23 22:52:26] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 98/100, Acc=0.9048, Val Loss=0.2980, lr=0.0001
+[02/23 22:52:54] cifar10-global-slim-2.0-mobilenetv2 INFO: Epoch 99/100, Acc=0.9039, Val Loss=0.2967, lr=0.0001
+[02/23 22:52:54] cifar10-global-slim-2.0-mobilenetv2 INFO: Best Acc=0.9064
+[02/23 22:52:54] cifar10-global-slim-2.0-mobilenetv2 INFO: Params: 1.14 M
+[02/23 22:52:54] cifar10-global-slim-2.0-mobilenetv2 INFO: ops: 33.95 M
+[02/23 22:52:57] cifar10-global-slim-2.0-mobilenetv2 INFO: Acc: 0.9039 Val Loss: 0.2967
+

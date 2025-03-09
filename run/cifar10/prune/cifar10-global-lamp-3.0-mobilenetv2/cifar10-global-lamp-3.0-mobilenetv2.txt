@@ -1,0 +1,372 @@
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: mode: prune
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: model: mobilenetv2
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: verbose: False
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: dataset: cifar10
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: dataroot: data
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: batch_size: 128
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: total_epochs: 100
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: lr_decay_milestones: 60,80
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: lr_decay_gamma: 0.1
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: lr: 0.01
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: restore: run/cifar10/pretrain/cifar10_mobilenetv2.pth
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: output_dir: run/cifar10/prune/cifar10-global-lamp-3.0-mobilenetv2
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: finetune: True
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: last_epochs: 100
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: reps: 1
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: method: lamp
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: speed_up: 3.0
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: max_pruning_ratio: 1.0
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: soft_keeping_ratio: 0.0
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: reg: 1e-05
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: delta_reg: 0.0001
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: weight_decay: 0.0005
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: seed: 1
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: global_pruning: True
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: sl_total_epochs: 100
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: sl_lr: 0.01
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: sl_lr_decay_milestones: 60,80
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: sl_reg_warmup: 0
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: sl_restore: None
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: iterative_steps: 400
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: logger: <Logger cifar10-global-lamp-3.0-mobilenetv2 (DEBUG)>
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: device: cuda
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: num_classes: 10
+[02/26 05:38:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: Loading model from run/cifar10/pretrain/cifar10_mobilenetv2.pth
+[02/26 05:38:42] cifar10-global-lamp-3.0-mobilenetv2 INFO: Pruning...
+[02/26 05:39:14] cifar10-global-lamp-3.0-mobilenetv2 INFO: MobileNetV2(
+  (pre): Sequential(
+    (0): Conv2d(3, 7, kernel_size=(1, 1), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(7, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU6(inplace=True)
+  )
+  (stage1): LinearBottleNeck(
+    (residual): Sequential(
+      (0): Conv2d(7, 17, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(17, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU6(inplace=True)
+      (3): Conv2d(17, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=17)
+      (4): BatchNorm2d(17, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU6(inplace=True)
+      (6): Conv2d(17, 16, kernel_size=(1, 1), stride=(1, 1))
+      (7): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (stage2): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(16, 68, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(68, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(68, 68, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=68)
+        (4): BatchNorm2d(68, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(68, 24, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(24, 73, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(73, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(73, 73, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=73)
+        (4): BatchNorm2d(73, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(73, 24, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage3): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(24, 50, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(50, 50, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=50)
+        (4): BatchNorm2d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(50, 32, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(32, 70, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(70, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(70, 70, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=70)
+        (4): BatchNorm2d(70, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(70, 32, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(32, 33, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(33, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(33, 33, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=33)
+        (4): BatchNorm2d(33, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(33, 32, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage4): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(32, 40, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(40, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(40, 40, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=40)
+        (4): BatchNorm2d(40, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(40, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 51, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(51, 51, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=51)
+        (4): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(51, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 33, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(33, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(33, 33, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=33)
+        (4): BatchNorm2d(33, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(33, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (3): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 14, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(14, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(14, 14, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=14)
+        (4): BatchNorm2d(14, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(14, 64, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage5): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(64, 73, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(73, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(73, 73, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=73)
+        (4): BatchNorm2d(73, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(73, 96, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(96, 17, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(17, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(17, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=17)
+        (4): BatchNorm2d(17, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(17, 96, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(96, 3, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(3, 3, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=3)
+        (4): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(3, 96, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage6): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(96, 142, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(142, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(142, 142, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=142)
+        (4): BatchNorm2d(142, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(142, 160, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(160, 7, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(7, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(7, 7, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=7)
+        (4): BatchNorm2d(7, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(7, 160, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(160, 4, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=4)
+        (4): BatchNorm2d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(4, 160, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage7): LinearBottleNeck(
+    (residual): Sequential(
+      (0): Conv2d(160, 404, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(404, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU6(inplace=True)
+      (3): Conv2d(404, 404, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=404)
+      (4): BatchNorm2d(404, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU6(inplace=True)
+      (6): Conv2d(404, 320, kernel_size=(1, 1), stride=(1, 1))
+      (7): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv1): Sequential(
+    (0): Conv2d(320, 1181, kernel_size=(1, 1), stride=(1, 1))
+    (1): BatchNorm2d(1181, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU6(inplace=True)
+  )
+  (conv2): Conv2d(1181, 10, kernel_size=(1, 1), stride=(1, 1))
+)
+[02/26 05:39:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Params: 2.25 M => 0.70 M (30.88%)
+[02/26 05:39:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: FLOPs: 68.29 M => 22.63 M (33.14%, 3.02X )
+[02/26 05:39:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Acc: 0.8936 => 0.8936
+[02/26 05:39:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Val Loss: 0.3202 => 0.3194
+[02/26 05:39:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Finetuning...
+[02/26 05:39:44] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 0/100, Acc=0.8475, Val Loss=0.4487, lr=0.0100
+[02/26 05:40:12] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 1/100, Acc=0.8350, Val Loss=0.4832, lr=0.0100
+[02/26 05:40:39] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 2/100, Acc=0.8408, Val Loss=0.4690, lr=0.0100
+[02/26 05:41:06] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 3/100, Acc=0.8487, Val Loss=0.4411, lr=0.0100
+[02/26 05:41:33] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 4/100, Acc=0.8595, Val Loss=0.4196, lr=0.0100
+[02/26 05:42:01] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 5/100, Acc=0.8500, Val Loss=0.4321, lr=0.0100
+[02/26 05:42:28] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 6/100, Acc=0.8433, Val Loss=0.4633, lr=0.0100
+[02/26 05:42:55] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 7/100, Acc=0.8523, Val Loss=0.4282, lr=0.0100
+[02/26 05:43:22] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 8/100, Acc=0.8596, Val Loss=0.4185, lr=0.0100
+[02/26 05:43:50] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 9/100, Acc=0.8495, Val Loss=0.4383, lr=0.0100
+[02/26 05:44:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 10/100, Acc=0.8620, Val Loss=0.4023, lr=0.0100
+[02/26 05:44:44] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 11/100, Acc=0.8640, Val Loss=0.3984, lr=0.0100
+[02/26 05:45:11] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 12/100, Acc=0.8514, Val Loss=0.4341, lr=0.0100
+[02/26 05:45:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 13/100, Acc=0.8442, Val Loss=0.4425, lr=0.0100
+[02/26 05:46:06] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 14/100, Acc=0.8473, Val Loss=0.4578, lr=0.0100
+[02/26 05:46:33] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 15/100, Acc=0.8561, Val Loss=0.4328, lr=0.0100
+[02/26 05:47:00] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 16/100, Acc=0.8674, Val Loss=0.3868, lr=0.0100
+[02/26 05:47:28] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 17/100, Acc=0.8575, Val Loss=0.4183, lr=0.0100
+[02/26 05:47:55] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 18/100, Acc=0.8561, Val Loss=0.4236, lr=0.0100
+[02/26 05:48:22] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 19/100, Acc=0.8544, Val Loss=0.4343, lr=0.0100
+[02/26 05:48:50] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 20/100, Acc=0.8417, Val Loss=0.4676, lr=0.0100
+[02/26 05:49:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 21/100, Acc=0.8607, Val Loss=0.4061, lr=0.0100
+[02/26 05:49:44] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 22/100, Acc=0.8559, Val Loss=0.4269, lr=0.0100
+[02/26 05:50:12] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 23/100, Acc=0.8595, Val Loss=0.4168, lr=0.0100
+[02/26 05:50:39] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 24/100, Acc=0.8634, Val Loss=0.4130, lr=0.0100
+[02/26 05:51:07] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 25/100, Acc=0.8607, Val Loss=0.4215, lr=0.0100
+[02/26 05:51:34] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 26/100, Acc=0.8524, Val Loss=0.4398, lr=0.0100
+[02/26 05:52:01] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 27/100, Acc=0.8329, Val Loss=0.4932, lr=0.0100
+[02/26 05:52:29] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 28/100, Acc=0.8501, Val Loss=0.4529, lr=0.0100
+[02/26 05:52:56] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 29/100, Acc=0.8316, Val Loss=0.4936, lr=0.0100
+[02/26 05:53:23] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 30/100, Acc=0.8507, Val Loss=0.4373, lr=0.0100
+[02/26 05:53:51] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 31/100, Acc=0.8501, Val Loss=0.4466, lr=0.0100
+[02/26 05:54:18] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 32/100, Acc=0.8471, Val Loss=0.4526, lr=0.0100
+[02/26 05:54:46] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 33/100, Acc=0.8636, Val Loss=0.3955, lr=0.0100
+[02/26 05:55:13] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 34/100, Acc=0.8665, Val Loss=0.3947, lr=0.0100
+[02/26 05:55:41] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 35/100, Acc=0.8629, Val Loss=0.4149, lr=0.0100
+[02/26 05:56:08] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 36/100, Acc=0.8532, Val Loss=0.4320, lr=0.0100
+[02/26 05:56:35] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 37/100, Acc=0.8611, Val Loss=0.4022, lr=0.0100
+[02/26 05:57:02] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 38/100, Acc=0.8594, Val Loss=0.4290, lr=0.0100
+[02/26 05:57:29] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 39/100, Acc=0.8597, Val Loss=0.4088, lr=0.0100
+[02/26 05:57:56] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 40/100, Acc=0.8632, Val Loss=0.4098, lr=0.0100
+[02/26 05:58:23] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 41/100, Acc=0.8646, Val Loss=0.4061, lr=0.0100
+[02/26 05:58:50] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 42/100, Acc=0.8620, Val Loss=0.4031, lr=0.0100
+[02/26 05:59:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 43/100, Acc=0.8636, Val Loss=0.4100, lr=0.0100
+[02/26 05:59:44] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 44/100, Acc=0.8650, Val Loss=0.4001, lr=0.0100
+[02/26 06:00:11] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 45/100, Acc=0.8643, Val Loss=0.4031, lr=0.0100
+[02/26 06:00:39] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 46/100, Acc=0.8525, Val Loss=0.4289, lr=0.0100
+[02/26 06:01:06] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 47/100, Acc=0.8354, Val Loss=0.4849, lr=0.0100
+[02/26 06:01:33] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 48/100, Acc=0.8466, Val Loss=0.4439, lr=0.0100
+[02/26 06:02:00] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 49/100, Acc=0.8556, Val Loss=0.4237, lr=0.0100
+[02/26 06:02:27] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 50/100, Acc=0.8617, Val Loss=0.4155, lr=0.0100
+[02/26 06:02:54] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 51/100, Acc=0.8577, Val Loss=0.4234, lr=0.0100
+[02/26 06:03:21] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 52/100, Acc=0.8537, Val Loss=0.4274, lr=0.0100
+[02/26 06:03:48] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 53/100, Acc=0.8509, Val Loss=0.4389, lr=0.0100
+[02/26 06:04:15] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 54/100, Acc=0.8645, Val Loss=0.4095, lr=0.0100
+[02/26 06:04:43] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 55/100, Acc=0.8598, Val Loss=0.4117, lr=0.0100
+[02/26 06:05:10] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 56/100, Acc=0.8461, Val Loss=0.4608, lr=0.0100
+[02/26 06:05:37] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 57/100, Acc=0.8466, Val Loss=0.4494, lr=0.0100
+[02/26 06:06:04] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 58/100, Acc=0.8548, Val Loss=0.4392, lr=0.0100
+[02/26 06:06:32] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 59/100, Acc=0.8575, Val Loss=0.4132, lr=0.0100
+[02/26 06:06:59] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 60/100, Acc=0.8927, Val Loss=0.3154, lr=0.0010
+[02/26 06:07:26] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 61/100, Acc=0.8955, Val Loss=0.3075, lr=0.0010
+[02/26 06:07:53] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 62/100, Acc=0.8946, Val Loss=0.3067, lr=0.0010
+[02/26 06:08:20] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 63/100, Acc=0.8967, Val Loss=0.3072, lr=0.0010
+[02/26 06:08:48] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 64/100, Acc=0.8969, Val Loss=0.3025, lr=0.0010
+[02/26 06:09:15] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 65/100, Acc=0.8957, Val Loss=0.3056, lr=0.0010
+[02/26 06:09:42] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 66/100, Acc=0.8968, Val Loss=0.3053, lr=0.0010
+[02/26 06:10:09] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 67/100, Acc=0.8957, Val Loss=0.3075, lr=0.0010
+[02/26 06:10:37] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 68/100, Acc=0.8990, Val Loss=0.3070, lr=0.0010
+[02/26 06:11:04] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 69/100, Acc=0.8978, Val Loss=0.3050, lr=0.0010
+[02/26 06:11:31] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 70/100, Acc=0.8989, Val Loss=0.3085, lr=0.0010
+[02/26 06:11:58] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 71/100, Acc=0.8990, Val Loss=0.3025, lr=0.0010
+[02/26 06:12:25] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 72/100, Acc=0.8978, Val Loss=0.3060, lr=0.0010
+[02/26 06:12:52] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 73/100, Acc=0.8982, Val Loss=0.3067, lr=0.0010
+[02/26 06:13:19] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 74/100, Acc=0.9001, Val Loss=0.3046, lr=0.0010
+[02/26 06:13:47] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 75/100, Acc=0.8976, Val Loss=0.3068, lr=0.0010
+[02/26 06:14:14] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 76/100, Acc=0.8977, Val Loss=0.3086, lr=0.0010
+[02/26 06:14:41] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 77/100, Acc=0.8980, Val Loss=0.3102, lr=0.0010
+[02/26 06:15:08] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 78/100, Acc=0.8975, Val Loss=0.3090, lr=0.0010
+[02/26 06:15:35] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 79/100, Acc=0.8976, Val Loss=0.3062, lr=0.0010
+[02/26 06:16:02] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 80/100, Acc=0.9001, Val Loss=0.3004, lr=0.0001
+[02/26 06:16:29] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 81/100, Acc=0.9010, Val Loss=0.3016, lr=0.0001
+[02/26 06:16:57] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 82/100, Acc=0.8997, Val Loss=0.3036, lr=0.0001
+[02/26 06:17:23] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 83/100, Acc=0.8985, Val Loss=0.3044, lr=0.0001
+[02/26 06:17:50] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 84/100, Acc=0.8999, Val Loss=0.3028, lr=0.0001
+[02/26 06:18:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 85/100, Acc=0.8989, Val Loss=0.3041, lr=0.0001
+[02/26 06:18:45] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 86/100, Acc=0.8993, Val Loss=0.3037, lr=0.0001
+[02/26 06:19:12] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 87/100, Acc=0.8999, Val Loss=0.3017, lr=0.0001
+[02/26 06:19:39] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 88/100, Acc=0.9001, Val Loss=0.3012, lr=0.0001
+[02/26 06:20:06] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 89/100, Acc=0.9010, Val Loss=0.3019, lr=0.0001
+[02/26 06:20:33] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 90/100, Acc=0.9005, Val Loss=0.3040, lr=0.0001
+[02/26 06:21:01] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 91/100, Acc=0.9006, Val Loss=0.3020, lr=0.0001
+[02/26 06:21:28] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 92/100, Acc=0.9021, Val Loss=0.3013, lr=0.0001
+[02/26 06:21:55] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 93/100, Acc=0.8999, Val Loss=0.3026, lr=0.0001
+[02/26 06:22:22] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 94/100, Acc=0.9007, Val Loss=0.3020, lr=0.0001
+[02/26 06:22:49] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 95/100, Acc=0.9003, Val Loss=0.3031, lr=0.0001
+[02/26 06:23:17] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 96/100, Acc=0.9000, Val Loss=0.3027, lr=0.0001
+[02/26 06:23:44] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 97/100, Acc=0.8988, Val Loss=0.3035, lr=0.0001
+[02/26 06:24:11] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 98/100, Acc=0.8982, Val Loss=0.3034, lr=0.0001
+[02/26 06:24:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: Epoch 99/100, Acc=0.8994, Val Loss=0.3029, lr=0.0001
+[02/26 06:24:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: Best Acc=0.9021
+[02/26 06:24:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: Params: 0.70 M
+[02/26 06:24:38] cifar10-global-lamp-3.0-mobilenetv2 INFO: ops: 22.63 M
+[02/26 06:24:41] cifar10-global-lamp-3.0-mobilenetv2 INFO: Acc: 0.8994 Val Loss: 0.3029
+

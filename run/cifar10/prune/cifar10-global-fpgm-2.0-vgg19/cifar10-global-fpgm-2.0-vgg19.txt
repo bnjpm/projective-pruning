@@ -1,0 +1,206 @@
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: mode: prune
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: model: vgg19
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: verbose: False
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: dataset: cifar10
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: dataroot: data
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: batch_size: 128
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: total_epochs: 100
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: lr_decay_milestones: 60,80
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: lr_decay_gamma: 0.1
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: lr: 0.01
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: restore: run/cifar10/pretrain/cifar10_vgg19.pth
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: output_dir: run/cifar10/prune/cifar10-global-fpgm-2.0-vgg19
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: finetune: True
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: last_epochs: 100
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: reps: 1
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: method: fpgm
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: speed_up: 2.0
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: max_pruning_ratio: 1.0
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: soft_keeping_ratio: 0.0
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: reg: 1e-05
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: delta_reg: 0.0001
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: weight_decay: 0.0005
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: seed: 1
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: global_pruning: True
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: sl_total_epochs: 100
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: sl_lr: 0.01
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: sl_lr_decay_milestones: 60,80
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: sl_reg_warmup: 0
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: sl_restore: None
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: iterative_steps: 400
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: logger: <Logger cifar10-global-fpgm-2.0-vgg19 (DEBUG)>
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: device: cuda
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: num_classes: 10
+[02/21 01:27:02] cifar10-global-fpgm-2.0-vgg19 INFO: Loading model from run/cifar10/pretrain/cifar10_vgg19.pth
+[02/21 01:27:05] cifar10-global-fpgm-2.0-vgg19 INFO: Pruning...
+[02/21 01:27:14] cifar10-global-fpgm-2.0-vgg19 INFO: VGG(
+  (block0): Sequential(
+    (0): Conv2d(3, 20, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(20, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block1): Sequential(
+    (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block2): Sequential(
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (10): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block3): Sequential(
+    (0): Conv2d(256, 409, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(409, 293, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(293, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Conv2d(293, 185, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(185, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): Conv2d(185, 175, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (10): BatchNorm2d(175, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block4): Sequential(
+    (0): Conv2d(175, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(192, 108, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(108, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Conv2d(108, 29, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(29, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): Conv2d(29, 203, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (10): BatchNorm2d(203, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (pool0): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool4): AdaptiveAvgPool2d(output_size=(1, 1))
+  (classifier): Linear(in_features=203, out_features=10, bias=True)
+)
+[02/21 01:27:16] cifar10-global-fpgm-2.0-vgg19 INFO: Params: 20.04 M => 5.68 M (28.34%)
+[02/21 01:27:16] cifar10-global-fpgm-2.0-vgg19 INFO: FLOPs: 512.69 M => 255.99 M (49.93%, 2.00X )
+[02/21 01:27:16] cifar10-global-fpgm-2.0-vgg19 INFO: Acc: 0.9368 => 0.8395
+[02/21 01:27:16] cifar10-global-fpgm-2.0-vgg19 INFO: Val Loss: 0.2814 => 1.3106
+[02/21 01:27:16] cifar10-global-fpgm-2.0-vgg19 INFO: Finetuning...
+[02/21 01:27:39] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 0/100, Acc=0.9059, Val Loss=0.3551, lr=0.0100
+[02/21 01:28:01] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 1/100, Acc=0.9037, Val Loss=0.3463, lr=0.0100
+[02/21 01:28:24] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 2/100, Acc=0.9061, Val Loss=0.3379, lr=0.0100
+[02/21 01:28:47] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 3/100, Acc=0.9079, Val Loss=0.3501, lr=0.0100
+[02/21 01:29:10] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 4/100, Acc=0.9134, Val Loss=0.3237, lr=0.0100
+[02/21 01:29:33] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 5/100, Acc=0.9101, Val Loss=0.3091, lr=0.0100
+[02/21 01:29:56] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 6/100, Acc=0.9123, Val Loss=0.3291, lr=0.0100
+[02/21 01:30:18] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 7/100, Acc=0.8922, Val Loss=0.4045, lr=0.0100
+[02/21 01:30:40] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 8/100, Acc=0.9112, Val Loss=0.3393, lr=0.0100
+[02/21 01:31:02] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 9/100, Acc=0.8988, Val Loss=0.3772, lr=0.0100
+[02/21 01:31:24] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 10/100, Acc=0.9054, Val Loss=0.3463, lr=0.0100
+[02/21 01:31:48] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 11/100, Acc=0.9016, Val Loss=0.3604, lr=0.0100
+[02/21 01:32:11] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 12/100, Acc=0.9109, Val Loss=0.3191, lr=0.0100
+[02/21 01:32:34] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 13/100, Acc=0.9133, Val Loss=0.3143, lr=0.0100
+[02/21 01:32:57] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 14/100, Acc=0.9162, Val Loss=0.3223, lr=0.0100
+[02/21 01:33:21] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 15/100, Acc=0.9071, Val Loss=0.3522, lr=0.0100
+[02/21 01:33:44] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 16/100, Acc=0.9090, Val Loss=0.3382, lr=0.0100
+[02/21 01:34:08] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 17/100, Acc=0.9147, Val Loss=0.3091, lr=0.0100
+[02/21 01:34:31] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 18/100, Acc=0.9051, Val Loss=0.3539, lr=0.0100
+[02/21 01:34:54] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 19/100, Acc=0.8929, Val Loss=0.4131, lr=0.0100
+[02/21 01:35:17] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 20/100, Acc=0.9059, Val Loss=0.3613, lr=0.0100
+[02/21 01:35:39] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 21/100, Acc=0.9056, Val Loss=0.3491, lr=0.0100
+[02/21 01:36:01] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 22/100, Acc=0.9138, Val Loss=0.3258, lr=0.0100
+[02/21 01:36:23] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 23/100, Acc=0.9083, Val Loss=0.3413, lr=0.0100
+[02/21 01:36:46] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 24/100, Acc=0.9057, Val Loss=0.3578, lr=0.0100
+[02/21 01:37:08] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 25/100, Acc=0.9154, Val Loss=0.3360, lr=0.0100
+[02/21 01:37:31] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 26/100, Acc=0.9156, Val Loss=0.3341, lr=0.0100
+[02/21 01:37:53] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 27/100, Acc=0.9029, Val Loss=0.3766, lr=0.0100
+[02/21 01:38:15] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 28/100, Acc=0.9093, Val Loss=0.3483, lr=0.0100
+[02/21 01:38:37] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 29/100, Acc=0.9075, Val Loss=0.3757, lr=0.0100
+[02/21 01:39:00] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 30/100, Acc=0.9021, Val Loss=0.3781, lr=0.0100
+[02/21 01:39:23] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 31/100, Acc=0.9021, Val Loss=0.3824, lr=0.0100
+[02/21 01:39:44] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 32/100, Acc=0.9122, Val Loss=0.3247, lr=0.0100
+[02/21 01:40:07] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 33/100, Acc=0.9153, Val Loss=0.3193, lr=0.0100
+[02/21 01:40:30] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 34/100, Acc=0.9147, Val Loss=0.3225, lr=0.0100
+[02/21 01:40:52] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 35/100, Acc=0.9043, Val Loss=0.3562, lr=0.0100
+[02/21 01:41:15] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 36/100, Acc=0.9126, Val Loss=0.3141, lr=0.0100
+[02/21 01:41:37] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 37/100, Acc=0.9151, Val Loss=0.3125, lr=0.0100
+[02/21 01:42:00] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 38/100, Acc=0.9146, Val Loss=0.3003, lr=0.0100
+[02/21 01:42:22] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 39/100, Acc=0.9069, Val Loss=0.3538, lr=0.0100
+[02/21 01:42:44] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 40/100, Acc=0.9050, Val Loss=0.3595, lr=0.0100
+[02/21 01:43:06] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 41/100, Acc=0.9040, Val Loss=0.3715, lr=0.0100
+[02/21 01:43:29] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 42/100, Acc=0.8952, Val Loss=0.4052, lr=0.0100
+[02/21 01:43:52] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 43/100, Acc=0.9045, Val Loss=0.3696, lr=0.0100
+[02/21 01:44:15] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 44/100, Acc=0.9054, Val Loss=0.3560, lr=0.0100
+[02/21 01:44:38] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 45/100, Acc=0.9087, Val Loss=0.3396, lr=0.0100
+[02/21 01:45:01] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 46/100, Acc=0.9089, Val Loss=0.3396, lr=0.0100
+[02/21 01:45:25] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 47/100, Acc=0.9126, Val Loss=0.3267, lr=0.0100
+[02/21 01:45:48] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 48/100, Acc=0.9079, Val Loss=0.3371, lr=0.0100
+[02/21 01:46:11] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 49/100, Acc=0.9139, Val Loss=0.3265, lr=0.0100
+[02/21 01:46:34] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 50/100, Acc=0.9142, Val Loss=0.3355, lr=0.0100
+[02/21 01:46:58] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 51/100, Acc=0.9106, Val Loss=0.3324, lr=0.0100
+[02/21 01:47:21] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 52/100, Acc=0.9162, Val Loss=0.3069, lr=0.0100
+[02/21 01:47:45] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 53/100, Acc=0.9173, Val Loss=0.3167, lr=0.0100
+[02/21 01:48:08] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 54/100, Acc=0.9152, Val Loss=0.3101, lr=0.0100
+[02/21 01:48:30] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 55/100, Acc=0.8978, Val Loss=0.4043, lr=0.0100
+[02/21 01:48:53] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 56/100, Acc=0.8920, Val Loss=0.3972, lr=0.0100
+[02/21 01:49:17] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 57/100, Acc=0.9137, Val Loss=0.3275, lr=0.0100
+[02/21 01:49:40] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 58/100, Acc=0.8880, Val Loss=0.4276, lr=0.0100
+[02/21 01:50:02] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 59/100, Acc=0.9064, Val Loss=0.3504, lr=0.0100
+[02/21 01:50:26] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 60/100, Acc=0.9309, Val Loss=0.2619, lr=0.0010
+[02/21 01:50:49] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 61/100, Acc=0.9316, Val Loss=0.2668, lr=0.0010
+[02/21 01:51:11] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 62/100, Acc=0.9314, Val Loss=0.2707, lr=0.0010
+[02/21 01:51:34] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 63/100, Acc=0.9339, Val Loss=0.2744, lr=0.0010
+[02/21 01:51:57] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 64/100, Acc=0.9344, Val Loss=0.2705, lr=0.0010
+[02/21 01:52:19] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 65/100, Acc=0.9339, Val Loss=0.2761, lr=0.0010
+[02/21 01:52:41] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 66/100, Acc=0.9335, Val Loss=0.2773, lr=0.0010
+[02/21 01:53:03] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 67/100, Acc=0.9345, Val Loss=0.2787, lr=0.0010
+[02/21 01:53:26] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 68/100, Acc=0.9345, Val Loss=0.2807, lr=0.0010
+[02/21 01:53:47] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 69/100, Acc=0.9349, Val Loss=0.2822, lr=0.0010
+[02/21 01:54:09] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 70/100, Acc=0.9351, Val Loss=0.2831, lr=0.0010
+[02/21 01:54:32] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 71/100, Acc=0.9342, Val Loss=0.2884, lr=0.0010
+[02/21 01:54:54] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 72/100, Acc=0.9345, Val Loss=0.2877, lr=0.0010
+[02/21 01:55:16] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 73/100, Acc=0.9356, Val Loss=0.2876, lr=0.0010
+[02/21 01:55:38] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 74/100, Acc=0.9347, Val Loss=0.2902, lr=0.0010
+[02/21 01:56:01] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 75/100, Acc=0.9356, Val Loss=0.2898, lr=0.0010
+[02/21 01:56:23] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 76/100, Acc=0.9359, Val Loss=0.2903, lr=0.0010
+[02/21 01:56:45] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 77/100, Acc=0.9341, Val Loss=0.2925, lr=0.0010
+[02/21 01:57:07] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 78/100, Acc=0.9352, Val Loss=0.2924, lr=0.0010
+[02/21 01:57:29] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 79/100, Acc=0.9355, Val Loss=0.2908, lr=0.0010
+[02/21 01:57:51] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 80/100, Acc=0.9355, Val Loss=0.2914, lr=0.0001
+[02/21 01:58:12] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 81/100, Acc=0.9347, Val Loss=0.2920, lr=0.0001
+[02/21 01:58:35] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 82/100, Acc=0.9351, Val Loss=0.2928, lr=0.0001
+[02/21 01:58:57] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 83/100, Acc=0.9347, Val Loss=0.2903, lr=0.0001
+[02/21 01:59:20] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 84/100, Acc=0.9351, Val Loss=0.2917, lr=0.0001
+[02/21 01:59:42] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 85/100, Acc=0.9357, Val Loss=0.2907, lr=0.0001
+[02/21 02:00:04] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 86/100, Acc=0.9352, Val Loss=0.2907, lr=0.0001
+[02/21 02:00:26] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 87/100, Acc=0.9356, Val Loss=0.2926, lr=0.0001
+[02/21 02:00:48] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 88/100, Acc=0.9356, Val Loss=0.2922, lr=0.0001
+[02/21 02:01:11] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 89/100, Acc=0.9352, Val Loss=0.2905, lr=0.0001
+[02/21 02:01:33] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 90/100, Acc=0.9356, Val Loss=0.2906, lr=0.0001
+[02/21 02:01:55] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 91/100, Acc=0.9346, Val Loss=0.2909, lr=0.0001
+[02/21 02:02:17] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 92/100, Acc=0.9353, Val Loss=0.2928, lr=0.0001
+[02/21 02:02:40] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 93/100, Acc=0.9355, Val Loss=0.2920, lr=0.0001
+[02/21 02:03:02] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 94/100, Acc=0.9353, Val Loss=0.2921, lr=0.0001
+[02/21 02:03:25] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 95/100, Acc=0.9353, Val Loss=0.2925, lr=0.0001
+[02/21 02:03:48] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 96/100, Acc=0.9358, Val Loss=0.2922, lr=0.0001
+[02/21 02:04:10] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 97/100, Acc=0.9354, Val Loss=0.2910, lr=0.0001
+[02/21 02:04:33] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 98/100, Acc=0.9357, Val Loss=0.2905, lr=0.0001
+[02/21 02:04:56] cifar10-global-fpgm-2.0-vgg19 INFO: Epoch 99/100, Acc=0.9351, Val Loss=0.2915, lr=0.0001
+[02/21 02:04:56] cifar10-global-fpgm-2.0-vgg19 INFO: Best Acc=0.9359
+[02/21 02:04:56] cifar10-global-fpgm-2.0-vgg19 INFO: Params: 5.68 M
+[02/21 02:04:56] cifar10-global-fpgm-2.0-vgg19 INFO: ops: 255.99 M
+[02/21 02:04:59] cifar10-global-fpgm-2.0-vgg19 INFO: Acc: 0.9351 Val Loss: 0.2915
+

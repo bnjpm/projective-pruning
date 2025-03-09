@@ -1,0 +1,264 @@
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: mode: prune
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: model: pointnet
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: verbose: False
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: dataset: modelnet40
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: dataroot: data
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: batch_size: 32
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: total_epochs: 100
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: lr_decay_milestones: 50,80
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: lr_decay_gamma: 0.1
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: lr: 0.01
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: restore: run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: output_dir: run/modelnet40/prune/modelnet40-global-proj_sl-2.0-pointnet
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: finetune: True
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: last_epochs: 100
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: reps: 1
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: method: proj_sl
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: speed_up: 2.0
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: max_pruning_ratio: 1.0
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: soft_keeping_ratio: 0.0
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: reg: 1e-05
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: delta_reg: 0.0001
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: weight_decay: 0.0005
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: seed: 1
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: global_pruning: True
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: sl_total_epochs: 100
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: sl_lr: 0.01
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: sl_lr_decay_milestones: 60,80
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: sl_reg_warmup: 0
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: sl_restore: None
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: iterative_steps: 400
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: logger: <Logger modelnet40-global-proj_sl-2.0-pointnet (DEBUG)>
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: device: cuda
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: num_classes: 40
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Loading model from run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/22 15:48:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Regularizing...
+[02/22 15:59:23] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 0/100, Acc=0.7966, Val Loss=0.6047, lr=0.0100
+[02/22 16:10:23] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 1/100, Acc=0.8136, Val Loss=0.5954, lr=0.0100
+[02/22 16:21:23] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 2/100, Acc=0.8229, Val Loss=0.5610, lr=0.0100
+[02/22 16:32:24] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 3/100, Acc=0.8367, Val Loss=0.5235, lr=0.0100
+[02/22 16:43:26] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 4/100, Acc=0.8274, Val Loss=0.5606, lr=0.0100
+[02/22 16:54:27] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 5/100, Acc=0.8525, Val Loss=0.4914, lr=0.0100
+[02/22 17:05:28] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 6/100, Acc=0.8071, Val Loss=0.6010, lr=0.0100
+[02/22 17:16:27] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 7/100, Acc=0.8274, Val Loss=0.5501, lr=0.0100
+[02/22 17:27:45] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 8/100, Acc=0.8533, Val Loss=0.4946, lr=0.0100
+[02/22 17:38:43] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 9/100, Acc=0.8432, Val Loss=0.5034, lr=0.0100
+[02/22 17:49:40] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 10/100, Acc=0.8120, Val Loss=0.5719, lr=0.0100
+[02/22 18:00:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 11/100, Acc=0.8574, Val Loss=0.4905, lr=0.0100
+[02/22 18:11:35] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 12/100, Acc=0.8545, Val Loss=0.4946, lr=0.0100
+[02/22 18:22:32] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 13/100, Acc=0.8578, Val Loss=0.4598, lr=0.0100
+[02/22 18:34:08] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 14/100, Acc=0.8371, Val Loss=0.4994, lr=0.0100
+[02/22 18:45:05] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 15/100, Acc=0.8250, Val Loss=0.5661, lr=0.0100
+[02/22 18:56:06] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 16/100, Acc=0.8444, Val Loss=0.5438, lr=0.0100
+[02/22 19:07:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 17/100, Acc=0.8237, Val Loss=0.5483, lr=0.0100
+[02/22 19:18:04] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 18/100, Acc=0.8468, Val Loss=0.5137, lr=0.0100
+[02/22 19:29:01] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 19/100, Acc=0.8452, Val Loss=0.4956, lr=0.0100
+[02/22 19:39:59] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 20/100, Acc=0.8558, Val Loss=0.4851, lr=0.0100
+[02/22 19:51:05] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 21/100, Acc=0.8436, Val Loss=0.5142, lr=0.0100
+[02/22 20:02:02] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 22/100, Acc=0.8675, Val Loss=0.4561, lr=0.0100
+[02/22 20:13:12] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 23/100, Acc=0.8562, Val Loss=0.4667, lr=0.0100
+[02/22 20:24:09] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 24/100, Acc=0.8428, Val Loss=0.5078, lr=0.0100
+[02/22 20:35:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 25/100, Acc=0.8497, Val Loss=0.4958, lr=0.0100
+[02/22 20:46:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 26/100, Acc=0.8412, Val Loss=0.5323, lr=0.0100
+[02/22 20:57:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 27/100, Acc=0.8485, Val Loss=0.4770, lr=0.0100
+[02/22 21:08:06] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 28/100, Acc=0.8266, Val Loss=0.5420, lr=0.0100
+[02/22 21:19:04] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 29/100, Acc=0.8578, Val Loss=0.4649, lr=0.0100
+[02/22 21:30:03] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 30/100, Acc=0.8383, Val Loss=0.4886, lr=0.0100
+[02/22 21:41:02] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 31/100, Acc=0.8428, Val Loss=0.4853, lr=0.0100
+[02/22 21:52:01] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 32/100, Acc=0.8501, Val Loss=0.4811, lr=0.0100
+[02/22 22:03:02] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 33/100, Acc=0.8606, Val Loss=0.4647, lr=0.0100
+[02/22 22:14:01] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 34/100, Acc=0.8586, Val Loss=0.4728, lr=0.0100
+[02/22 22:25:00] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 35/100, Acc=0.8574, Val Loss=0.4670, lr=0.0100
+[02/22 22:35:57] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 36/100, Acc=0.8237, Val Loss=0.5434, lr=0.0100
+[02/22 22:46:56] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 37/100, Acc=0.8367, Val Loss=0.5245, lr=0.0100
+[02/22 22:57:54] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 38/100, Acc=0.8420, Val Loss=0.4883, lr=0.0100
+[02/22 23:08:52] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 39/100, Acc=0.8420, Val Loss=0.4907, lr=0.0100
+[02/22 23:20:15] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 40/100, Acc=0.8630, Val Loss=0.4468, lr=0.0100
+[02/22 23:31:13] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 41/100, Acc=0.8716, Val Loss=0.4323, lr=0.0100
+[02/22 23:42:12] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 42/100, Acc=0.8610, Val Loss=0.4484, lr=0.0100
+[02/22 23:53:17] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 43/100, Acc=0.8675, Val Loss=0.4483, lr=0.0100
+[02/23 00:04:18] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 44/100, Acc=0.8760, Val Loss=0.4360, lr=0.0100
+[02/23 00:15:19] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 45/100, Acc=0.8602, Val Loss=0.4566, lr=0.0100
+[02/23 00:26:17] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 46/100, Acc=0.8553, Val Loss=0.4701, lr=0.0100
+[02/23 00:37:15] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 47/100, Acc=0.8428, Val Loss=0.4913, lr=0.0100
+[02/23 00:48:14] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 48/100, Acc=0.8468, Val Loss=0.4795, lr=0.0100
+[02/23 00:59:14] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 49/100, Acc=0.8659, Val Loss=0.4373, lr=0.0100
+[02/23 01:10:15] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 50/100, Acc=0.8282, Val Loss=0.5569, lr=0.0100
+[02/23 01:21:19] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 51/100, Acc=0.8254, Val Loss=0.5370, lr=0.0100
+[02/23 01:32:24] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 52/100, Acc=0.8707, Val Loss=0.4434, lr=0.0100
+[02/23 01:44:00] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 53/100, Acc=0.8594, Val Loss=0.4432, lr=0.0100
+[02/23 01:55:02] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 54/100, Acc=0.8578, Val Loss=0.4538, lr=0.0100
+[02/23 02:06:00] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 55/100, Acc=0.8298, Val Loss=0.5582, lr=0.0100
+[02/23 02:17:14] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 56/100, Acc=0.8513, Val Loss=0.4666, lr=0.0100
+[02/23 02:28:23] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 57/100, Acc=0.8720, Val Loss=0.4218, lr=0.0100
+[02/23 02:39:24] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 58/100, Acc=0.8756, Val Loss=0.4506, lr=0.0100
+[02/23 02:50:24] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 59/100, Acc=0.8712, Val Loss=0.4522, lr=0.0100
+[02/23 03:01:26] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 60/100, Acc=0.8793, Val Loss=0.3918, lr=0.0010
+[02/23 03:12:32] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 61/100, Acc=0.8788, Val Loss=0.3946, lr=0.0010
+[02/23 03:23:36] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 62/100, Acc=0.8825, Val Loss=0.3893, lr=0.0010
+[02/23 03:34:38] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 63/100, Acc=0.8797, Val Loss=0.3906, lr=0.0010
+[02/23 03:45:40] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 64/100, Acc=0.8845, Val Loss=0.3842, lr=0.0010
+[02/23 03:56:42] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 65/100, Acc=0.8829, Val Loss=0.3909, lr=0.0010
+[02/23 04:07:59] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 66/100, Acc=0.8857, Val Loss=0.3819, lr=0.0010
+[02/23 04:19:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 67/100, Acc=0.8898, Val Loss=0.3848, lr=0.0010
+[02/23 04:30:17] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 68/100, Acc=0.8870, Val Loss=0.3859, lr=0.0010
+[02/23 04:41:35] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 69/100, Acc=0.8882, Val Loss=0.3835, lr=0.0010
+[02/23 04:52:42] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 70/100, Acc=0.8886, Val Loss=0.3827, lr=0.0010
+[02/23 05:03:44] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 71/100, Acc=0.8861, Val Loss=0.3833, lr=0.0010
+[02/23 05:14:48] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 72/100, Acc=0.8874, Val Loss=0.3832, lr=0.0010
+[02/23 05:26:26] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 73/100, Acc=0.8865, Val Loss=0.3814, lr=0.0010
+[02/23 05:37:33] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 74/100, Acc=0.8841, Val Loss=0.3850, lr=0.0010
+[02/23 05:48:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 75/100, Acc=0.8886, Val Loss=0.3774, lr=0.0010
+[02/23 05:59:39] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 76/100, Acc=0.8878, Val Loss=0.3855, lr=0.0010
+[02/23 06:10:48] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 77/100, Acc=0.8966, Val Loss=0.3766, lr=0.0010
+[02/23 06:21:54] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 78/100, Acc=0.8878, Val Loss=0.3734, lr=0.0010
+[02/23 06:32:59] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 79/100, Acc=0.8865, Val Loss=0.3789, lr=0.0010
+[02/23 06:44:03] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 80/100, Acc=0.8930, Val Loss=0.3694, lr=0.0001
+[02/23 06:55:06] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 81/100, Acc=0.8886, Val Loss=0.3711, lr=0.0001
+[02/23 07:06:10] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 82/100, Acc=0.8902, Val Loss=0.3743, lr=0.0001
+[02/23 07:17:14] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 83/100, Acc=0.8906, Val Loss=0.3725, lr=0.0001
+[02/23 07:28:22] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 84/100, Acc=0.8894, Val Loss=0.3741, lr=0.0001
+[02/23 07:39:20] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 85/100, Acc=0.8898, Val Loss=0.3764, lr=0.0001
+[02/23 07:50:20] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 86/100, Acc=0.8878, Val Loss=0.3730, lr=0.0001
+[02/23 08:01:20] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 87/100, Acc=0.8906, Val Loss=0.3754, lr=0.0001
+[02/23 08:12:20] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 88/100, Acc=0.8882, Val Loss=0.3756, lr=0.0001
+[02/23 08:23:24] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 89/100, Acc=0.8894, Val Loss=0.3748, lr=0.0001
+[02/23 08:34:23] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 90/100, Acc=0.8857, Val Loss=0.3749, lr=0.0001
+[02/23 08:45:36] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 91/100, Acc=0.8898, Val Loss=0.3729, lr=0.0001
+[02/23 08:56:38] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 92/100, Acc=0.8878, Val Loss=0.3775, lr=0.0001
+[02/23 09:07:41] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 93/100, Acc=0.8890, Val Loss=0.3756, lr=0.0001
+[02/23 09:18:43] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 94/100, Acc=0.8902, Val Loss=0.3726, lr=0.0001
+[02/23 09:29:46] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 95/100, Acc=0.8902, Val Loss=0.3763, lr=0.0001
+[02/23 09:40:45] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 96/100, Acc=0.8906, Val Loss=0.3748, lr=0.0001
+[02/23 09:51:51] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 97/100, Acc=0.8898, Val Loss=0.3734, lr=0.0001
+[02/23 10:02:53] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 98/100, Acc=0.8922, Val Loss=0.3745, lr=0.0001
+[02/23 10:13:54] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 99/100, Acc=0.8906, Val Loss=0.3738, lr=0.0001
+[02/23 10:13:54] modelnet40-global-proj_sl-2.0-pointnet INFO: Best Acc=0.8966
+[02/23 10:13:54] modelnet40-global-proj_sl-2.0-pointnet INFO: Loading the sparse model from run/modelnet40/prune/modelnet40-global-proj_sl-2.0-pointnet/reg_modelnet40_pointnet_proj_sl_1e-05.pth...
+[02/23 10:13:55] modelnet40-global-proj_sl-2.0-pointnet INFO: Pruning...
+[02/23 10:18:10] modelnet40-global-proj_sl-2.0-pointnet INFO: PointNet(
+  (conv1): Conv1d(3, 53, kernel_size=(1,), stride=(1,), bias=False)
+  (conv2): Conv1d(53, 60, kernel_size=(1,), stride=(1,), bias=False)
+  (conv3): Conv1d(60, 48, kernel_size=(1,), stride=(1,), bias=False)
+  (conv4): Conv1d(48, 109, kernel_size=(1,), stride=(1,), bias=False)
+  (conv5): Conv1d(109, 1135, kernel_size=(1,), stride=(1,), bias=False)
+  (bn1): BatchNorm1d(53, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn2): BatchNorm1d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn3): BatchNorm1d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn4): BatchNorm1d(109, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn5): BatchNorm1d(1135, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear1): Linear(in_features=1135, out_features=186, bias=False)
+  (bn6): BatchNorm1d(186, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dp1): Dropout(p=0.5, inplace=False)
+  (linear2): Linear(in_features=186, out_features=40, bias=True)
+)
+[02/23 10:18:11] modelnet40-global-proj_sl-2.0-pointnet INFO: Params: 1.35 M => 0.36 M (26.37%)
+[02/23 10:18:11] modelnet40-global-proj_sl-2.0-pointnet INFO: FLOPs: 291.33 M => 141.51 M (48.57%, 2.06X )
+[02/23 10:18:11] modelnet40-global-proj_sl-2.0-pointnet INFO: Acc: 0.8934 => 0.6313
+[02/23 10:18:11] modelnet40-global-proj_sl-2.0-pointnet INFO: Val Loss: 0.3766 => 1.3743
+[02/23 10:18:11] modelnet40-global-proj_sl-2.0-pointnet INFO: Finetuning...
+[02/23 10:18:25] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 0/100, Acc=0.8578, Val Loss=0.4556, lr=0.0100
+[02/23 10:18:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 1/100, Acc=0.8598, Val Loss=0.4761, lr=0.0100
+[02/23 10:18:50] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 2/100, Acc=0.8630, Val Loss=0.4487, lr=0.0100
+[02/23 10:19:04] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 3/100, Acc=0.8606, Val Loss=0.4704, lr=0.0100
+[02/23 10:19:17] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 4/100, Acc=0.8578, Val Loss=0.4649, lr=0.0100
+[02/23 10:19:30] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 5/100, Acc=0.8424, Val Loss=0.5097, lr=0.0100
+[02/23 10:19:43] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 6/100, Acc=0.8626, Val Loss=0.4714, lr=0.0100
+[02/23 10:19:57] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 7/100, Acc=0.8558, Val Loss=0.4857, lr=0.0100
+[02/23 10:20:10] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 8/100, Acc=0.8549, Val Loss=0.4791, lr=0.0100
+[02/23 10:20:23] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 9/100, Acc=0.8566, Val Loss=0.4877, lr=0.0100
+[02/23 10:20:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 10/100, Acc=0.8553, Val Loss=0.4677, lr=0.0100
+[02/23 10:20:51] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 11/100, Acc=0.8517, Val Loss=0.4887, lr=0.0100
+[02/23 10:21:05] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 12/100, Acc=0.8606, Val Loss=0.4621, lr=0.0100
+[02/23 10:21:19] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 13/100, Acc=0.8448, Val Loss=0.5338, lr=0.0100
+[02/23 10:21:32] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 14/100, Acc=0.8732, Val Loss=0.4111, lr=0.0100
+[02/23 10:21:46] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 15/100, Acc=0.8225, Val Loss=0.5504, lr=0.0100
+[02/23 10:22:00] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 16/100, Acc=0.8144, Val Loss=0.5680, lr=0.0100
+[02/23 10:22:13] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 17/100, Acc=0.8594, Val Loss=0.4772, lr=0.0100
+[02/23 10:22:27] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 18/100, Acc=0.8659, Val Loss=0.4580, lr=0.0100
+[02/23 10:22:40] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 19/100, Acc=0.8286, Val Loss=0.5396, lr=0.0100
+[02/23 10:22:54] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 20/100, Acc=0.8493, Val Loss=0.4846, lr=0.0100
+[02/23 10:23:07] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 21/100, Acc=0.8493, Val Loss=0.4851, lr=0.0100
+[02/23 10:23:21] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 22/100, Acc=0.8274, Val Loss=0.5329, lr=0.0100
+[02/23 10:23:34] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 23/100, Acc=0.8464, Val Loss=0.4978, lr=0.0100
+[02/23 10:23:47] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 24/100, Acc=0.8643, Val Loss=0.4566, lr=0.0100
+[02/23 10:24:00] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 25/100, Acc=0.8489, Val Loss=0.4803, lr=0.0100
+[02/23 10:24:14] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 26/100, Acc=0.8513, Val Loss=0.4694, lr=0.0100
+[02/23 10:24:28] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 27/100, Acc=0.8566, Val Loss=0.4714, lr=0.0100
+[02/23 10:24:42] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 28/100, Acc=0.8363, Val Loss=0.5084, lr=0.0100
+[02/23 10:24:55] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 29/100, Acc=0.8655, Val Loss=0.4642, lr=0.0100
+[02/23 10:25:09] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 30/100, Acc=0.8424, Val Loss=0.5156, lr=0.0100
+[02/23 10:25:22] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 31/100, Acc=0.8262, Val Loss=0.5269, lr=0.0100
+[02/23 10:25:36] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 32/100, Acc=0.8468, Val Loss=0.5309, lr=0.0100
+[02/23 10:25:49] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 33/100, Acc=0.8436, Val Loss=0.5028, lr=0.0100
+[02/23 10:26:04] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 34/100, Acc=0.8533, Val Loss=0.4758, lr=0.0100
+[02/23 10:26:17] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 35/100, Acc=0.8371, Val Loss=0.5255, lr=0.0100
+[02/23 10:26:31] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 36/100, Acc=0.8521, Val Loss=0.4724, lr=0.0100
+[02/23 10:26:45] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 37/100, Acc=0.8294, Val Loss=0.5385, lr=0.0100
+[02/23 10:26:59] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 38/100, Acc=0.8582, Val Loss=0.4597, lr=0.0100
+[02/23 10:27:12] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 39/100, Acc=0.8233, Val Loss=0.5740, lr=0.0100
+[02/23 10:27:26] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 40/100, Acc=0.8521, Val Loss=0.4931, lr=0.0100
+[02/23 10:27:39] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 41/100, Acc=0.8359, Val Loss=0.5098, lr=0.0100
+[02/23 10:27:52] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 42/100, Acc=0.8420, Val Loss=0.5085, lr=0.0100
+[02/23 10:28:06] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 43/100, Acc=0.8367, Val Loss=0.5223, lr=0.0100
+[02/23 10:28:19] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 44/100, Acc=0.8460, Val Loss=0.5049, lr=0.0100
+[02/23 10:28:33] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 45/100, Acc=0.8464, Val Loss=0.5133, lr=0.0100
+[02/23 10:28:47] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 46/100, Acc=0.8509, Val Loss=0.4856, lr=0.0100
+[02/23 10:29:01] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 47/100, Acc=0.8408, Val Loss=0.5411, lr=0.0100
+[02/23 10:29:14] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 48/100, Acc=0.8517, Val Loss=0.4887, lr=0.0100
+[02/23 10:29:28] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 49/100, Acc=0.8274, Val Loss=0.5479, lr=0.0100
+[02/23 10:29:42] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 50/100, Acc=0.8772, Val Loss=0.3941, lr=0.0010
+[02/23 10:29:55] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 51/100, Acc=0.8857, Val Loss=0.3903, lr=0.0010
+[02/23 10:30:08] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 52/100, Acc=0.8865, Val Loss=0.3847, lr=0.0010
+[02/23 10:30:22] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 53/100, Acc=0.8837, Val Loss=0.3928, lr=0.0010
+[02/23 10:30:35] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 54/100, Acc=0.8825, Val Loss=0.3909, lr=0.0010
+[02/23 10:30:49] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 55/100, Acc=0.8825, Val Loss=0.3892, lr=0.0010
+[02/23 10:31:03] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 56/100, Acc=0.8853, Val Loss=0.3870, lr=0.0010
+[02/23 10:31:16] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 57/100, Acc=0.8801, Val Loss=0.3864, lr=0.0010
+[02/23 10:31:30] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 58/100, Acc=0.8817, Val Loss=0.3880, lr=0.0010
+[02/23 10:31:43] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 59/100, Acc=0.8809, Val Loss=0.3892, lr=0.0010
+[02/23 10:31:56] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 60/100, Acc=0.8833, Val Loss=0.3838, lr=0.0010
+[02/23 10:32:10] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 61/100, Acc=0.8809, Val Loss=0.3831, lr=0.0010
+[02/23 10:32:24] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 62/100, Acc=0.8837, Val Loss=0.3847, lr=0.0010
+[02/23 10:32:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 63/100, Acc=0.8878, Val Loss=0.3782, lr=0.0010
+[02/23 10:32:51] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 64/100, Acc=0.8788, Val Loss=0.3817, lr=0.0010
+[02/23 10:33:04] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 65/100, Acc=0.8865, Val Loss=0.3769, lr=0.0010
+[02/23 10:33:18] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 66/100, Acc=0.8772, Val Loss=0.3933, lr=0.0010
+[02/23 10:33:32] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 67/100, Acc=0.8833, Val Loss=0.3854, lr=0.0010
+[02/23 10:33:45] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 68/100, Acc=0.8874, Val Loss=0.3738, lr=0.0010
+[02/23 10:33:59] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 69/100, Acc=0.8841, Val Loss=0.3856, lr=0.0010
+[02/23 10:34:13] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 70/100, Acc=0.8865, Val Loss=0.3732, lr=0.0010
+[02/23 10:34:27] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 71/100, Acc=0.8886, Val Loss=0.3713, lr=0.0010
+[02/23 10:34:39] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 72/100, Acc=0.8821, Val Loss=0.3772, lr=0.0010
+[02/23 10:34:53] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 73/100, Acc=0.8837, Val Loss=0.3758, lr=0.0010
+[02/23 10:35:05] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 74/100, Acc=0.8874, Val Loss=0.3708, lr=0.0010
+[02/23 10:35:18] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 75/100, Acc=0.8865, Val Loss=0.3748, lr=0.0010
+[02/23 10:35:31] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 76/100, Acc=0.8898, Val Loss=0.3681, lr=0.0010
+[02/23 10:35:44] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 77/100, Acc=0.8930, Val Loss=0.3680, lr=0.0010
+[02/23 10:35:57] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 78/100, Acc=0.8886, Val Loss=0.3705, lr=0.0010
+[02/23 10:36:10] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 79/100, Acc=0.8898, Val Loss=0.3702, lr=0.0010
+[02/23 10:36:24] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 80/100, Acc=0.8861, Val Loss=0.3703, lr=0.0001
+[02/23 10:36:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 81/100, Acc=0.8886, Val Loss=0.3642, lr=0.0001
+[02/23 10:36:50] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 82/100, Acc=0.8878, Val Loss=0.3684, lr=0.0001
+[02/23 10:37:03] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 83/100, Acc=0.8902, Val Loss=0.3619, lr=0.0001
+[02/23 10:37:17] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 84/100, Acc=0.8902, Val Loss=0.3619, lr=0.0001
+[02/23 10:37:30] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 85/100, Acc=0.8857, Val Loss=0.3651, lr=0.0001
+[02/23 10:37:44] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 86/100, Acc=0.8902, Val Loss=0.3632, lr=0.0001
+[02/23 10:37:58] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 87/100, Acc=0.8898, Val Loss=0.3622, lr=0.0001
+[02/23 10:38:11] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 88/100, Acc=0.8886, Val Loss=0.3645, lr=0.0001
+[02/23 10:38:25] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 89/100, Acc=0.8861, Val Loss=0.3663, lr=0.0001
+[02/23 10:38:38] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 90/100, Acc=0.8874, Val Loss=0.3647, lr=0.0001
+[02/23 10:38:51] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 91/100, Acc=0.8865, Val Loss=0.3629, lr=0.0001
+[02/23 10:39:04] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 92/100, Acc=0.8890, Val Loss=0.3627, lr=0.0001
+[02/23 10:39:16] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 93/100, Acc=0.8878, Val Loss=0.3637, lr=0.0001
+[02/23 10:39:29] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 94/100, Acc=0.8878, Val Loss=0.3644, lr=0.0001
+[02/23 10:39:43] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 95/100, Acc=0.8878, Val Loss=0.3623, lr=0.0001
+[02/23 10:39:56] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 96/100, Acc=0.8882, Val Loss=0.3613, lr=0.0001
+[02/23 10:40:10] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 97/100, Acc=0.8902, Val Loss=0.3619, lr=0.0001
+[02/23 10:40:23] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 98/100, Acc=0.8861, Val Loss=0.3664, lr=0.0001
+[02/23 10:40:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Epoch 99/100, Acc=0.8914, Val Loss=0.3628, lr=0.0001
+[02/23 10:40:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Best Acc=0.8930
+[02/23 10:40:37] modelnet40-global-proj_sl-2.0-pointnet INFO: Params: 0.36 M
+[02/23 10:40:37] modelnet40-global-proj_sl-2.0-pointnet INFO: ops: 141.51 M
+[02/23 10:40:38] modelnet40-global-proj_sl-2.0-pointnet INFO: Acc: 0.8914 Val Loss: 0.3628
+

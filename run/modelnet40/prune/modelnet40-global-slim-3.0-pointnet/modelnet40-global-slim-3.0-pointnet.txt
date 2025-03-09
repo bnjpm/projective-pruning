@@ -1,0 +1,264 @@
+[02/23 02:39:36] modelnet40-global-slim-3.0-pointnet INFO: mode: prune
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: model: pointnet
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: verbose: False
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: dataset: modelnet40
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: dataroot: data
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: batch_size: 32
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: total_epochs: 100
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: lr_decay_milestones: 50,80
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: lr_decay_gamma: 0.1
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: lr: 0.01
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: restore: run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: output_dir: run/modelnet40/prune/modelnet40-global-slim-3.0-pointnet
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: finetune: True
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: last_epochs: 100
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: reps: 1
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: method: slim
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: speed_up: 3.0
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: max_pruning_ratio: 1.0
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: soft_keeping_ratio: 0.0
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: reg: 1e-05
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: delta_reg: 0.0001
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: weight_decay: 0.0005
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: seed: 1
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: global_pruning: True
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: sl_total_epochs: 100
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: sl_lr: 0.01
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: sl_lr_decay_milestones: 60,80
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: sl_reg_warmup: 0
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: sl_restore: None
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: iterative_steps: 400
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: logger: <Logger modelnet40-global-slim-3.0-pointnet (DEBUG)>
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: device: cuda
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: num_classes: 40
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: Loading model from run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/23 02:39:37] modelnet40-global-slim-3.0-pointnet INFO: Regularizing...
+[02/23 02:39:51] modelnet40-global-slim-3.0-pointnet INFO: Epoch 0/100, Acc=0.7905, Val Loss=0.6111, lr=0.0100
+[02/23 02:40:06] modelnet40-global-slim-3.0-pointnet INFO: Epoch 1/100, Acc=0.8302, Val Loss=0.5610, lr=0.0100
+[02/23 02:40:17] modelnet40-global-slim-3.0-pointnet INFO: Epoch 2/100, Acc=0.8436, Val Loss=0.5110, lr=0.0100
+[02/23 02:40:28] modelnet40-global-slim-3.0-pointnet INFO: Epoch 3/100, Acc=0.8408, Val Loss=0.5137, lr=0.0100
+[02/23 02:40:39] modelnet40-global-slim-3.0-pointnet INFO: Epoch 4/100, Acc=0.8144, Val Loss=0.6033, lr=0.0100
+[02/23 02:40:50] modelnet40-global-slim-3.0-pointnet INFO: Epoch 5/100, Acc=0.8444, Val Loss=0.5127, lr=0.0100
+[02/23 02:41:01] modelnet40-global-slim-3.0-pointnet INFO: Epoch 6/100, Acc=0.8201, Val Loss=0.5759, lr=0.0100
+[02/23 02:41:12] modelnet40-global-slim-3.0-pointnet INFO: Epoch 7/100, Acc=0.8383, Val Loss=0.5560, lr=0.0100
+[02/23 02:41:23] modelnet40-global-slim-3.0-pointnet INFO: Epoch 8/100, Acc=0.8481, Val Loss=0.5110, lr=0.0100
+[02/23 02:41:34] modelnet40-global-slim-3.0-pointnet INFO: Epoch 9/100, Acc=0.8420, Val Loss=0.4998, lr=0.0100
+[02/23 02:41:45] modelnet40-global-slim-3.0-pointnet INFO: Epoch 10/100, Acc=0.8400, Val Loss=0.4979, lr=0.0100
+[02/23 02:41:56] modelnet40-global-slim-3.0-pointnet INFO: Epoch 11/100, Acc=0.8667, Val Loss=0.4666, lr=0.0100
+[02/23 02:42:07] modelnet40-global-slim-3.0-pointnet INFO: Epoch 12/100, Acc=0.8630, Val Loss=0.4793, lr=0.0100
+[02/23 02:42:18] modelnet40-global-slim-3.0-pointnet INFO: Epoch 13/100, Acc=0.8489, Val Loss=0.4705, lr=0.0100
+[02/23 02:42:29] modelnet40-global-slim-3.0-pointnet INFO: Epoch 14/100, Acc=0.8416, Val Loss=0.5087, lr=0.0100
+[02/23 02:42:40] modelnet40-global-slim-3.0-pointnet INFO: Epoch 15/100, Acc=0.8169, Val Loss=0.5684, lr=0.0100
+[02/23 02:42:51] modelnet40-global-slim-3.0-pointnet INFO: Epoch 16/100, Acc=0.8566, Val Loss=0.5013, lr=0.0100
+[02/23 02:43:02] modelnet40-global-slim-3.0-pointnet INFO: Epoch 17/100, Acc=0.8440, Val Loss=0.4926, lr=0.0100
+[02/23 02:43:13] modelnet40-global-slim-3.0-pointnet INFO: Epoch 18/100, Acc=0.8266, Val Loss=0.5488, lr=0.0100
+[02/23 02:43:25] modelnet40-global-slim-3.0-pointnet INFO: Epoch 19/100, Acc=0.8363, Val Loss=0.5030, lr=0.0100
+[02/23 02:43:36] modelnet40-global-slim-3.0-pointnet INFO: Epoch 20/100, Acc=0.8671, Val Loss=0.4649, lr=0.0100
+[02/23 02:43:48] modelnet40-global-slim-3.0-pointnet INFO: Epoch 21/100, Acc=0.8371, Val Loss=0.5415, lr=0.0100
+[02/23 02:43:59] modelnet40-global-slim-3.0-pointnet INFO: Epoch 22/100, Acc=0.8635, Val Loss=0.4612, lr=0.0100
+[02/23 02:44:10] modelnet40-global-slim-3.0-pointnet INFO: Epoch 23/100, Acc=0.8594, Val Loss=0.4652, lr=0.0100
+[02/23 02:44:22] modelnet40-global-slim-3.0-pointnet INFO: Epoch 24/100, Acc=0.8436, Val Loss=0.5112, lr=0.0100
+[02/23 02:44:33] modelnet40-global-slim-3.0-pointnet INFO: Epoch 25/100, Acc=0.8306, Val Loss=0.5433, lr=0.0100
+[02/23 02:44:44] modelnet40-global-slim-3.0-pointnet INFO: Epoch 26/100, Acc=0.8169, Val Loss=0.5856, lr=0.0100
+[02/23 02:44:55] modelnet40-global-slim-3.0-pointnet INFO: Epoch 27/100, Acc=0.8464, Val Loss=0.4852, lr=0.0100
+[02/23 02:45:07] modelnet40-global-slim-3.0-pointnet INFO: Epoch 28/100, Acc=0.8493, Val Loss=0.4956, lr=0.0100
+[02/23 02:45:18] modelnet40-global-slim-3.0-pointnet INFO: Epoch 29/100, Acc=0.8594, Val Loss=0.4709, lr=0.0100
+[02/23 02:45:29] modelnet40-global-slim-3.0-pointnet INFO: Epoch 30/100, Acc=0.8440, Val Loss=0.4764, lr=0.0100
+[02/23 02:45:41] modelnet40-global-slim-3.0-pointnet INFO: Epoch 31/100, Acc=0.8375, Val Loss=0.5142, lr=0.0100
+[02/23 02:45:52] modelnet40-global-slim-3.0-pointnet INFO: Epoch 32/100, Acc=0.8521, Val Loss=0.5103, lr=0.0100
+[02/23 02:46:03] modelnet40-global-slim-3.0-pointnet INFO: Epoch 33/100, Acc=0.8635, Val Loss=0.4413, lr=0.0100
+[02/23 02:46:14] modelnet40-global-slim-3.0-pointnet INFO: Epoch 34/100, Acc=0.8614, Val Loss=0.4675, lr=0.0100
+[02/23 02:46:26] modelnet40-global-slim-3.0-pointnet INFO: Epoch 35/100, Acc=0.8594, Val Loss=0.4545, lr=0.0100
+[02/23 02:46:37] modelnet40-global-slim-3.0-pointnet INFO: Epoch 36/100, Acc=0.8310, Val Loss=0.5087, lr=0.0100
+[02/23 02:46:48] modelnet40-global-slim-3.0-pointnet INFO: Epoch 37/100, Acc=0.8424, Val Loss=0.4980, lr=0.0100
+[02/23 02:47:00] modelnet40-global-slim-3.0-pointnet INFO: Epoch 38/100, Acc=0.8509, Val Loss=0.4588, lr=0.0100
+[02/23 02:47:11] modelnet40-global-slim-3.0-pointnet INFO: Epoch 39/100, Acc=0.8286, Val Loss=0.5335, lr=0.0100
+[02/23 02:47:22] modelnet40-global-slim-3.0-pointnet INFO: Epoch 40/100, Acc=0.8630, Val Loss=0.4412, lr=0.0100
+[02/23 02:47:34] modelnet40-global-slim-3.0-pointnet INFO: Epoch 41/100, Acc=0.8679, Val Loss=0.4355, lr=0.0100
+[02/23 02:47:45] modelnet40-global-slim-3.0-pointnet INFO: Epoch 42/100, Acc=0.8525, Val Loss=0.4827, lr=0.0100
+[02/23 02:47:56] modelnet40-global-slim-3.0-pointnet INFO: Epoch 43/100, Acc=0.8732, Val Loss=0.4302, lr=0.0100
+[02/23 02:48:08] modelnet40-global-slim-3.0-pointnet INFO: Epoch 44/100, Acc=0.8744, Val Loss=0.4305, lr=0.0100
+[02/23 02:48:19] modelnet40-global-slim-3.0-pointnet INFO: Epoch 45/100, Acc=0.8643, Val Loss=0.4470, lr=0.0100
+[02/23 02:48:30] modelnet40-global-slim-3.0-pointnet INFO: Epoch 46/100, Acc=0.8663, Val Loss=0.4500, lr=0.0100
+[02/23 02:48:41] modelnet40-global-slim-3.0-pointnet INFO: Epoch 47/100, Acc=0.8598, Val Loss=0.4600, lr=0.0100
+[02/23 02:48:53] modelnet40-global-slim-3.0-pointnet INFO: Epoch 48/100, Acc=0.8351, Val Loss=0.5103, lr=0.0100
+[02/23 02:49:04] modelnet40-global-slim-3.0-pointnet INFO: Epoch 49/100, Acc=0.8651, Val Loss=0.4327, lr=0.0100
+[02/23 02:49:15] modelnet40-global-slim-3.0-pointnet INFO: Epoch 50/100, Acc=0.8400, Val Loss=0.5223, lr=0.0100
+[02/23 02:49:26] modelnet40-global-slim-3.0-pointnet INFO: Epoch 51/100, Acc=0.8468, Val Loss=0.4880, lr=0.0100
+[02/23 02:49:37] modelnet40-global-slim-3.0-pointnet INFO: Epoch 52/100, Acc=0.8655, Val Loss=0.4465, lr=0.0100
+[02/23 02:49:49] modelnet40-global-slim-3.0-pointnet INFO: Epoch 53/100, Acc=0.8635, Val Loss=0.4421, lr=0.0100
+[02/23 02:50:00] modelnet40-global-slim-3.0-pointnet INFO: Epoch 54/100, Acc=0.8533, Val Loss=0.4570, lr=0.0100
+[02/23 02:50:11] modelnet40-global-slim-3.0-pointnet INFO: Epoch 55/100, Acc=0.8549, Val Loss=0.4970, lr=0.0100
+[02/23 02:50:22] modelnet40-global-slim-3.0-pointnet INFO: Epoch 56/100, Acc=0.8562, Val Loss=0.4605, lr=0.0100
+[02/23 02:50:33] modelnet40-global-slim-3.0-pointnet INFO: Epoch 57/100, Acc=0.8724, Val Loss=0.4283, lr=0.0100
+[02/23 02:50:45] modelnet40-global-slim-3.0-pointnet INFO: Epoch 58/100, Acc=0.8752, Val Loss=0.4260, lr=0.0100
+[02/23 02:50:56] modelnet40-global-slim-3.0-pointnet INFO: Epoch 59/100, Acc=0.8833, Val Loss=0.4167, lr=0.0100
+[02/23 02:51:07] modelnet40-global-slim-3.0-pointnet INFO: Epoch 60/100, Acc=0.8882, Val Loss=0.3808, lr=0.0010
+[02/23 02:51:18] modelnet40-global-slim-3.0-pointnet INFO: Epoch 61/100, Acc=0.8829, Val Loss=0.3845, lr=0.0010
+[02/23 02:51:29] modelnet40-global-slim-3.0-pointnet INFO: Epoch 62/100, Acc=0.8861, Val Loss=0.3788, lr=0.0010
+[02/23 02:51:40] modelnet40-global-slim-3.0-pointnet INFO: Epoch 63/100, Acc=0.8797, Val Loss=0.3808, lr=0.0010
+[02/23 02:51:51] modelnet40-global-slim-3.0-pointnet INFO: Epoch 64/100, Acc=0.8882, Val Loss=0.3730, lr=0.0010
+[02/23 02:52:03] modelnet40-global-slim-3.0-pointnet INFO: Epoch 65/100, Acc=0.8817, Val Loss=0.3790, lr=0.0010
+[02/23 02:52:14] modelnet40-global-slim-3.0-pointnet INFO: Epoch 66/100, Acc=0.8874, Val Loss=0.3690, lr=0.0010
+[02/23 02:52:25] modelnet40-global-slim-3.0-pointnet INFO: Epoch 67/100, Acc=0.8918, Val Loss=0.3704, lr=0.0010
+[02/23 02:52:36] modelnet40-global-slim-3.0-pointnet INFO: Epoch 68/100, Acc=0.8886, Val Loss=0.3755, lr=0.0010
+[02/23 02:52:47] modelnet40-global-slim-3.0-pointnet INFO: Epoch 69/100, Acc=0.8894, Val Loss=0.3714, lr=0.0010
+[02/23 02:52:58] modelnet40-global-slim-3.0-pointnet INFO: Epoch 70/100, Acc=0.8886, Val Loss=0.3708, lr=0.0010
+[02/23 02:53:09] modelnet40-global-slim-3.0-pointnet INFO: Epoch 71/100, Acc=0.8890, Val Loss=0.3721, lr=0.0010
+[02/23 02:53:20] modelnet40-global-slim-3.0-pointnet INFO: Epoch 72/100, Acc=0.8870, Val Loss=0.3726, lr=0.0010
+[02/23 02:53:31] modelnet40-global-slim-3.0-pointnet INFO: Epoch 73/100, Acc=0.8841, Val Loss=0.3741, lr=0.0010
+[02/23 02:53:43] modelnet40-global-slim-3.0-pointnet INFO: Epoch 74/100, Acc=0.8865, Val Loss=0.3758, lr=0.0010
+[02/23 02:53:54] modelnet40-global-slim-3.0-pointnet INFO: Epoch 75/100, Acc=0.8886, Val Loss=0.3698, lr=0.0010
+[02/23 02:54:06] modelnet40-global-slim-3.0-pointnet INFO: Epoch 76/100, Acc=0.8865, Val Loss=0.3767, lr=0.0010
+[02/23 02:54:17] modelnet40-global-slim-3.0-pointnet INFO: Epoch 77/100, Acc=0.8926, Val Loss=0.3702, lr=0.0010
+[02/23 02:54:29] modelnet40-global-slim-3.0-pointnet INFO: Epoch 78/100, Acc=0.8894, Val Loss=0.3654, lr=0.0010
+[02/23 02:54:40] modelnet40-global-slim-3.0-pointnet INFO: Epoch 79/100, Acc=0.8890, Val Loss=0.3700, lr=0.0010
+[02/23 02:54:52] modelnet40-global-slim-3.0-pointnet INFO: Epoch 80/100, Acc=0.8914, Val Loss=0.3624, lr=0.0001
+[02/23 02:55:03] modelnet40-global-slim-3.0-pointnet INFO: Epoch 81/100, Acc=0.8918, Val Loss=0.3634, lr=0.0001
+[02/23 02:55:15] modelnet40-global-slim-3.0-pointnet INFO: Epoch 82/100, Acc=0.8890, Val Loss=0.3678, lr=0.0001
+[02/23 02:55:26] modelnet40-global-slim-3.0-pointnet INFO: Epoch 83/100, Acc=0.8902, Val Loss=0.3640, lr=0.0001
+[02/23 02:55:38] modelnet40-global-slim-3.0-pointnet INFO: Epoch 84/100, Acc=0.8926, Val Loss=0.3684, lr=0.0001
+[02/23 02:55:49] modelnet40-global-slim-3.0-pointnet INFO: Epoch 85/100, Acc=0.8910, Val Loss=0.3692, lr=0.0001
+[02/23 02:56:00] modelnet40-global-slim-3.0-pointnet INFO: Epoch 86/100, Acc=0.8918, Val Loss=0.3662, lr=0.0001
+[02/23 02:56:12] modelnet40-global-slim-3.0-pointnet INFO: Epoch 87/100, Acc=0.8894, Val Loss=0.3694, lr=0.0001
+[02/23 02:56:24] modelnet40-global-slim-3.0-pointnet INFO: Epoch 88/100, Acc=0.8930, Val Loss=0.3693, lr=0.0001
+[02/23 02:56:35] modelnet40-global-slim-3.0-pointnet INFO: Epoch 89/100, Acc=0.8914, Val Loss=0.3683, lr=0.0001
+[02/23 02:56:47] modelnet40-global-slim-3.0-pointnet INFO: Epoch 90/100, Acc=0.8906, Val Loss=0.3684, lr=0.0001
+[02/23 02:56:58] modelnet40-global-slim-3.0-pointnet INFO: Epoch 91/100, Acc=0.8914, Val Loss=0.3662, lr=0.0001
+[02/23 02:57:10] modelnet40-global-slim-3.0-pointnet INFO: Epoch 92/100, Acc=0.8910, Val Loss=0.3698, lr=0.0001
+[02/23 02:57:21] modelnet40-global-slim-3.0-pointnet INFO: Epoch 93/100, Acc=0.8918, Val Loss=0.3686, lr=0.0001
+[02/23 02:57:33] modelnet40-global-slim-3.0-pointnet INFO: Epoch 94/100, Acc=0.8930, Val Loss=0.3668, lr=0.0001
+[02/23 02:57:44] modelnet40-global-slim-3.0-pointnet INFO: Epoch 95/100, Acc=0.8922, Val Loss=0.3697, lr=0.0001
+[02/23 02:57:56] modelnet40-global-slim-3.0-pointnet INFO: Epoch 96/100, Acc=0.8926, Val Loss=0.3685, lr=0.0001
+[02/23 02:58:08] modelnet40-global-slim-3.0-pointnet INFO: Epoch 97/100, Acc=0.8922, Val Loss=0.3651, lr=0.0001
+[02/23 02:58:19] modelnet40-global-slim-3.0-pointnet INFO: Epoch 98/100, Acc=0.8918, Val Loss=0.3681, lr=0.0001
+[02/23 02:58:31] modelnet40-global-slim-3.0-pointnet INFO: Epoch 99/100, Acc=0.8930, Val Loss=0.3668, lr=0.0001
+[02/23 02:58:31] modelnet40-global-slim-3.0-pointnet INFO: Best Acc=0.8930
+[02/23 02:58:31] modelnet40-global-slim-3.0-pointnet INFO: Loading the sparse model from run/modelnet40/prune/modelnet40-global-slim-3.0-pointnet/reg_modelnet40_pointnet_slim_1e-05.pth...
+[02/23 02:58:31] modelnet40-global-slim-3.0-pointnet INFO: Pruning...
+[02/23 02:58:35] modelnet40-global-slim-3.0-pointnet INFO: PointNet(
+  (conv1): Conv1d(3, 41, kernel_size=(1,), stride=(1,), bias=False)
+  (conv2): Conv1d(41, 46, kernel_size=(1,), stride=(1,), bias=False)
+  (conv3): Conv1d(46, 33, kernel_size=(1,), stride=(1,), bias=False)
+  (conv4): Conv1d(33, 98, kernel_size=(1,), stride=(1,), bias=False)
+  (conv5): Conv1d(98, 863, kernel_size=(1,), stride=(1,), bias=False)
+  (bn1): BatchNorm1d(41, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn2): BatchNorm1d(46, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn3): BatchNorm1d(33, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn4): BatchNorm1d(98, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn5): BatchNorm1d(863, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear1): Linear(in_features=863, out_features=186, bias=False)
+  (bn6): BatchNorm1d(186, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dp1): Dropout(p=0.5, inplace=False)
+  (linear2): Linear(in_features=186, out_features=40, bias=True)
+)
+[02/23 02:58:35] modelnet40-global-slim-3.0-pointnet INFO: Params: 1.35 M => 0.26 M (19.35%)
+[02/23 02:58:35] modelnet40-global-slim-3.0-pointnet INFO: FLOPs: 291.33 M => 95.91 M (32.92%, 3.04X )
+[02/23 02:58:35] modelnet40-global-slim-3.0-pointnet INFO: Acc: 0.8930 => 0.2257
+[02/23 02:58:35] modelnet40-global-slim-3.0-pointnet INFO: Val Loss: 0.3693 => 4.2157
+[02/23 02:58:35] modelnet40-global-slim-3.0-pointnet INFO: Finetuning...
+[02/23 02:58:47] modelnet40-global-slim-3.0-pointnet INFO: Epoch 0/100, Acc=0.8513, Val Loss=0.4662, lr=0.0100
+[02/23 02:58:58] modelnet40-global-slim-3.0-pointnet INFO: Epoch 1/100, Acc=0.8602, Val Loss=0.4722, lr=0.0100
+[02/23 02:59:10] modelnet40-global-slim-3.0-pointnet INFO: Epoch 2/100, Acc=0.8695, Val Loss=0.4477, lr=0.0100
+[02/23 02:59:21] modelnet40-global-slim-3.0-pointnet INFO: Epoch 3/100, Acc=0.8679, Val Loss=0.4538, lr=0.0100
+[02/23 02:59:32] modelnet40-global-slim-3.0-pointnet INFO: Epoch 4/100, Acc=0.8485, Val Loss=0.4709, lr=0.0100
+[02/23 02:59:44] modelnet40-global-slim-3.0-pointnet INFO: Epoch 5/100, Acc=0.8347, Val Loss=0.5134, lr=0.0100
+[02/23 02:59:55] modelnet40-global-slim-3.0-pointnet INFO: Epoch 6/100, Acc=0.8545, Val Loss=0.4566, lr=0.0100
+[02/23 03:00:07] modelnet40-global-slim-3.0-pointnet INFO: Epoch 7/100, Acc=0.8618, Val Loss=0.4571, lr=0.0100
+[02/23 03:00:18] modelnet40-global-slim-3.0-pointnet INFO: Epoch 8/100, Acc=0.8651, Val Loss=0.4516, lr=0.0100
+[02/23 03:00:30] modelnet40-global-slim-3.0-pointnet INFO: Epoch 9/100, Acc=0.8610, Val Loss=0.4671, lr=0.0100
+[02/23 03:00:41] modelnet40-global-slim-3.0-pointnet INFO: Epoch 10/100, Acc=0.8339, Val Loss=0.5108, lr=0.0100
+[02/23 03:00:52] modelnet40-global-slim-3.0-pointnet INFO: Epoch 11/100, Acc=0.8501, Val Loss=0.4968, lr=0.0100
+[02/23 03:01:04] modelnet40-global-slim-3.0-pointnet INFO: Epoch 12/100, Acc=0.8716, Val Loss=0.4482, lr=0.0100
+[02/23 03:01:16] modelnet40-global-slim-3.0-pointnet INFO: Epoch 13/100, Acc=0.8614, Val Loss=0.4752, lr=0.0100
+[02/23 03:01:27] modelnet40-global-slim-3.0-pointnet INFO: Epoch 14/100, Acc=0.8614, Val Loss=0.4428, lr=0.0100
+[02/23 03:01:38] modelnet40-global-slim-3.0-pointnet INFO: Epoch 15/100, Acc=0.8343, Val Loss=0.5204, lr=0.0100
+[02/23 03:01:50] modelnet40-global-slim-3.0-pointnet INFO: Epoch 16/100, Acc=0.8250, Val Loss=0.5161, lr=0.0100
+[02/23 03:02:01] modelnet40-global-slim-3.0-pointnet INFO: Epoch 17/100, Acc=0.8671, Val Loss=0.4638, lr=0.0100
+[02/23 03:02:13] modelnet40-global-slim-3.0-pointnet INFO: Epoch 18/100, Acc=0.8679, Val Loss=0.4559, lr=0.0100
+[02/23 03:02:24] modelnet40-global-slim-3.0-pointnet INFO: Epoch 19/100, Acc=0.8019, Val Loss=0.5820, lr=0.0100
+[02/23 03:02:36] modelnet40-global-slim-3.0-pointnet INFO: Epoch 20/100, Acc=0.8614, Val Loss=0.4639, lr=0.0100
+[02/23 03:02:47] modelnet40-global-slim-3.0-pointnet INFO: Epoch 21/100, Acc=0.8626, Val Loss=0.4840, lr=0.0100
+[02/23 03:02:59] modelnet40-global-slim-3.0-pointnet INFO: Epoch 22/100, Acc=0.8444, Val Loss=0.5114, lr=0.0100
+[02/23 03:03:11] modelnet40-global-slim-3.0-pointnet INFO: Epoch 23/100, Acc=0.8339, Val Loss=0.5376, lr=0.0100
+[02/23 03:03:22] modelnet40-global-slim-3.0-pointnet INFO: Epoch 24/100, Acc=0.8695, Val Loss=0.4298, lr=0.0100
+[02/23 03:03:34] modelnet40-global-slim-3.0-pointnet INFO: Epoch 25/100, Acc=0.8347, Val Loss=0.5206, lr=0.0100
+[02/23 03:03:45] modelnet40-global-slim-3.0-pointnet INFO: Epoch 26/100, Acc=0.8468, Val Loss=0.4802, lr=0.0100
+[02/23 03:03:57] modelnet40-global-slim-3.0-pointnet INFO: Epoch 27/100, Acc=0.8481, Val Loss=0.5031, lr=0.0100
+[02/23 03:04:08] modelnet40-global-slim-3.0-pointnet INFO: Epoch 28/100, Acc=0.8282, Val Loss=0.5308, lr=0.0100
+[02/23 03:04:20] modelnet40-global-slim-3.0-pointnet INFO: Epoch 29/100, Acc=0.8505, Val Loss=0.4881, lr=0.0100
+[02/23 03:04:31] modelnet40-global-slim-3.0-pointnet INFO: Epoch 30/100, Acc=0.8549, Val Loss=0.4732, lr=0.0100
+[02/23 03:04:43] modelnet40-global-slim-3.0-pointnet INFO: Epoch 31/100, Acc=0.8011, Val Loss=0.6198, lr=0.0100
+[02/23 03:04:54] modelnet40-global-slim-3.0-pointnet INFO: Epoch 32/100, Acc=0.8509, Val Loss=0.5181, lr=0.0100
+[02/23 03:05:05] modelnet40-global-slim-3.0-pointnet INFO: Epoch 33/100, Acc=0.8541, Val Loss=0.4933, lr=0.0100
+[02/23 03:05:17] modelnet40-global-slim-3.0-pointnet INFO: Epoch 34/100, Acc=0.8460, Val Loss=0.4951, lr=0.0100
+[02/23 03:05:28] modelnet40-global-slim-3.0-pointnet INFO: Epoch 35/100, Acc=0.8481, Val Loss=0.5092, lr=0.0100
+[02/23 03:05:40] modelnet40-global-slim-3.0-pointnet INFO: Epoch 36/100, Acc=0.8541, Val Loss=0.4742, lr=0.0100
+[02/23 03:05:51] modelnet40-global-slim-3.0-pointnet INFO: Epoch 37/100, Acc=0.8408, Val Loss=0.5489, lr=0.0100
+[02/23 03:06:03] modelnet40-global-slim-3.0-pointnet INFO: Epoch 38/100, Acc=0.8505, Val Loss=0.4786, lr=0.0100
+[02/23 03:06:14] modelnet40-global-slim-3.0-pointnet INFO: Epoch 39/100, Acc=0.8225, Val Loss=0.5635, lr=0.0100
+[02/23 03:06:26] modelnet40-global-slim-3.0-pointnet INFO: Epoch 40/100, Acc=0.8513, Val Loss=0.4985, lr=0.0100
+[02/23 03:06:37] modelnet40-global-slim-3.0-pointnet INFO: Epoch 41/100, Acc=0.8476, Val Loss=0.4839, lr=0.0100
+[02/23 03:06:49] modelnet40-global-slim-3.0-pointnet INFO: Epoch 42/100, Acc=0.8209, Val Loss=0.5457, lr=0.0100
+[02/23 03:07:00] modelnet40-global-slim-3.0-pointnet INFO: Epoch 43/100, Acc=0.8472, Val Loss=0.4998, lr=0.0100
+[02/23 03:07:12] modelnet40-global-slim-3.0-pointnet INFO: Epoch 44/100, Acc=0.8598, Val Loss=0.4743, lr=0.0100
+[02/23 03:07:23] modelnet40-global-slim-3.0-pointnet INFO: Epoch 45/100, Acc=0.8444, Val Loss=0.5193, lr=0.0100
+[02/23 03:07:35] modelnet40-global-slim-3.0-pointnet INFO: Epoch 46/100, Acc=0.8497, Val Loss=0.5000, lr=0.0100
+[02/23 03:07:46] modelnet40-global-slim-3.0-pointnet INFO: Epoch 47/100, Acc=0.8367, Val Loss=0.5413, lr=0.0100
+[02/23 03:07:57] modelnet40-global-slim-3.0-pointnet INFO: Epoch 48/100, Acc=0.8549, Val Loss=0.4820, lr=0.0100
+[02/23 03:08:09] modelnet40-global-slim-3.0-pointnet INFO: Epoch 49/100, Acc=0.8294, Val Loss=0.5346, lr=0.0100
+[02/23 03:08:20] modelnet40-global-slim-3.0-pointnet INFO: Epoch 50/100, Acc=0.8825, Val Loss=0.3954, lr=0.0010
+[02/23 03:08:31] modelnet40-global-slim-3.0-pointnet INFO: Epoch 51/100, Acc=0.8861, Val Loss=0.3881, lr=0.0010
+[02/23 03:08:42] modelnet40-global-slim-3.0-pointnet INFO: Epoch 52/100, Acc=0.8870, Val Loss=0.3866, lr=0.0010
+[02/23 03:08:52] modelnet40-global-slim-3.0-pointnet INFO: Epoch 53/100, Acc=0.8853, Val Loss=0.3914, lr=0.0010
+[02/23 03:09:03] modelnet40-global-slim-3.0-pointnet INFO: Epoch 54/100, Acc=0.8841, Val Loss=0.3914, lr=0.0010
+[02/23 03:09:14] modelnet40-global-slim-3.0-pointnet INFO: Epoch 55/100, Acc=0.8870, Val Loss=0.3903, lr=0.0010
+[02/23 03:09:25] modelnet40-global-slim-3.0-pointnet INFO: Epoch 56/100, Acc=0.8837, Val Loss=0.3879, lr=0.0010
+[02/23 03:09:36] modelnet40-global-slim-3.0-pointnet INFO: Epoch 57/100, Acc=0.8870, Val Loss=0.3845, lr=0.0010
+[02/23 03:09:47] modelnet40-global-slim-3.0-pointnet INFO: Epoch 58/100, Acc=0.8853, Val Loss=0.3855, lr=0.0010
+[02/23 03:09:58] modelnet40-global-slim-3.0-pointnet INFO: Epoch 59/100, Acc=0.8780, Val Loss=0.3894, lr=0.0010
+[02/23 03:10:09] modelnet40-global-slim-3.0-pointnet INFO: Epoch 60/100, Acc=0.8845, Val Loss=0.3862, lr=0.0010
+[02/23 03:10:20] modelnet40-global-slim-3.0-pointnet INFO: Epoch 61/100, Acc=0.8853, Val Loss=0.3800, lr=0.0010
+[02/23 03:10:30] modelnet40-global-slim-3.0-pointnet INFO: Epoch 62/100, Acc=0.8870, Val Loss=0.3861, lr=0.0010
+[02/23 03:10:41] modelnet40-global-slim-3.0-pointnet INFO: Epoch 63/100, Acc=0.8898, Val Loss=0.3824, lr=0.0010
+[02/23 03:10:52] modelnet40-global-slim-3.0-pointnet INFO: Epoch 64/100, Acc=0.8825, Val Loss=0.3821, lr=0.0010
+[02/23 03:11:03] modelnet40-global-slim-3.0-pointnet INFO: Epoch 65/100, Acc=0.8874, Val Loss=0.3787, lr=0.0010
+[02/23 03:11:14] modelnet40-global-slim-3.0-pointnet INFO: Epoch 66/100, Acc=0.8752, Val Loss=0.3906, lr=0.0010
+[02/23 03:11:25] modelnet40-global-slim-3.0-pointnet INFO: Epoch 67/100, Acc=0.8849, Val Loss=0.3839, lr=0.0010
+[02/23 03:11:36] modelnet40-global-slim-3.0-pointnet INFO: Epoch 68/100, Acc=0.8870, Val Loss=0.3752, lr=0.0010
+[02/23 03:11:47] modelnet40-global-slim-3.0-pointnet INFO: Epoch 69/100, Acc=0.8861, Val Loss=0.3815, lr=0.0010
+[02/23 03:11:58] modelnet40-global-slim-3.0-pointnet INFO: Epoch 70/100, Acc=0.8886, Val Loss=0.3759, lr=0.0010
+[02/23 03:12:08] modelnet40-global-slim-3.0-pointnet INFO: Epoch 71/100, Acc=0.8865, Val Loss=0.3739, lr=0.0010
+[02/23 03:12:19] modelnet40-global-slim-3.0-pointnet INFO: Epoch 72/100, Acc=0.8878, Val Loss=0.3760, lr=0.0010
+[02/23 03:12:30] modelnet40-global-slim-3.0-pointnet INFO: Epoch 73/100, Acc=0.8882, Val Loss=0.3739, lr=0.0010
+[02/23 03:12:41] modelnet40-global-slim-3.0-pointnet INFO: Epoch 74/100, Acc=0.8870, Val Loss=0.3714, lr=0.0010
+[02/23 03:12:52] modelnet40-global-slim-3.0-pointnet INFO: Epoch 75/100, Acc=0.8849, Val Loss=0.3743, lr=0.0010
+[02/23 03:13:03] modelnet40-global-slim-3.0-pointnet INFO: Epoch 76/100, Acc=0.8882, Val Loss=0.3713, lr=0.0010
+[02/23 03:13:14] modelnet40-global-slim-3.0-pointnet INFO: Epoch 77/100, Acc=0.8918, Val Loss=0.3712, lr=0.0010
+[02/23 03:13:26] modelnet40-global-slim-3.0-pointnet INFO: Epoch 78/100, Acc=0.8878, Val Loss=0.3717, lr=0.0010
+[02/23 03:13:37] modelnet40-global-slim-3.0-pointnet INFO: Epoch 79/100, Acc=0.8841, Val Loss=0.3725, lr=0.0010
+[02/23 03:13:48] modelnet40-global-slim-3.0-pointnet INFO: Epoch 80/100, Acc=0.8853, Val Loss=0.3713, lr=0.0001
+[02/23 03:13:59] modelnet40-global-slim-3.0-pointnet INFO: Epoch 81/100, Acc=0.8890, Val Loss=0.3650, lr=0.0001
+[02/23 03:14:11] modelnet40-global-slim-3.0-pointnet INFO: Epoch 82/100, Acc=0.8865, Val Loss=0.3692, lr=0.0001
+[02/23 03:14:22] modelnet40-global-slim-3.0-pointnet INFO: Epoch 83/100, Acc=0.8934, Val Loss=0.3622, lr=0.0001
+[02/23 03:14:33] modelnet40-global-slim-3.0-pointnet INFO: Epoch 84/100, Acc=0.8918, Val Loss=0.3629, lr=0.0001
+[02/23 03:14:45] modelnet40-global-slim-3.0-pointnet INFO: Epoch 85/100, Acc=0.8865, Val Loss=0.3659, lr=0.0001
+[02/23 03:14:56] modelnet40-global-slim-3.0-pointnet INFO: Epoch 86/100, Acc=0.8898, Val Loss=0.3634, lr=0.0001
+[02/23 03:15:07] modelnet40-global-slim-3.0-pointnet INFO: Epoch 87/100, Acc=0.8922, Val Loss=0.3628, lr=0.0001
+[02/23 03:15:18] modelnet40-global-slim-3.0-pointnet INFO: Epoch 88/100, Acc=0.8898, Val Loss=0.3648, lr=0.0001
+[02/23 03:15:29] modelnet40-global-slim-3.0-pointnet INFO: Epoch 89/100, Acc=0.8902, Val Loss=0.3667, lr=0.0001
+[02/23 03:15:40] modelnet40-global-slim-3.0-pointnet INFO: Epoch 90/100, Acc=0.8890, Val Loss=0.3658, lr=0.0001
+[02/23 03:15:51] modelnet40-global-slim-3.0-pointnet INFO: Epoch 91/100, Acc=0.8910, Val Loss=0.3642, lr=0.0001
+[02/23 03:16:01] modelnet40-global-slim-3.0-pointnet INFO: Epoch 92/100, Acc=0.8918, Val Loss=0.3637, lr=0.0001
+[02/23 03:16:12] modelnet40-global-slim-3.0-pointnet INFO: Epoch 93/100, Acc=0.8886, Val Loss=0.3642, lr=0.0001
+[02/23 03:16:23] modelnet40-global-slim-3.0-pointnet INFO: Epoch 94/100, Acc=0.8890, Val Loss=0.3651, lr=0.0001
+[02/23 03:16:34] modelnet40-global-slim-3.0-pointnet INFO: Epoch 95/100, Acc=0.8898, Val Loss=0.3624, lr=0.0001
+[02/23 03:16:45] modelnet40-global-slim-3.0-pointnet INFO: Epoch 96/100, Acc=0.8874, Val Loss=0.3623, lr=0.0001
+[02/23 03:16:56] modelnet40-global-slim-3.0-pointnet INFO: Epoch 97/100, Acc=0.8922, Val Loss=0.3626, lr=0.0001
+[02/23 03:17:07] modelnet40-global-slim-3.0-pointnet INFO: Epoch 98/100, Acc=0.8853, Val Loss=0.3677, lr=0.0001
+[02/23 03:17:18] modelnet40-global-slim-3.0-pointnet INFO: Epoch 99/100, Acc=0.8914, Val Loss=0.3637, lr=0.0001
+[02/23 03:17:18] modelnet40-global-slim-3.0-pointnet INFO: Best Acc=0.8934
+[02/23 03:17:18] modelnet40-global-slim-3.0-pointnet INFO: Params: 0.26 M
+[02/23 03:17:18] modelnet40-global-slim-3.0-pointnet INFO: ops: 95.91 M
+[02/23 03:17:18] modelnet40-global-slim-3.0-pointnet INFO: Acc: 0.8914 Val Loss: 0.3637
+

@@ -1,0 +1,10 @@
+method,dataset,model,2.0,3.0
+Random,cifar100,mobilenetv2,0.7068,0.6042
+MagnitudeL2,cifar100,mobilenetv2,0.6843,0.6823
+Slimming,cifar100,mobilenetv2,0.6892,0.6865
+FPGM,cifar100,mobilenetv2,0.6856,0.6848
+EigenDamage,cifar100,mobilenetv2,0.6792,0.6848
+LAMP,cifar100,mobilenetv2,0.6824,0.6862
+DepGraph,cifar100,mobilenetv2,0.6847,0.6849
+DepGraph-SL,cifar100,mobilenetv2,0.6873,0.6129
+\bf{Projective (ours)},cifar100,mobilenetv2,0.6895,0.6911

@@ -1,0 +1,372 @@
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: mode: prune
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: model: mobilenetv2
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: verbose: False
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: dataset: cifar100
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: dataroot: data
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: batch_size: 128
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: total_epochs: 100
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: lr_decay_milestones: 60,80
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: lr_decay_gamma: 0.1
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: lr: 0.01
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: restore: run/cifar100/pretrain/cifar100_mobilenetv2.pth
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: output_dir: run/cifar100/prune/cifar100-global-random-3.0-mobilenetv2
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: finetune: True
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: last_epochs: 100
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: reps: 1
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: method: random
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: speed_up: 3.0
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: max_pruning_ratio: 1.0
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: soft_keeping_ratio: 0.0
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: reg: 1e-05
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: delta_reg: 0.0001
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: weight_decay: 0.0005
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: seed: 1
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: global_pruning: True
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: sl_total_epochs: 100
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: sl_lr: 0.01
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: sl_lr_decay_milestones: 60,80
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: sl_reg_warmup: 0
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: sl_restore: None
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: iterative_steps: 400
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: logger: <Logger cifar100-global-random-3.0-mobilenetv2 (DEBUG)>
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: device: cuda
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: num_classes: 100
+[02/26 15:36:47] cifar100-global-random-3.0-mobilenetv2 INFO: Loading model from run/cifar100/pretrain/cifar100_mobilenetv2.pth
+[02/26 15:36:51] cifar100-global-random-3.0-mobilenetv2 INFO: Pruning...
+[02/26 15:37:02] cifar100-global-random-3.0-mobilenetv2 INFO: MobileNetV2(
+  (pre): Sequential(
+    (0): Conv2d(3, 1, kernel_size=(1, 1), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU6(inplace=True)
+  )
+  (stage1): LinearBottleNeck(
+    (residual): Sequential(
+      (0): Conv2d(1, 1, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU6(inplace=True)
+      (3): Conv2d(1, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU6(inplace=True)
+      (6): Conv2d(1, 1, kernel_size=(1, 1), stride=(1, 1))
+      (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (stage2): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 1, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(1, 1, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (4): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(1, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 49, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(49, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(49, 49, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=49)
+        (4): BatchNorm2d(49, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(49, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage3): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 49, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(49, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(49, 49, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=49)
+        (4): BatchNorm2d(49, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(49, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 97, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(97, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(97, 97, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=97)
+        (4): BatchNorm2d(97, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(97, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 97, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(97, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(97, 97, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=97)
+        (4): BatchNorm2d(97, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(97, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage4): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 97, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(97, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(97, 97, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=97)
+        (4): BatchNorm2d(97, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(97, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 289, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(289, 289, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=289)
+        (4): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(289, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 289, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(289, 289, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=289)
+        (4): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(289, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (3): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 289, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(289, 289, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=289)
+        (4): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(289, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage5): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 289, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(289, 289, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=289)
+        (4): BatchNorm2d(289, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(289, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 481, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(481, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(481, 481, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=481)
+        (4): BatchNorm2d(481, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(481, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 481, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(481, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(481, 481, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=481)
+        (4): BatchNorm2d(481, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(481, 1, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage6): Sequential(
+    (0): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(1, 481, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(481, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(481, 481, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=481)
+        (4): BatchNorm2d(481, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(481, 65, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(65, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(65, 865, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(865, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(865, 865, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=865)
+        (4): BatchNorm2d(865, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(865, 65, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(65, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (2): LinearBottleNeck(
+      (residual): Sequential(
+        (0): Conv2d(65, 865, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(865, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU6(inplace=True)
+        (3): Conv2d(865, 865, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=865)
+        (4): BatchNorm2d(865, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU6(inplace=True)
+        (6): Conv2d(865, 65, kernel_size=(1, 1), stride=(1, 1))
+        (7): BatchNorm2d(65, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (stage7): LinearBottleNeck(
+    (residual): Sequential(
+      (0): Conv2d(65, 865, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(865, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU6(inplace=True)
+      (3): Conv2d(865, 865, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=865)
+      (4): BatchNorm2d(865, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU6(inplace=True)
+      (6): Conv2d(865, 225, kernel_size=(1, 1), stride=(1, 1))
+      (7): BatchNorm2d(225, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv1): Sequential(
+    (0): Conv2d(225, 1185, kernel_size=(1, 1), stride=(1, 1))
+    (1): BatchNorm2d(1185, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU6(inplace=True)
+  )
+  (conv2): Conv2d(1185, 100, kernel_size=(1, 1), stride=(1, 1))
+)
+[02/26 15:37:05] cifar100-global-random-3.0-mobilenetv2 INFO: Params: 2.37 M => 0.99 M (41.63%)
+[02/26 15:37:05] cifar100-global-random-3.0-mobilenetv2 INFO: FLOPs: 68.40 M => 22.75 M (33.26%, 3.01X )
+[02/26 15:37:05] cifar100-global-random-3.0-mobilenetv2 INFO: Acc: 0.6699 => 0.0100
+[02/26 15:37:05] cifar100-global-random-3.0-mobilenetv2 INFO: Val Loss: 1.1637 => 5.6273
+[02/26 15:37:05] cifar100-global-random-3.0-mobilenetv2 INFO: Finetuning...
+[02/26 15:37:36] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 0/100, Acc=0.1663, Val Loss=3.2306, lr=0.0100
+[02/26 15:38:07] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 1/100, Acc=0.3091, Val Loss=2.5061, lr=0.0100
+[02/26 15:38:38] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 2/100, Acc=0.3550, Val Loss=2.2945, lr=0.0100
+[02/26 15:39:09] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 3/100, Acc=0.3865, Val Loss=2.1823, lr=0.0100
+[02/26 15:39:41] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 4/100, Acc=0.4142, Val Loss=1.9790, lr=0.0100
+[02/26 15:40:12] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 5/100, Acc=0.4169, Val Loss=2.0563, lr=0.0100
+[02/26 15:40:43] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 6/100, Acc=0.4508, Val Loss=1.8606, lr=0.0100
+[02/26 15:41:15] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 7/100, Acc=0.4615, Val Loss=1.7856, lr=0.0100
+[02/26 15:41:46] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 8/100, Acc=0.4683, Val Loss=1.7617, lr=0.0100
+[02/26 15:42:17] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 9/100, Acc=0.4039, Val Loss=2.1518, lr=0.0100
+[02/26 15:42:48] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 10/100, Acc=0.4476, Val Loss=1.8794, lr=0.0100
+[02/26 15:43:19] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 11/100, Acc=0.4698, Val Loss=1.7914, lr=0.0100
+[02/26 15:43:50] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 12/100, Acc=0.5037, Val Loss=1.6049, lr=0.0100
+[02/26 15:44:21] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 13/100, Acc=0.4811, Val Loss=1.7518, lr=0.0100
+[02/26 15:44:51] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 14/100, Acc=0.4637, Val Loss=1.8133, lr=0.0100
+[02/26 15:45:22] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 15/100, Acc=0.4897, Val Loss=1.7177, lr=0.0100
+[02/26 15:45:53] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 16/100, Acc=0.4745, Val Loss=1.7694, lr=0.0100
+[02/26 15:46:24] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 17/100, Acc=0.4987, Val Loss=1.6529, lr=0.0100
+[02/26 15:46:54] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 18/100, Acc=0.5163, Val Loss=1.5831, lr=0.0100
+[02/26 15:47:25] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 19/100, Acc=0.5046, Val Loss=1.6150, lr=0.0100
+[02/26 15:47:55] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 20/100, Acc=0.5017, Val Loss=1.6520, lr=0.0100
+[02/26 15:48:26] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 21/100, Acc=0.4918, Val Loss=1.7266, lr=0.0100
+[02/26 15:48:57] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 22/100, Acc=0.5066, Val Loss=1.6321, lr=0.0100
+[02/26 15:49:28] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 23/100, Acc=0.5040, Val Loss=1.6583, lr=0.0100
+[02/26 15:49:59] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 24/100, Acc=0.5174, Val Loss=1.5968, lr=0.0100
+[02/26 15:50:30] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 25/100, Acc=0.5172, Val Loss=1.6049, lr=0.0100
+[02/26 15:51:00] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 26/100, Acc=0.5355, Val Loss=1.5253, lr=0.0100
+[02/26 15:51:31] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 27/100, Acc=0.5221, Val Loss=1.5750, lr=0.0100
+[02/26 15:52:02] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 28/100, Acc=0.4881, Val Loss=1.7583, lr=0.0100
+[02/26 15:52:32] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 29/100, Acc=0.5019, Val Loss=1.7334, lr=0.0100
+[02/26 15:53:03] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 30/100, Acc=0.5049, Val Loss=1.7080, lr=0.0100
+[02/26 15:53:34] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 31/100, Acc=0.4895, Val Loss=1.7066, lr=0.0100
+[02/26 15:54:05] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 32/100, Acc=0.4816, Val Loss=1.8029, lr=0.0100
+[02/26 15:54:36] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 33/100, Acc=0.5084, Val Loss=1.6683, lr=0.0100
+[02/26 15:55:07] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 34/100, Acc=0.5246, Val Loss=1.5933, lr=0.0100
+[02/26 15:55:38] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 35/100, Acc=0.5127, Val Loss=1.6514, lr=0.0100
+[02/26 15:56:09] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 36/100, Acc=0.4888, Val Loss=1.8190, lr=0.0100
+[02/26 15:56:41] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 37/100, Acc=0.5143, Val Loss=1.6374, lr=0.0100
+[02/26 15:57:12] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 38/100, Acc=0.5147, Val Loss=1.6368, lr=0.0100
+[02/26 15:57:43] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 39/100, Acc=0.5318, Val Loss=1.5465, lr=0.0100
+[02/26 15:58:14] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 40/100, Acc=0.5225, Val Loss=1.5688, lr=0.0100
+[02/26 15:58:46] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 41/100, Acc=0.5317, Val Loss=1.5684, lr=0.0100
+[02/26 15:59:17] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 42/100, Acc=0.5062, Val Loss=1.6836, lr=0.0100
+[02/26 15:59:48] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 43/100, Acc=0.5322, Val Loss=1.5482, lr=0.0100
+[02/26 16:00:20] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 44/100, Acc=0.5370, Val Loss=1.5263, lr=0.0100
+[02/26 16:00:51] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 45/100, Acc=0.5190, Val Loss=1.6094, lr=0.0100
+[02/26 16:01:23] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 46/100, Acc=0.5328, Val Loss=1.5576, lr=0.0100
+[02/26 16:01:55] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 47/100, Acc=0.5281, Val Loss=1.5737, lr=0.0100
+[02/26 16:02:27] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 48/100, Acc=0.5265, Val Loss=1.6046, lr=0.0100
+[02/26 16:02:58] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 49/100, Acc=0.5207, Val Loss=1.6095, lr=0.0100
+[02/26 16:03:29] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 50/100, Acc=0.5089, Val Loss=1.7238, lr=0.0100
+[02/26 16:04:01] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 51/100, Acc=0.4949, Val Loss=1.7606, lr=0.0100
+[02/26 16:04:33] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 52/100, Acc=0.4895, Val Loss=1.8611, lr=0.0100
+[02/26 16:05:05] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 53/100, Acc=0.5317, Val Loss=1.5731, lr=0.0100
+[02/26 16:05:37] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 54/100, Acc=0.5254, Val Loss=1.6597, lr=0.0100
+[02/26 16:06:08] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 55/100, Acc=0.5283, Val Loss=1.6028, lr=0.0100
+[02/26 16:06:40] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 56/100, Acc=0.5279, Val Loss=1.6002, lr=0.0100
+[02/26 16:07:12] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 57/100, Acc=0.5143, Val Loss=1.7299, lr=0.0100
+[02/26 16:07:44] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 58/100, Acc=0.5350, Val Loss=1.5835, lr=0.0100
+[02/26 16:08:17] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 59/100, Acc=0.5246, Val Loss=1.6017, lr=0.0100
+[02/26 16:08:48] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 60/100, Acc=0.5951, Val Loss=1.2852, lr=0.0010
+[02/26 16:09:20] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 61/100, Acc=0.5932, Val Loss=1.2818, lr=0.0010
+[02/26 16:09:52] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 62/100, Acc=0.5985, Val Loss=1.2781, lr=0.0010
+[02/26 16:10:24] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 63/100, Acc=0.6002, Val Loss=1.2769, lr=0.0010
+[02/26 16:10:56] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 64/100, Acc=0.5992, Val Loss=1.2874, lr=0.0010
+[02/26 16:11:28] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 65/100, Acc=0.6000, Val Loss=1.2953, lr=0.0010
+[02/26 16:12:00] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 66/100, Acc=0.5995, Val Loss=1.3037, lr=0.0010
+[02/26 16:12:32] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 67/100, Acc=0.5981, Val Loss=1.2959, lr=0.0010
+[02/26 16:13:04] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 68/100, Acc=0.6009, Val Loss=1.2975, lr=0.0010
+[02/26 16:13:35] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 69/100, Acc=0.5971, Val Loss=1.3068, lr=0.0010
+[02/26 16:14:07] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 70/100, Acc=0.5997, Val Loss=1.3023, lr=0.0010
+[02/26 16:14:38] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 71/100, Acc=0.5985, Val Loss=1.3106, lr=0.0010
+[02/26 16:15:10] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 72/100, Acc=0.6022, Val Loss=1.3053, lr=0.0010
+[02/26 16:15:40] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 73/100, Acc=0.6019, Val Loss=1.3095, lr=0.0010
+[02/26 16:16:11] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 74/100, Acc=0.6022, Val Loss=1.3099, lr=0.0010
+[02/26 16:16:43] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 75/100, Acc=0.6006, Val Loss=1.3202, lr=0.0010
+[02/26 16:17:14] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 76/100, Acc=0.6031, Val Loss=1.3152, lr=0.0010
+[02/26 16:17:45] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 77/100, Acc=0.5986, Val Loss=1.3304, lr=0.0010
+[02/26 16:18:16] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 78/100, Acc=0.5953, Val Loss=1.3353, lr=0.0010
+[02/26 16:18:47] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 79/100, Acc=0.5962, Val Loss=1.3475, lr=0.0010
+[02/26 16:19:19] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 80/100, Acc=0.6007, Val Loss=1.3267, lr=0.0001
+[02/26 16:19:50] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 81/100, Acc=0.6027, Val Loss=1.3219, lr=0.0001
+[02/26 16:20:21] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 82/100, Acc=0.5996, Val Loss=1.3222, lr=0.0001
+[02/26 16:20:52] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 83/100, Acc=0.6018, Val Loss=1.3238, lr=0.0001
+[02/26 16:21:23] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 84/100, Acc=0.6002, Val Loss=1.3261, lr=0.0001
+[02/26 16:21:54] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 85/100, Acc=0.6015, Val Loss=1.3254, lr=0.0001
+[02/26 16:22:25] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 86/100, Acc=0.6030, Val Loss=1.3273, lr=0.0001
+[02/26 16:22:56] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 87/100, Acc=0.6011, Val Loss=1.3277, lr=0.0001
+[02/26 16:23:27] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 88/100, Acc=0.6011, Val Loss=1.3227, lr=0.0001
+[02/26 16:23:58] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 89/100, Acc=0.6004, Val Loss=1.3250, lr=0.0001
+[02/26 16:24:29] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 90/100, Acc=0.6021, Val Loss=1.3231, lr=0.0001
+[02/26 16:25:00] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 91/100, Acc=0.6003, Val Loss=1.3315, lr=0.0001
+[02/26 16:25:30] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 92/100, Acc=0.6042, Val Loss=1.3203, lr=0.0001
+[02/26 16:26:01] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 93/100, Acc=0.6005, Val Loss=1.3281, lr=0.0001
+[02/26 16:26:32] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 94/100, Acc=0.6039, Val Loss=1.3269, lr=0.0001
+[02/26 16:27:03] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 95/100, Acc=0.6013, Val Loss=1.3307, lr=0.0001
+[02/26 16:27:34] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 96/100, Acc=0.6004, Val Loss=1.3305, lr=0.0001
+[02/26 16:28:05] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 97/100, Acc=0.5992, Val Loss=1.3281, lr=0.0001
+[02/26 16:28:36] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 98/100, Acc=0.6014, Val Loss=1.3289, lr=0.0001
+[02/26 16:29:07] cifar100-global-random-3.0-mobilenetv2 INFO: Epoch 99/100, Acc=0.6005, Val Loss=1.3294, lr=0.0001
+[02/26 16:29:07] cifar100-global-random-3.0-mobilenetv2 INFO: Best Acc=0.6042
+[02/26 16:29:07] cifar100-global-random-3.0-mobilenetv2 INFO: Params: 0.99 M
+[02/26 16:29:07] cifar100-global-random-3.0-mobilenetv2 INFO: ops: 22.75 M
+[02/26 16:29:10] cifar100-global-random-3.0-mobilenetv2 INFO: Acc: 0.6005 Val Loss: 1.3294
+

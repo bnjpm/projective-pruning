@@ -1,0 +1,309 @@
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: mode: prune
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: model: vgg19
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: verbose: False
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: dataset: cifar100
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: dataroot: data
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: batch_size: 128
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: total_epochs: 100
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: lr_decay_milestones: 60,80
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: lr_decay_gamma: 0.1
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: lr: 0.01
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: restore: run/cifar100/pretrain/cifar100_vgg19.pth
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: output_dir: run/cifar100/prune/cifar100-global-slim-3.0-vgg19
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: finetune: True
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: last_epochs: 100
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: reps: 1
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: method: slim
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: speed_up: 3.0
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: max_pruning_ratio: 1.0
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: soft_keeping_ratio: 0.0
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: reg: 1e-05
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: delta_reg: 0.0001
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: weight_decay: 0.0005
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: seed: 1
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: global_pruning: True
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: sl_total_epochs: 100
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: sl_lr: 0.01
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: sl_lr_decay_milestones: 60,80
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: sl_reg_warmup: 0
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: sl_restore: None
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: iterative_steps: 400
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: logger: <Logger cifar100-global-slim-3.0-vgg19 (DEBUG)>
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: device: cuda
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: num_classes: 100
+[02/25 06:58:21] cifar100-global-slim-3.0-vgg19 INFO: Loading model from run/cifar100/pretrain/cifar100_vgg19.pth
+[02/25 06:58:22] cifar100-global-slim-3.0-vgg19 INFO: Regularizing...
+[02/25 06:58:44] cifar100-global-slim-3.0-vgg19 INFO: Epoch 0/100, Acc=0.6564, Val Loss=1.6046, lr=0.0100
+[02/25 06:59:07] cifar100-global-slim-3.0-vgg19 INFO: Epoch 1/100, Acc=0.6648, Val Loss=1.6118, lr=0.0100
+[02/25 06:59:29] cifar100-global-slim-3.0-vgg19 INFO: Epoch 2/100, Acc=0.6726, Val Loss=1.5023, lr=0.0100
+[02/25 06:59:50] cifar100-global-slim-3.0-vgg19 INFO: Epoch 3/100, Acc=0.6761, Val Loss=1.5211, lr=0.0100
+[02/25 07:00:12] cifar100-global-slim-3.0-vgg19 INFO: Epoch 4/100, Acc=0.6670, Val Loss=1.5723, lr=0.0100
+[02/25 07:00:34] cifar100-global-slim-3.0-vgg19 INFO: Epoch 5/100, Acc=0.6650, Val Loss=1.6018, lr=0.0100
+[02/25 07:00:57] cifar100-global-slim-3.0-vgg19 INFO: Epoch 6/100, Acc=0.6829, Val Loss=1.5161, lr=0.0100
+[02/25 07:01:19] cifar100-global-slim-3.0-vgg19 INFO: Epoch 7/100, Acc=0.6832, Val Loss=1.5505, lr=0.0100
+[02/25 07:01:42] cifar100-global-slim-3.0-vgg19 INFO: Epoch 8/100, Acc=0.6854, Val Loss=1.5413, lr=0.0100
+[02/25 07:02:05] cifar100-global-slim-3.0-vgg19 INFO: Epoch 9/100, Acc=0.6728, Val Loss=1.6077, lr=0.0100
+[02/25 07:02:27] cifar100-global-slim-3.0-vgg19 INFO: Epoch 10/100, Acc=0.6928, Val Loss=1.5103, lr=0.0100
+[02/25 07:02:49] cifar100-global-slim-3.0-vgg19 INFO: Epoch 11/100, Acc=0.6884, Val Loss=1.5533, lr=0.0100
+[02/25 07:03:13] cifar100-global-slim-3.0-vgg19 INFO: Epoch 12/100, Acc=0.6927, Val Loss=1.5351, lr=0.0100
+[02/25 07:03:36] cifar100-global-slim-3.0-vgg19 INFO: Epoch 13/100, Acc=0.6854, Val Loss=1.5871, lr=0.0100
+[02/25 07:03:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 14/100, Acc=0.6731, Val Loss=1.6528, lr=0.0100
+[02/25 07:04:22] cifar100-global-slim-3.0-vgg19 INFO: Epoch 15/100, Acc=0.6894, Val Loss=1.5942, lr=0.0100
+[02/25 07:04:44] cifar100-global-slim-3.0-vgg19 INFO: Epoch 16/100, Acc=0.6989, Val Loss=1.5248, lr=0.0100
+[02/25 07:05:06] cifar100-global-slim-3.0-vgg19 INFO: Epoch 17/100, Acc=0.6940, Val Loss=1.5970, lr=0.0100
+[02/25 07:05:28] cifar100-global-slim-3.0-vgg19 INFO: Epoch 18/100, Acc=0.6929, Val Loss=1.6408, lr=0.0100
+[02/25 07:05:50] cifar100-global-slim-3.0-vgg19 INFO: Epoch 19/100, Acc=0.6938, Val Loss=1.6466, lr=0.0100
+[02/25 07:06:12] cifar100-global-slim-3.0-vgg19 INFO: Epoch 20/100, Acc=0.6940, Val Loss=1.6259, lr=0.0100
+[02/25 07:06:34] cifar100-global-slim-3.0-vgg19 INFO: Epoch 21/100, Acc=0.7016, Val Loss=1.6205, lr=0.0100
+[02/25 07:06:57] cifar100-global-slim-3.0-vgg19 INFO: Epoch 22/100, Acc=0.7009, Val Loss=1.6161, lr=0.0100
+[02/25 07:07:19] cifar100-global-slim-3.0-vgg19 INFO: Epoch 23/100, Acc=0.7009, Val Loss=1.6534, lr=0.0100
+[02/25 07:07:41] cifar100-global-slim-3.0-vgg19 INFO: Epoch 24/100, Acc=0.7076, Val Loss=1.6015, lr=0.0100
+[02/25 07:08:04] cifar100-global-slim-3.0-vgg19 INFO: Epoch 25/100, Acc=0.7000, Val Loss=1.6314, lr=0.0100
+[02/25 07:08:26] cifar100-global-slim-3.0-vgg19 INFO: Epoch 26/100, Acc=0.6913, Val Loss=1.7509, lr=0.0100
+[02/25 07:08:49] cifar100-global-slim-3.0-vgg19 INFO: Epoch 27/100, Acc=0.7055, Val Loss=1.6465, lr=0.0100
+[02/25 07:09:11] cifar100-global-slim-3.0-vgg19 INFO: Epoch 28/100, Acc=0.7001, Val Loss=1.6546, lr=0.0100
+[02/25 07:09:34] cifar100-global-slim-3.0-vgg19 INFO: Epoch 29/100, Acc=0.6954, Val Loss=1.7026, lr=0.0100
+[02/25 07:09:57] cifar100-global-slim-3.0-vgg19 INFO: Epoch 30/100, Acc=0.7051, Val Loss=1.6272, lr=0.0100
+[02/25 07:10:20] cifar100-global-slim-3.0-vgg19 INFO: Epoch 31/100, Acc=0.7061, Val Loss=1.6491, lr=0.0100
+[02/25 07:10:44] cifar100-global-slim-3.0-vgg19 INFO: Epoch 32/100, Acc=0.7022, Val Loss=1.6856, lr=0.0100
+[02/25 07:11:07] cifar100-global-slim-3.0-vgg19 INFO: Epoch 33/100, Acc=0.7085, Val Loss=1.6574, lr=0.0100
+[02/25 07:11:30] cifar100-global-slim-3.0-vgg19 INFO: Epoch 34/100, Acc=0.7035, Val Loss=1.6580, lr=0.0100
+[02/25 07:11:52] cifar100-global-slim-3.0-vgg19 INFO: Epoch 35/100, Acc=0.7092, Val Loss=1.7034, lr=0.0100
+[02/25 07:12:15] cifar100-global-slim-3.0-vgg19 INFO: Epoch 36/100, Acc=0.7027, Val Loss=1.7432, lr=0.0100
+[02/25 07:12:37] cifar100-global-slim-3.0-vgg19 INFO: Epoch 37/100, Acc=0.7001, Val Loss=1.7336, lr=0.0100
+[02/25 07:12:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 38/100, Acc=0.7056, Val Loss=1.7079, lr=0.0100
+[02/25 07:13:21] cifar100-global-slim-3.0-vgg19 INFO: Epoch 39/100, Acc=0.7099, Val Loss=1.7012, lr=0.0100
+[02/25 07:13:44] cifar100-global-slim-3.0-vgg19 INFO: Epoch 40/100, Acc=0.7089, Val Loss=1.6953, lr=0.0100
+[02/25 07:14:06] cifar100-global-slim-3.0-vgg19 INFO: Epoch 41/100, Acc=0.7049, Val Loss=1.7415, lr=0.0100
+[02/25 07:14:28] cifar100-global-slim-3.0-vgg19 INFO: Epoch 42/100, Acc=0.7065, Val Loss=1.7062, lr=0.0100
+[02/25 07:14:50] cifar100-global-slim-3.0-vgg19 INFO: Epoch 43/100, Acc=0.7056, Val Loss=1.7290, lr=0.0100
+[02/25 07:15:13] cifar100-global-slim-3.0-vgg19 INFO: Epoch 44/100, Acc=0.7067, Val Loss=1.7503, lr=0.0100
+[02/25 07:15:35] cifar100-global-slim-3.0-vgg19 INFO: Epoch 45/100, Acc=0.7042, Val Loss=1.7296, lr=0.0100
+[02/25 07:15:57] cifar100-global-slim-3.0-vgg19 INFO: Epoch 46/100, Acc=0.7121, Val Loss=1.7159, lr=0.0100
+[02/25 07:16:20] cifar100-global-slim-3.0-vgg19 INFO: Epoch 47/100, Acc=0.7067, Val Loss=1.7373, lr=0.0100
+[02/25 07:16:43] cifar100-global-slim-3.0-vgg19 INFO: Epoch 48/100, Acc=0.7000, Val Loss=1.7803, lr=0.0100
+[02/25 07:17:05] cifar100-global-slim-3.0-vgg19 INFO: Epoch 49/100, Acc=0.7149, Val Loss=1.7079, lr=0.0100
+[02/25 07:17:29] cifar100-global-slim-3.0-vgg19 INFO: Epoch 50/100, Acc=0.7069, Val Loss=1.7725, lr=0.0100
+[02/25 07:17:52] cifar100-global-slim-3.0-vgg19 INFO: Epoch 51/100, Acc=0.7095, Val Loss=1.7602, lr=0.0100
+[02/25 07:18:14] cifar100-global-slim-3.0-vgg19 INFO: Epoch 52/100, Acc=0.7130, Val Loss=1.7465, lr=0.0100
+[02/25 07:18:36] cifar100-global-slim-3.0-vgg19 INFO: Epoch 53/100, Acc=0.7127, Val Loss=1.7246, lr=0.0100
+[02/25 07:18:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 54/100, Acc=0.7079, Val Loss=1.7585, lr=0.0100
+[02/25 07:19:21] cifar100-global-slim-3.0-vgg19 INFO: Epoch 55/100, Acc=0.7127, Val Loss=1.7385, lr=0.0100
+[02/25 07:19:43] cifar100-global-slim-3.0-vgg19 INFO: Epoch 56/100, Acc=0.7104, Val Loss=1.8129, lr=0.0100
+[02/25 07:20:06] cifar100-global-slim-3.0-vgg19 INFO: Epoch 57/100, Acc=0.7082, Val Loss=1.7739, lr=0.0100
+[02/25 07:20:28] cifar100-global-slim-3.0-vgg19 INFO: Epoch 58/100, Acc=0.7167, Val Loss=1.7240, lr=0.0100
+[02/25 07:20:51] cifar100-global-slim-3.0-vgg19 INFO: Epoch 59/100, Acc=0.7082, Val Loss=1.7643, lr=0.0100
+[02/25 07:21:13] cifar100-global-slim-3.0-vgg19 INFO: Epoch 60/100, Acc=0.7205, Val Loss=1.6730, lr=0.0010
+[02/25 07:21:36] cifar100-global-slim-3.0-vgg19 INFO: Epoch 61/100, Acc=0.7233, Val Loss=1.6611, lr=0.0010
+[02/25 07:21:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 62/100, Acc=0.7266, Val Loss=1.6492, lr=0.0010
+[02/25 07:22:21] cifar100-global-slim-3.0-vgg19 INFO: Epoch 63/100, Acc=0.7271, Val Loss=1.6523, lr=0.0010
+[02/25 07:22:44] cifar100-global-slim-3.0-vgg19 INFO: Epoch 64/100, Acc=0.7286, Val Loss=1.6525, lr=0.0010
+[02/25 07:23:07] cifar100-global-slim-3.0-vgg19 INFO: Epoch 65/100, Acc=0.7297, Val Loss=1.6508, lr=0.0010
+[02/25 07:23:31] cifar100-global-slim-3.0-vgg19 INFO: Epoch 66/100, Acc=0.7306, Val Loss=1.6528, lr=0.0010
+[02/25 07:23:55] cifar100-global-slim-3.0-vgg19 INFO: Epoch 67/100, Acc=0.7305, Val Loss=1.6555, lr=0.0010
+[02/25 07:24:18] cifar100-global-slim-3.0-vgg19 INFO: Epoch 68/100, Acc=0.7297, Val Loss=1.6531, lr=0.0010
+[02/25 07:24:41] cifar100-global-slim-3.0-vgg19 INFO: Epoch 69/100, Acc=0.7321, Val Loss=1.6618, lr=0.0010
+[02/25 07:25:03] cifar100-global-slim-3.0-vgg19 INFO: Epoch 70/100, Acc=0.7298, Val Loss=1.6511, lr=0.0010
+[02/25 07:25:26] cifar100-global-slim-3.0-vgg19 INFO: Epoch 71/100, Acc=0.7301, Val Loss=1.6515, lr=0.0010
+[02/25 07:25:48] cifar100-global-slim-3.0-vgg19 INFO: Epoch 72/100, Acc=0.7307, Val Loss=1.6571, lr=0.0010
+[02/25 07:26:11] cifar100-global-slim-3.0-vgg19 INFO: Epoch 73/100, Acc=0.7305, Val Loss=1.6606, lr=0.0010
+[02/25 07:26:33] cifar100-global-slim-3.0-vgg19 INFO: Epoch 74/100, Acc=0.7314, Val Loss=1.6584, lr=0.0010
+[02/25 07:26:55] cifar100-global-slim-3.0-vgg19 INFO: Epoch 75/100, Acc=0.7316, Val Loss=1.6671, lr=0.0010
+[02/25 07:27:18] cifar100-global-slim-3.0-vgg19 INFO: Epoch 76/100, Acc=0.7341, Val Loss=1.6600, lr=0.0010
+[02/25 07:27:40] cifar100-global-slim-3.0-vgg19 INFO: Epoch 77/100, Acc=0.7334, Val Loss=1.6614, lr=0.0010
+[02/25 07:28:02] cifar100-global-slim-3.0-vgg19 INFO: Epoch 78/100, Acc=0.7341, Val Loss=1.6651, lr=0.0010
+[02/25 07:28:24] cifar100-global-slim-3.0-vgg19 INFO: Epoch 79/100, Acc=0.7342, Val Loss=1.6670, lr=0.0010
+[02/25 07:28:47] cifar100-global-slim-3.0-vgg19 INFO: Epoch 80/100, Acc=0.7328, Val Loss=1.6684, lr=0.0001
+[02/25 07:29:09] cifar100-global-slim-3.0-vgg19 INFO: Epoch 81/100, Acc=0.7334, Val Loss=1.6673, lr=0.0001
+[02/25 07:29:31] cifar100-global-slim-3.0-vgg19 INFO: Epoch 82/100, Acc=0.7333, Val Loss=1.6596, lr=0.0001
+[02/25 07:29:53] cifar100-global-slim-3.0-vgg19 INFO: Epoch 83/100, Acc=0.7327, Val Loss=1.6624, lr=0.0001
+[02/25 07:30:15] cifar100-global-slim-3.0-vgg19 INFO: Epoch 84/100, Acc=0.7336, Val Loss=1.6685, lr=0.0001
+[02/25 07:30:37] cifar100-global-slim-3.0-vgg19 INFO: Epoch 85/100, Acc=0.7334, Val Loss=1.6621, lr=0.0001
+[02/25 07:31:01] cifar100-global-slim-3.0-vgg19 INFO: Epoch 86/100, Acc=0.7335, Val Loss=1.6711, lr=0.0001
+[02/25 07:31:24] cifar100-global-slim-3.0-vgg19 INFO: Epoch 87/100, Acc=0.7336, Val Loss=1.6642, lr=0.0001
+[02/25 07:31:47] cifar100-global-slim-3.0-vgg19 INFO: Epoch 88/100, Acc=0.7338, Val Loss=1.6626, lr=0.0001
+[02/25 07:32:09] cifar100-global-slim-3.0-vgg19 INFO: Epoch 89/100, Acc=0.7333, Val Loss=1.6644, lr=0.0001
+[02/25 07:32:32] cifar100-global-slim-3.0-vgg19 INFO: Epoch 90/100, Acc=0.7344, Val Loss=1.6647, lr=0.0001
+[02/25 07:32:54] cifar100-global-slim-3.0-vgg19 INFO: Epoch 91/100, Acc=0.7336, Val Loss=1.6655, lr=0.0001
+[02/25 07:33:17] cifar100-global-slim-3.0-vgg19 INFO: Epoch 92/100, Acc=0.7330, Val Loss=1.6634, lr=0.0001
+[02/25 07:33:39] cifar100-global-slim-3.0-vgg19 INFO: Epoch 93/100, Acc=0.7350, Val Loss=1.6647, lr=0.0001
+[02/25 07:34:02] cifar100-global-slim-3.0-vgg19 INFO: Epoch 94/100, Acc=0.7340, Val Loss=1.6636, lr=0.0001
+[02/25 07:34:24] cifar100-global-slim-3.0-vgg19 INFO: Epoch 95/100, Acc=0.7332, Val Loss=1.6717, lr=0.0001
+[02/25 07:34:47] cifar100-global-slim-3.0-vgg19 INFO: Epoch 96/100, Acc=0.7340, Val Loss=1.6703, lr=0.0001
+[02/25 07:35:09] cifar100-global-slim-3.0-vgg19 INFO: Epoch 97/100, Acc=0.7328, Val Loss=1.6636, lr=0.0001
+[02/25 07:35:31] cifar100-global-slim-3.0-vgg19 INFO: Epoch 98/100, Acc=0.7345, Val Loss=1.6593, lr=0.0001
+[02/25 07:35:54] cifar100-global-slim-3.0-vgg19 INFO: Epoch 99/100, Acc=0.7344, Val Loss=1.6621, lr=0.0001
+[02/25 07:35:54] cifar100-global-slim-3.0-vgg19 INFO: Best Acc=0.7350
+[02/25 07:35:54] cifar100-global-slim-3.0-vgg19 INFO: Loading the sparse model from run/cifar100/prune/cifar100-global-slim-3.0-vgg19/reg_cifar100_vgg19_slim_1e-05.pth...
+[02/25 07:35:57] cifar100-global-slim-3.0-vgg19 INFO: Pruning...
+[02/25 07:36:07] cifar100-global-slim-3.0-vgg19 INFO: VGG(
+  (block0): Sequential(
+    (0): Conv2d(3, 7, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(7, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(7, 29, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(29, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block1): Sequential(
+    (0): Conv2d(29, 40, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(40, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(40, 119, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(119, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block2): Sequential(
+    (0): Conv2d(119, 234, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(234, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(234, 237, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(237, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Conv2d(237, 229, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(229, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): Conv2d(229, 252, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (10): BatchNorm2d(252, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block3): Sequential(
+    (0): Conv2d(252, 434, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(434, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(434, 354, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(354, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Conv2d(354, 41, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(41, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): Conv2d(41, 10, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (10): BatchNorm2d(10, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (block4): Sequential(
+    (0): Conv2d(10, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(2, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(2, 9, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(9, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Conv2d(9, 62, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(62, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): Conv2d(62, 170, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (10): BatchNorm2d(170, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (pool0): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (pool4): AdaptiveAvgPool2d(output_size=(1, 1))
+  (classifier): Linear(in_features=170, out_features=100, bias=True)
+)
+[02/25 07:36:10] cifar100-global-slim-3.0-vgg19 INFO: Params: 20.09 M => 4.44 M (22.10%)
+[02/25 07:36:10] cifar100-global-slim-3.0-vgg19 INFO: FLOPs: 512.73 M => 170.45 M (33.24%, 3.01X )
+[02/25 07:36:10] cifar100-global-slim-3.0-vgg19 INFO: Acc: 0.7350 => 0.0100
+[02/25 07:36:10] cifar100-global-slim-3.0-vgg19 INFO: Val Loss: 1.6647 => 5.5150
+[02/25 07:36:10] cifar100-global-slim-3.0-vgg19 INFO: Finetuning...
+[02/25 07:36:32] cifar100-global-slim-3.0-vgg19 INFO: Epoch 0/100, Acc=0.5548, Val Loss=1.7801, lr=0.0100
+[02/25 07:36:55] cifar100-global-slim-3.0-vgg19 INFO: Epoch 1/100, Acc=0.5978, Val Loss=1.7242, lr=0.0100
+[02/25 07:37:18] cifar100-global-slim-3.0-vgg19 INFO: Epoch 2/100, Acc=0.5971, Val Loss=1.7728, lr=0.0100
+[02/25 07:37:42] cifar100-global-slim-3.0-vgg19 INFO: Epoch 3/100, Acc=0.6005, Val Loss=1.7876, lr=0.0100
+[02/25 07:38:05] cifar100-global-slim-3.0-vgg19 INFO: Epoch 4/100, Acc=0.6248, Val Loss=1.7197, lr=0.0100
+[02/25 07:38:29] cifar100-global-slim-3.0-vgg19 INFO: Epoch 5/100, Acc=0.6406, Val Loss=1.5859, lr=0.0100
+[02/25 07:38:52] cifar100-global-slim-3.0-vgg19 INFO: Epoch 6/100, Acc=0.6417, Val Loss=1.6475, lr=0.0100
+[02/25 07:39:14] cifar100-global-slim-3.0-vgg19 INFO: Epoch 7/100, Acc=0.6381, Val Loss=1.5938, lr=0.0100
+[02/25 07:39:36] cifar100-global-slim-3.0-vgg19 INFO: Epoch 8/100, Acc=0.6289, Val Loss=1.7065, lr=0.0100
+[02/25 07:39:58] cifar100-global-slim-3.0-vgg19 INFO: Epoch 9/100, Acc=0.6455, Val Loss=1.6247, lr=0.0100
+[02/25 07:40:21] cifar100-global-slim-3.0-vgg19 INFO: Epoch 10/100, Acc=0.6409, Val Loss=1.6609, lr=0.0100
+[02/25 07:40:43] cifar100-global-slim-3.0-vgg19 INFO: Epoch 11/100, Acc=0.6582, Val Loss=1.5880, lr=0.0100
+[02/25 07:41:05] cifar100-global-slim-3.0-vgg19 INFO: Epoch 12/100, Acc=0.6280, Val Loss=1.7575, lr=0.0100
+[02/25 07:41:28] cifar100-global-slim-3.0-vgg19 INFO: Epoch 13/100, Acc=0.6395, Val Loss=1.6727, lr=0.0100
+[02/25 07:41:50] cifar100-global-slim-3.0-vgg19 INFO: Epoch 14/100, Acc=0.6536, Val Loss=1.6096, lr=0.0100
+[02/25 07:42:12] cifar100-global-slim-3.0-vgg19 INFO: Epoch 15/100, Acc=0.6553, Val Loss=1.5621, lr=0.0100
+[02/25 07:42:34] cifar100-global-slim-3.0-vgg19 INFO: Epoch 16/100, Acc=0.6372, Val Loss=1.7099, lr=0.0100
+[02/25 07:42:57] cifar100-global-slim-3.0-vgg19 INFO: Epoch 17/100, Acc=0.6551, Val Loss=1.6277, lr=0.0100
+[02/25 07:43:19] cifar100-global-slim-3.0-vgg19 INFO: Epoch 18/100, Acc=0.6423, Val Loss=1.6683, lr=0.0100
+[02/25 07:43:41] cifar100-global-slim-3.0-vgg19 INFO: Epoch 19/100, Acc=0.6397, Val Loss=1.6800, lr=0.0100
+[02/25 07:44:04] cifar100-global-slim-3.0-vgg19 INFO: Epoch 20/100, Acc=0.6323, Val Loss=1.7084, lr=0.0100
+[02/25 07:44:26] cifar100-global-slim-3.0-vgg19 INFO: Epoch 21/100, Acc=0.6562, Val Loss=1.6332, lr=0.0100
+[02/25 07:44:50] cifar100-global-slim-3.0-vgg19 INFO: Epoch 22/100, Acc=0.6370, Val Loss=1.6970, lr=0.0100
+[02/25 07:45:13] cifar100-global-slim-3.0-vgg19 INFO: Epoch 23/100, Acc=0.6443, Val Loss=1.6914, lr=0.0100
+[02/25 07:45:36] cifar100-global-slim-3.0-vgg19 INFO: Epoch 24/100, Acc=0.6499, Val Loss=1.6561, lr=0.0100
+[02/25 07:45:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 25/100, Acc=0.6449, Val Loss=1.6775, lr=0.0100
+[02/25 07:46:22] cifar100-global-slim-3.0-vgg19 INFO: Epoch 26/100, Acc=0.6591, Val Loss=1.6369, lr=0.0100
+[02/25 07:46:44] cifar100-global-slim-3.0-vgg19 INFO: Epoch 27/100, Acc=0.6534, Val Loss=1.5758, lr=0.0100
+[02/25 07:47:07] cifar100-global-slim-3.0-vgg19 INFO: Epoch 28/100, Acc=0.6497, Val Loss=1.6248, lr=0.0100
+[02/25 07:47:29] cifar100-global-slim-3.0-vgg19 INFO: Epoch 29/100, Acc=0.6213, Val Loss=1.8045, lr=0.0100
+[02/25 07:47:51] cifar100-global-slim-3.0-vgg19 INFO: Epoch 30/100, Acc=0.6408, Val Loss=1.6810, lr=0.0100
+[02/25 07:48:13] cifar100-global-slim-3.0-vgg19 INFO: Epoch 31/100, Acc=0.6541, Val Loss=1.6126, lr=0.0100
+[02/25 07:48:36] cifar100-global-slim-3.0-vgg19 INFO: Epoch 32/100, Acc=0.6398, Val Loss=1.7098, lr=0.0100
+[02/25 07:48:58] cifar100-global-slim-3.0-vgg19 INFO: Epoch 33/100, Acc=0.6639, Val Loss=1.5661, lr=0.0100
+[02/25 07:49:20] cifar100-global-slim-3.0-vgg19 INFO: Epoch 34/100, Acc=0.6488, Val Loss=1.6704, lr=0.0100
+[02/25 07:49:42] cifar100-global-slim-3.0-vgg19 INFO: Epoch 35/100, Acc=0.6510, Val Loss=1.6266, lr=0.0100
+[02/25 07:50:05] cifar100-global-slim-3.0-vgg19 INFO: Epoch 36/100, Acc=0.6391, Val Loss=1.6940, lr=0.0100
+[02/25 07:50:27] cifar100-global-slim-3.0-vgg19 INFO: Epoch 37/100, Acc=0.6347, Val Loss=1.7207, lr=0.0100
+[02/25 07:50:49] cifar100-global-slim-3.0-vgg19 INFO: Epoch 38/100, Acc=0.6559, Val Loss=1.5950, lr=0.0100
+[02/25 07:51:12] cifar100-global-slim-3.0-vgg19 INFO: Epoch 39/100, Acc=0.6526, Val Loss=1.6366, lr=0.0100
+[02/25 07:51:34] cifar100-global-slim-3.0-vgg19 INFO: Epoch 40/100, Acc=0.6395, Val Loss=1.6950, lr=0.0100
+[02/25 07:51:57] cifar100-global-slim-3.0-vgg19 INFO: Epoch 41/100, Acc=0.6489, Val Loss=1.6370, lr=0.0100
+[02/25 07:52:20] cifar100-global-slim-3.0-vgg19 INFO: Epoch 42/100, Acc=0.6371, Val Loss=1.7263, lr=0.0100
+[02/25 07:52:43] cifar100-global-slim-3.0-vgg19 INFO: Epoch 43/100, Acc=0.6339, Val Loss=1.7531, lr=0.0100
+[02/25 07:53:07] cifar100-global-slim-3.0-vgg19 INFO: Epoch 44/100, Acc=0.6569, Val Loss=1.6345, lr=0.0100
+[02/25 07:53:29] cifar100-global-slim-3.0-vgg19 INFO: Epoch 45/100, Acc=0.6372, Val Loss=1.7434, lr=0.0100
+[02/25 07:53:52] cifar100-global-slim-3.0-vgg19 INFO: Epoch 46/100, Acc=0.6325, Val Loss=1.7575, lr=0.0100
+[02/25 07:54:14] cifar100-global-slim-3.0-vgg19 INFO: Epoch 47/100, Acc=0.6490, Val Loss=1.6354, lr=0.0100
+[02/25 07:54:37] cifar100-global-slim-3.0-vgg19 INFO: Epoch 48/100, Acc=0.6546, Val Loss=1.6049, lr=0.0100
+[02/25 07:54:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 49/100, Acc=0.6574, Val Loss=1.6033, lr=0.0100
+[02/25 07:55:22] cifar100-global-slim-3.0-vgg19 INFO: Epoch 50/100, Acc=0.6446, Val Loss=1.6448, lr=0.0100
+[02/25 07:55:45] cifar100-global-slim-3.0-vgg19 INFO: Epoch 51/100, Acc=0.6394, Val Loss=1.7119, lr=0.0100
+[02/25 07:56:07] cifar100-global-slim-3.0-vgg19 INFO: Epoch 52/100, Acc=0.6465, Val Loss=1.6656, lr=0.0100
+[02/25 07:56:30] cifar100-global-slim-3.0-vgg19 INFO: Epoch 53/100, Acc=0.6401, Val Loss=1.7274, lr=0.0100
+[02/25 07:56:52] cifar100-global-slim-3.0-vgg19 INFO: Epoch 54/100, Acc=0.6455, Val Loss=1.6671, lr=0.0100
+[02/25 07:57:15] cifar100-global-slim-3.0-vgg19 INFO: Epoch 55/100, Acc=0.6468, Val Loss=1.6866, lr=0.0100
+[02/25 07:57:37] cifar100-global-slim-3.0-vgg19 INFO: Epoch 56/100, Acc=0.6377, Val Loss=1.7078, lr=0.0100
+[02/25 07:58:00] cifar100-global-slim-3.0-vgg19 INFO: Epoch 57/100, Acc=0.6536, Val Loss=1.6159, lr=0.0100
+[02/25 07:58:22] cifar100-global-slim-3.0-vgg19 INFO: Epoch 58/100, Acc=0.6409, Val Loss=1.7313, lr=0.0100
+[02/25 07:58:45] cifar100-global-slim-3.0-vgg19 INFO: Epoch 59/100, Acc=0.6515, Val Loss=1.6277, lr=0.0100
+[02/25 07:59:08] cifar100-global-slim-3.0-vgg19 INFO: Epoch 60/100, Acc=0.7054, Val Loss=1.3515, lr=0.0010
+[02/25 07:59:32] cifar100-global-slim-3.0-vgg19 INFO: Epoch 61/100, Acc=0.7077, Val Loss=1.3494, lr=0.0010
+[02/25 07:59:55] cifar100-global-slim-3.0-vgg19 INFO: Epoch 62/100, Acc=0.7082, Val Loss=1.3576, lr=0.0010
+[02/25 08:00:18] cifar100-global-slim-3.0-vgg19 INFO: Epoch 63/100, Acc=0.7086, Val Loss=1.3664, lr=0.0010
+[02/25 08:00:42] cifar100-global-slim-3.0-vgg19 INFO: Epoch 64/100, Acc=0.7108, Val Loss=1.3666, lr=0.0010
+[02/25 08:01:05] cifar100-global-slim-3.0-vgg19 INFO: Epoch 65/100, Acc=0.7145, Val Loss=1.3688, lr=0.0010
+[02/25 08:01:27] cifar100-global-slim-3.0-vgg19 INFO: Epoch 66/100, Acc=0.7111, Val Loss=1.3736, lr=0.0010
+[02/25 08:01:50] cifar100-global-slim-3.0-vgg19 INFO: Epoch 67/100, Acc=0.7131, Val Loss=1.3716, lr=0.0010
+[02/25 08:02:13] cifar100-global-slim-3.0-vgg19 INFO: Epoch 68/100, Acc=0.7132, Val Loss=1.3732, lr=0.0010
+[02/25 08:02:35] cifar100-global-slim-3.0-vgg19 INFO: Epoch 69/100, Acc=0.7133, Val Loss=1.3773, lr=0.0010
+[02/25 08:02:58] cifar100-global-slim-3.0-vgg19 INFO: Epoch 70/100, Acc=0.7135, Val Loss=1.3773, lr=0.0010
+[02/25 08:03:20] cifar100-global-slim-3.0-vgg19 INFO: Epoch 71/100, Acc=0.7131, Val Loss=1.3790, lr=0.0010
+[02/25 08:03:42] cifar100-global-slim-3.0-vgg19 INFO: Epoch 72/100, Acc=0.7142, Val Loss=1.3811, lr=0.0010
+[02/25 08:04:05] cifar100-global-slim-3.0-vgg19 INFO: Epoch 73/100, Acc=0.7148, Val Loss=1.3817, lr=0.0010
+[02/25 08:04:28] cifar100-global-slim-3.0-vgg19 INFO: Epoch 74/100, Acc=0.7131, Val Loss=1.3850, lr=0.0010
+[02/25 08:04:50] cifar100-global-slim-3.0-vgg19 INFO: Epoch 75/100, Acc=0.7147, Val Loss=1.3828, lr=0.0010
+[02/25 08:05:13] cifar100-global-slim-3.0-vgg19 INFO: Epoch 76/100, Acc=0.7148, Val Loss=1.3906, lr=0.0010
+[02/25 08:05:36] cifar100-global-slim-3.0-vgg19 INFO: Epoch 77/100, Acc=0.7153, Val Loss=1.3874, lr=0.0010
+[02/25 08:05:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 78/100, Acc=0.7126, Val Loss=1.3920, lr=0.0010
+[02/25 08:06:22] cifar100-global-slim-3.0-vgg19 INFO: Epoch 79/100, Acc=0.7151, Val Loss=1.3926, lr=0.0010
+[02/25 08:06:45] cifar100-global-slim-3.0-vgg19 INFO: Epoch 80/100, Acc=0.7154, Val Loss=1.3894, lr=0.0001
+[02/25 08:07:08] cifar100-global-slim-3.0-vgg19 INFO: Epoch 81/100, Acc=0.7152, Val Loss=1.3904, lr=0.0001
+[02/25 08:07:30] cifar100-global-slim-3.0-vgg19 INFO: Epoch 82/100, Acc=0.7159, Val Loss=1.3882, lr=0.0001
+[02/25 08:07:53] cifar100-global-slim-3.0-vgg19 INFO: Epoch 83/100, Acc=0.7144, Val Loss=1.3905, lr=0.0001
+[02/25 08:08:15] cifar100-global-slim-3.0-vgg19 INFO: Epoch 84/100, Acc=0.7152, Val Loss=1.3875, lr=0.0001
+[02/25 08:08:37] cifar100-global-slim-3.0-vgg19 INFO: Epoch 85/100, Acc=0.7167, Val Loss=1.3895, lr=0.0001
+[02/25 08:09:00] cifar100-global-slim-3.0-vgg19 INFO: Epoch 86/100, Acc=0.7167, Val Loss=1.3861, lr=0.0001
+[02/25 08:09:22] cifar100-global-slim-3.0-vgg19 INFO: Epoch 87/100, Acc=0.7179, Val Loss=1.3861, lr=0.0001
+[02/25 08:09:45] cifar100-global-slim-3.0-vgg19 INFO: Epoch 88/100, Acc=0.7155, Val Loss=1.3886, lr=0.0001
+[02/25 08:10:07] cifar100-global-slim-3.0-vgg19 INFO: Epoch 89/100, Acc=0.7158, Val Loss=1.3856, lr=0.0001
+[02/25 08:10:29] cifar100-global-slim-3.0-vgg19 INFO: Epoch 90/100, Acc=0.7146, Val Loss=1.3889, lr=0.0001
+[02/25 08:10:52] cifar100-global-slim-3.0-vgg19 INFO: Epoch 91/100, Acc=0.7153, Val Loss=1.3893, lr=0.0001
+[02/25 08:11:14] cifar100-global-slim-3.0-vgg19 INFO: Epoch 92/100, Acc=0.7148, Val Loss=1.3843, lr=0.0001
+[02/25 08:11:37] cifar100-global-slim-3.0-vgg19 INFO: Epoch 93/100, Acc=0.7162, Val Loss=1.3894, lr=0.0001
+[02/25 08:11:59] cifar100-global-slim-3.0-vgg19 INFO: Epoch 94/100, Acc=0.7164, Val Loss=1.3853, lr=0.0001
+[02/25 08:12:23] cifar100-global-slim-3.0-vgg19 INFO: Epoch 95/100, Acc=0.7180, Val Loss=1.3853, lr=0.0001
+[02/25 08:12:46] cifar100-global-slim-3.0-vgg19 INFO: Epoch 96/100, Acc=0.7164, Val Loss=1.3880, lr=0.0001
+[02/25 08:13:09] cifar100-global-slim-3.0-vgg19 INFO: Epoch 97/100, Acc=0.7161, Val Loss=1.3863, lr=0.0001
+[02/25 08:13:33] cifar100-global-slim-3.0-vgg19 INFO: Epoch 98/100, Acc=0.7168, Val Loss=1.3869, lr=0.0001
+[02/25 08:13:55] cifar100-global-slim-3.0-vgg19 INFO: Epoch 99/100, Acc=0.7170, Val Loss=1.3872, lr=0.0001
+[02/25 08:13:55] cifar100-global-slim-3.0-vgg19 INFO: Best Acc=0.7180
+[02/25 08:13:56] cifar100-global-slim-3.0-vgg19 INFO: Params: 4.44 M
+[02/25 08:13:56] cifar100-global-slim-3.0-vgg19 INFO: ops: 170.45 M
+[02/25 08:13:58] cifar100-global-slim-3.0-vgg19 INFO: Acc: 0.7170 Val Loss: 1.3872
+

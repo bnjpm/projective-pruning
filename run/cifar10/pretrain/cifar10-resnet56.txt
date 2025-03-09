@@ -1,0 +1,240 @@
+[02/20 11:52:28] cifar10-resnet56 INFO: mode: pretrain
+[02/20 11:52:28] cifar10-resnet56 INFO: model: resnet56
+[02/20 11:52:28] cifar10-resnet56 INFO: verbose: False
+[02/20 11:52:28] cifar10-resnet56 INFO: dataset: cifar10
+[02/20 11:52:28] cifar10-resnet56 INFO: dataroot: data
+[02/20 11:52:28] cifar10-resnet56 INFO: batch_size: 128
+[02/20 11:52:28] cifar10-resnet56 INFO: total_epochs: 200
+[02/20 11:52:28] cifar10-resnet56 INFO: lr_decay_milestones: 120,160,180
+[02/20 11:52:28] cifar10-resnet56 INFO: lr_decay_gamma: 0.1
+[02/20 11:52:28] cifar10-resnet56 INFO: lr: 0.1
+[02/20 11:52:28] cifar10-resnet56 INFO: restore: None
+[02/20 11:52:28] cifar10-resnet56 INFO: output_dir: run/cifar10/pretrain
+[02/20 11:52:28] cifar10-resnet56 INFO: finetune: False
+[02/20 11:52:28] cifar10-resnet56 INFO: last_epochs: 100
+[02/20 11:52:28] cifar10-resnet56 INFO: reps: 1
+[02/20 11:52:28] cifar10-resnet56 INFO: method: None
+[02/20 11:52:28] cifar10-resnet56 INFO: speed_up: 2
+[02/20 11:52:28] cifar10-resnet56 INFO: max_pruning_ratio: 1.0
+[02/20 11:52:28] cifar10-resnet56 INFO: soft_keeping_ratio: 0.0
+[02/20 11:52:28] cifar10-resnet56 INFO: reg: 0.0005
+[02/20 11:52:28] cifar10-resnet56 INFO: delta_reg: 0.0001
+[02/20 11:52:28] cifar10-resnet56 INFO: weight_decay: 0.0005
+[02/20 11:52:28] cifar10-resnet56 INFO: seed: 1
+[02/20 11:52:28] cifar10-resnet56 INFO: global_pruning: False
+[02/20 11:52:28] cifar10-resnet56 INFO: sl_total_epochs: 100
+[02/20 11:52:28] cifar10-resnet56 INFO: sl_lr: 0.01
+[02/20 11:52:28] cifar10-resnet56 INFO: sl_lr_decay_milestones: 60,80
+[02/20 11:52:28] cifar10-resnet56 INFO: sl_reg_warmup: 0
+[02/20 11:52:28] cifar10-resnet56 INFO: sl_restore: None
+[02/20 11:52:28] cifar10-resnet56 INFO: iterative_steps: 400
+[02/20 11:52:28] cifar10-resnet56 INFO: logger: <Logger cifar10-resnet56 (DEBUG)>
+[02/20 11:52:28] cifar10-resnet56 INFO: device: cuda
+[02/20 11:52:28] cifar10-resnet56 INFO: num_classes: 10
+[02/20 11:52:29] cifar10-resnet56 INFO: Params: 0.86 M
+[02/20 11:52:29] cifar10-resnet56 INFO: ops: 127.12 M
+[02/20 11:53:04] cifar10-resnet56 INFO: Epoch 0/200, Acc=0.3612, Val Loss=1.7340, lr=0.1000
+[02/20 11:53:38] cifar10-resnet56 INFO: Epoch 1/200, Acc=0.5232, Val Loss=1.3236, lr=0.1000
+[02/20 11:54:13] cifar10-resnet56 INFO: Epoch 2/200, Acc=0.5810, Val Loss=1.2974, lr=0.1000
+[02/20 11:54:48] cifar10-resnet56 INFO: Epoch 3/200, Acc=0.7306, Val Loss=0.7662, lr=0.1000
+[02/20 11:55:23] cifar10-resnet56 INFO: Epoch 4/200, Acc=0.6739, Val Loss=1.0006, lr=0.1000
+[02/20 11:55:57] cifar10-resnet56 INFO: Epoch 5/200, Acc=0.7489, Val Loss=0.7464, lr=0.1000
+[02/20 11:56:33] cifar10-resnet56 INFO: Epoch 6/200, Acc=0.7319, Val Loss=0.8314, lr=0.1000
+[02/20 11:57:07] cifar10-resnet56 INFO: Epoch 7/200, Acc=0.6491, Val Loss=1.1480, lr=0.1000
+[02/20 11:57:42] cifar10-resnet56 INFO: Epoch 8/200, Acc=0.7287, Val Loss=0.8320, lr=0.1000
+[02/20 11:58:17] cifar10-resnet56 INFO: Epoch 9/200, Acc=0.7518, Val Loss=0.7201, lr=0.1000
+[02/20 11:58:52] cifar10-resnet56 INFO: Epoch 10/200, Acc=0.5820, Val Loss=1.9916, lr=0.1000
+[02/20 11:59:27] cifar10-resnet56 INFO: Epoch 11/200, Acc=0.7061, Val Loss=0.9152, lr=0.1000
+[02/20 12:00:01] cifar10-resnet56 INFO: Epoch 12/200, Acc=0.7645, Val Loss=0.7159, lr=0.1000
+[02/20 12:00:36] cifar10-resnet56 INFO: Epoch 13/200, Acc=0.7552, Val Loss=0.7298, lr=0.1000
+[02/20 12:01:11] cifar10-resnet56 INFO: Epoch 14/200, Acc=0.7983, Val Loss=0.6202, lr=0.1000
+[02/20 12:01:47] cifar10-resnet56 INFO: Epoch 15/200, Acc=0.7690, Val Loss=0.7319, lr=0.1000
+[02/20 12:02:21] cifar10-resnet56 INFO: Epoch 16/200, Acc=0.7921, Val Loss=0.6322, lr=0.1000
+[02/20 12:02:56] cifar10-resnet56 INFO: Epoch 17/200, Acc=0.7734, Val Loss=0.7234, lr=0.1000
+[02/20 12:03:31] cifar10-resnet56 INFO: Epoch 18/200, Acc=0.7738, Val Loss=0.6554, lr=0.1000
+[02/20 12:04:06] cifar10-resnet56 INFO: Epoch 19/200, Acc=0.7571, Val Loss=0.7384, lr=0.1000
+[02/20 12:04:40] cifar10-resnet56 INFO: Epoch 20/200, Acc=0.7435, Val Loss=0.8183, lr=0.1000
+[02/20 12:05:15] cifar10-resnet56 INFO: Epoch 21/200, Acc=0.7706, Val Loss=0.7317, lr=0.1000
+[02/20 12:05:50] cifar10-resnet56 INFO: Epoch 22/200, Acc=0.8168, Val Loss=0.5525, lr=0.1000
+[02/20 12:06:25] cifar10-resnet56 INFO: Epoch 23/200, Acc=0.7581, Val Loss=0.7786, lr=0.1000
+[02/20 12:07:00] cifar10-resnet56 INFO: Epoch 24/200, Acc=0.8076, Val Loss=0.5646, lr=0.1000
+[02/20 12:07:35] cifar10-resnet56 INFO: Epoch 25/200, Acc=0.7532, Val Loss=0.8502, lr=0.1000
+[02/20 12:08:09] cifar10-resnet56 INFO: Epoch 26/200, Acc=0.7795, Val Loss=0.6841, lr=0.1000
+[02/20 12:08:44] cifar10-resnet56 INFO: Epoch 27/200, Acc=0.8060, Val Loss=0.5795, lr=0.1000
+[02/20 12:09:19] cifar10-resnet56 INFO: Epoch 28/200, Acc=0.7223, Val Loss=0.8283, lr=0.1000
+[02/20 12:09:54] cifar10-resnet56 INFO: Epoch 29/200, Acc=0.7564, Val Loss=0.7207, lr=0.1000
+[02/20 12:10:28] cifar10-resnet56 INFO: Epoch 30/200, Acc=0.8172, Val Loss=0.5636, lr=0.1000
+[02/20 12:11:02] cifar10-resnet56 INFO: Epoch 31/200, Acc=0.6958, Val Loss=1.1271, lr=0.1000
+[02/20 12:11:36] cifar10-resnet56 INFO: Epoch 32/200, Acc=0.8147, Val Loss=0.5486, lr=0.1000
+[02/20 12:12:11] cifar10-resnet56 INFO: Epoch 33/200, Acc=0.8132, Val Loss=0.5531, lr=0.1000
+[02/20 12:12:45] cifar10-resnet56 INFO: Epoch 34/200, Acc=0.8098, Val Loss=0.5905, lr=0.1000
+[02/20 12:13:19] cifar10-resnet56 INFO: Epoch 35/200, Acc=0.7885, Val Loss=0.6242, lr=0.1000
+[02/20 12:13:55] cifar10-resnet56 INFO: Epoch 36/200, Acc=0.7876, Val Loss=0.6368, lr=0.1000
+[02/20 12:14:29] cifar10-resnet56 INFO: Epoch 37/200, Acc=0.7924, Val Loss=0.6657, lr=0.1000
+[02/20 12:15:04] cifar10-resnet56 INFO: Epoch 38/200, Acc=0.8121, Val Loss=0.5652, lr=0.1000
+[02/20 12:15:40] cifar10-resnet56 INFO: Epoch 39/200, Acc=0.8111, Val Loss=0.5502, lr=0.1000
+[02/20 12:16:15] cifar10-resnet56 INFO: Epoch 40/200, Acc=0.7989, Val Loss=0.6262, lr=0.1000
+[02/20 12:16:49] cifar10-resnet56 INFO: Epoch 41/200, Acc=0.7725, Val Loss=0.6865, lr=0.1000
+[02/20 12:17:25] cifar10-resnet56 INFO: Epoch 42/200, Acc=0.8088, Val Loss=0.5588, lr=0.1000
+[02/20 12:18:00] cifar10-resnet56 INFO: Epoch 43/200, Acc=0.7990, Val Loss=0.5874, lr=0.1000
+[02/20 12:18:35] cifar10-resnet56 INFO: Epoch 44/200, Acc=0.8213, Val Loss=0.5247, lr=0.1000
+[02/20 12:19:09] cifar10-resnet56 INFO: Epoch 45/200, Acc=0.7996, Val Loss=0.5945, lr=0.1000
+[02/20 12:19:44] cifar10-resnet56 INFO: Epoch 46/200, Acc=0.8008, Val Loss=0.5908, lr=0.1000
+[02/20 12:20:19] cifar10-resnet56 INFO: Epoch 47/200, Acc=0.8356, Val Loss=0.5010, lr=0.1000
+[02/20 12:20:54] cifar10-resnet56 INFO: Epoch 48/200, Acc=0.7301, Val Loss=0.9373, lr=0.1000
+[02/20 12:21:28] cifar10-resnet56 INFO: Epoch 49/200, Acc=0.7825, Val Loss=0.7160, lr=0.1000
+[02/20 12:22:03] cifar10-resnet56 INFO: Epoch 50/200, Acc=0.8245, Val Loss=0.5277, lr=0.1000
+[02/20 12:22:37] cifar10-resnet56 INFO: Epoch 51/200, Acc=0.8249, Val Loss=0.5172, lr=0.1000
+[02/20 12:23:12] cifar10-resnet56 INFO: Epoch 52/200, Acc=0.7945, Val Loss=0.6566, lr=0.1000
+[02/20 12:23:46] cifar10-resnet56 INFO: Epoch 53/200, Acc=0.7698, Val Loss=0.7477, lr=0.1000
+[02/20 12:24:21] cifar10-resnet56 INFO: Epoch 54/200, Acc=0.7495, Val Loss=0.8428, lr=0.1000
+[02/20 12:24:56] cifar10-resnet56 INFO: Epoch 55/200, Acc=0.7545, Val Loss=0.8067, lr=0.1000
+[02/20 12:25:31] cifar10-resnet56 INFO: Epoch 56/200, Acc=0.8121, Val Loss=0.5563, lr=0.1000
+[02/20 12:26:05] cifar10-resnet56 INFO: Epoch 57/200, Acc=0.7973, Val Loss=0.6260, lr=0.1000
+[02/20 12:26:40] cifar10-resnet56 INFO: Epoch 58/200, Acc=0.7687, Val Loss=0.6991, lr=0.1000
+[02/20 12:27:15] cifar10-resnet56 INFO: Epoch 59/200, Acc=0.7233, Val Loss=0.8357, lr=0.1000
+[02/20 12:27:50] cifar10-resnet56 INFO: Epoch 60/200, Acc=0.7670, Val Loss=0.7201, lr=0.1000
+[02/20 12:28:25] cifar10-resnet56 INFO: Epoch 61/200, Acc=0.7962, Val Loss=0.6177, lr=0.1000
+[02/20 12:29:00] cifar10-resnet56 INFO: Epoch 62/200, Acc=0.8340, Val Loss=0.4949, lr=0.1000
+[02/20 12:29:34] cifar10-resnet56 INFO: Epoch 63/200, Acc=0.7599, Val Loss=0.7806, lr=0.1000
+[02/20 12:30:10] cifar10-resnet56 INFO: Epoch 64/200, Acc=0.7447, Val Loss=0.8149, lr=0.1000
+[02/20 12:30:45] cifar10-resnet56 INFO: Epoch 65/200, Acc=0.7190, Val Loss=0.9310, lr=0.1000
+[02/20 12:31:20] cifar10-resnet56 INFO: Epoch 66/200, Acc=0.8125, Val Loss=0.5654, lr=0.1000
+[02/20 12:31:54] cifar10-resnet56 INFO: Epoch 67/200, Acc=0.8017, Val Loss=0.6237, lr=0.1000
+[02/20 12:32:29] cifar10-resnet56 INFO: Epoch 68/200, Acc=0.7975, Val Loss=0.6187, lr=0.1000
+[02/20 12:33:04] cifar10-resnet56 INFO: Epoch 69/200, Acc=0.7405, Val Loss=0.8616, lr=0.1000
+[02/20 12:33:38] cifar10-resnet56 INFO: Epoch 70/200, Acc=0.8334, Val Loss=0.5120, lr=0.1000
+[02/20 12:34:13] cifar10-resnet56 INFO: Epoch 71/200, Acc=0.8242, Val Loss=0.5174, lr=0.1000
+[02/20 12:34:47] cifar10-resnet56 INFO: Epoch 72/200, Acc=0.7746, Val Loss=0.6909, lr=0.1000
+[02/20 12:35:22] cifar10-resnet56 INFO: Epoch 73/200, Acc=0.7769, Val Loss=0.7154, lr=0.1000
+[02/20 12:35:56] cifar10-resnet56 INFO: Epoch 74/200, Acc=0.8206, Val Loss=0.5507, lr=0.1000
+[02/20 12:36:31] cifar10-resnet56 INFO: Epoch 75/200, Acc=0.7729, Val Loss=0.7011, lr=0.1000
+[02/20 12:37:05] cifar10-resnet56 INFO: Epoch 76/200, Acc=0.8031, Val Loss=0.5814, lr=0.1000
+[02/20 12:37:39] cifar10-resnet56 INFO: Epoch 77/200, Acc=0.8075, Val Loss=0.5921, lr=0.1000
+[02/20 12:38:13] cifar10-resnet56 INFO: Epoch 78/200, Acc=0.8294, Val Loss=0.5148, lr=0.1000
+[02/20 12:38:48] cifar10-resnet56 INFO: Epoch 79/200, Acc=0.8049, Val Loss=0.6226, lr=0.1000
+[02/20 12:39:22] cifar10-resnet56 INFO: Epoch 80/200, Acc=0.7637, Val Loss=0.7577, lr=0.1000
+[02/20 12:39:57] cifar10-resnet56 INFO: Epoch 81/200, Acc=0.7661, Val Loss=0.7496, lr=0.1000
+[02/20 12:40:32] cifar10-resnet56 INFO: Epoch 82/200, Acc=0.7890, Val Loss=0.6538, lr=0.1000
+[02/20 12:41:06] cifar10-resnet56 INFO: Epoch 83/200, Acc=0.7870, Val Loss=0.6360, lr=0.1000
+[02/20 12:41:41] cifar10-resnet56 INFO: Epoch 84/200, Acc=0.7613, Val Loss=0.7040, lr=0.1000
+[02/20 12:42:15] cifar10-resnet56 INFO: Epoch 85/200, Acc=0.8245, Val Loss=0.5370, lr=0.1000
+[02/20 12:42:50] cifar10-resnet56 INFO: Epoch 86/200, Acc=0.7815, Val Loss=0.6847, lr=0.1000
+[02/20 12:43:25] cifar10-resnet56 INFO: Epoch 87/200, Acc=0.7605, Val Loss=0.7840, lr=0.1000
+[02/20 12:44:00] cifar10-resnet56 INFO: Epoch 88/200, Acc=0.8395, Val Loss=0.4678, lr=0.1000
+[02/20 12:44:35] cifar10-resnet56 INFO: Epoch 89/200, Acc=0.6784, Val Loss=1.1534, lr=0.1000
+[02/20 12:45:09] cifar10-resnet56 INFO: Epoch 90/200, Acc=0.8274, Val Loss=0.5213, lr=0.1000
+[02/20 12:45:44] cifar10-resnet56 INFO: Epoch 91/200, Acc=0.8439, Val Loss=0.4729, lr=0.1000
+[02/20 12:46:19] cifar10-resnet56 INFO: Epoch 92/200, Acc=0.7999, Val Loss=0.5920, lr=0.1000
+[02/20 12:46:54] cifar10-resnet56 INFO: Epoch 93/200, Acc=0.8134, Val Loss=0.5636, lr=0.1000
+[02/20 12:47:29] cifar10-resnet56 INFO: Epoch 94/200, Acc=0.7325, Val Loss=0.8290, lr=0.1000
+[02/20 12:48:04] cifar10-resnet56 INFO: Epoch 95/200, Acc=0.7435, Val Loss=0.8510, lr=0.1000
+[02/20 12:48:39] cifar10-resnet56 INFO: Epoch 96/200, Acc=0.8250, Val Loss=0.5384, lr=0.1000
+[02/20 12:49:14] cifar10-resnet56 INFO: Epoch 97/200, Acc=0.8562, Val Loss=0.4249, lr=0.1000
+[02/20 12:49:49] cifar10-resnet56 INFO: Epoch 98/200, Acc=0.8057, Val Loss=0.6104, lr=0.1000
+[02/20 12:50:24] cifar10-resnet56 INFO: Epoch 99/200, Acc=0.7967, Val Loss=0.6506, lr=0.1000
+[02/20 12:50:59] cifar10-resnet56 INFO: Epoch 100/200, Acc=0.7016, Val Loss=1.2373, lr=0.1000
+[02/20 12:51:34] cifar10-resnet56 INFO: Epoch 101/200, Acc=0.8461, Val Loss=0.4581, lr=0.1000
+[02/20 12:52:10] cifar10-resnet56 INFO: Epoch 102/200, Acc=0.8348, Val Loss=0.5016, lr=0.1000
+[02/20 12:52:45] cifar10-resnet56 INFO: Epoch 103/200, Acc=0.8186, Val Loss=0.5200, lr=0.1000
+[02/20 12:53:19] cifar10-resnet56 INFO: Epoch 104/200, Acc=0.8203, Val Loss=0.5540, lr=0.1000
+[02/20 12:53:54] cifar10-resnet56 INFO: Epoch 105/200, Acc=0.8190, Val Loss=0.5410, lr=0.1000
+[02/20 12:54:29] cifar10-resnet56 INFO: Epoch 106/200, Acc=0.8192, Val Loss=0.5338, lr=0.1000
+[02/20 12:55:05] cifar10-resnet56 INFO: Epoch 107/200, Acc=0.7974, Val Loss=0.6075, lr=0.1000
+[02/20 12:55:39] cifar10-resnet56 INFO: Epoch 108/200, Acc=0.8455, Val Loss=0.4689, lr=0.1000
+[02/20 12:56:14] cifar10-resnet56 INFO: Epoch 109/200, Acc=0.8150, Val Loss=0.5456, lr=0.1000
+[02/20 12:56:48] cifar10-resnet56 INFO: Epoch 110/200, Acc=0.8243, Val Loss=0.5318, lr=0.1000
+[02/20 12:57:23] cifar10-resnet56 INFO: Epoch 111/200, Acc=0.8191, Val Loss=0.5194, lr=0.1000
+[02/20 12:57:58] cifar10-resnet56 INFO: Epoch 112/200, Acc=0.7989, Val Loss=0.6524, lr=0.1000
+[02/20 12:58:32] cifar10-resnet56 INFO: Epoch 113/200, Acc=0.8032, Val Loss=0.6093, lr=0.1000
+[02/20 12:59:07] cifar10-resnet56 INFO: Epoch 114/200, Acc=0.7566, Val Loss=0.8528, lr=0.1000
+[02/20 12:59:42] cifar10-resnet56 INFO: Epoch 115/200, Acc=0.7916, Val Loss=0.6375, lr=0.1000
+[02/20 13:00:20] cifar10-resnet56 INFO: Epoch 116/200, Acc=0.7590, Val Loss=0.7602, lr=0.1000
+[02/20 13:01:00] cifar10-resnet56 INFO: Epoch 117/200, Acc=0.8175, Val Loss=0.5418, lr=0.1000
+[02/20 13:01:38] cifar10-resnet56 INFO: Epoch 118/200, Acc=0.8199, Val Loss=0.5322, lr=0.1000
+[02/20 13:02:13] cifar10-resnet56 INFO: Epoch 119/200, Acc=0.8245, Val Loss=0.5377, lr=0.1000
+[02/20 13:02:48] cifar10-resnet56 INFO: Epoch 120/200, Acc=0.9132, Val Loss=0.2588, lr=0.0100
+[02/20 13:03:22] cifar10-resnet56 INFO: Epoch 121/200, Acc=0.9198, Val Loss=0.2433, lr=0.0100
+[02/20 13:03:56] cifar10-resnet56 INFO: Epoch 122/200, Acc=0.9195, Val Loss=0.2384, lr=0.0100
+[02/20 13:04:31] cifar10-resnet56 INFO: Epoch 123/200, Acc=0.9225, Val Loss=0.2337, lr=0.0100
+[02/20 13:05:06] cifar10-resnet56 INFO: Epoch 124/200, Acc=0.9233, Val Loss=0.2345, lr=0.0100
+[02/20 13:05:40] cifar10-resnet56 INFO: Epoch 125/200, Acc=0.9222, Val Loss=0.2420, lr=0.0100
+[02/20 13:06:15] cifar10-resnet56 INFO: Epoch 126/200, Acc=0.9225, Val Loss=0.2458, lr=0.0100
+[02/20 13:06:49] cifar10-resnet56 INFO: Epoch 127/200, Acc=0.9208, Val Loss=0.2572, lr=0.0100
+[02/20 13:07:24] cifar10-resnet56 INFO: Epoch 128/200, Acc=0.9248, Val Loss=0.2435, lr=0.0100
+[02/20 13:07:58] cifar10-resnet56 INFO: Epoch 129/200, Acc=0.9234, Val Loss=0.2541, lr=0.0100
+[02/20 13:08:33] cifar10-resnet56 INFO: Epoch 130/200, Acc=0.9235, Val Loss=0.2540, lr=0.0100
+[02/20 13:09:08] cifar10-resnet56 INFO: Epoch 131/200, Acc=0.9203, Val Loss=0.2556, lr=0.0100
+[02/20 13:09:43] cifar10-resnet56 INFO: Epoch 132/200, Acc=0.9196, Val Loss=0.2651, lr=0.0100
+[02/20 13:10:19] cifar10-resnet56 INFO: Epoch 133/200, Acc=0.9196, Val Loss=0.2745, lr=0.0100
+[02/20 13:10:54] cifar10-resnet56 INFO: Epoch 134/200, Acc=0.9187, Val Loss=0.2633, lr=0.0100
+[02/20 13:11:29] cifar10-resnet56 INFO: Epoch 135/200, Acc=0.9194, Val Loss=0.2737, lr=0.0100
+[02/20 13:12:05] cifar10-resnet56 INFO: Epoch 136/200, Acc=0.9199, Val Loss=0.2612, lr=0.0100
+[02/20 13:12:40] cifar10-resnet56 INFO: Epoch 137/200, Acc=0.9193, Val Loss=0.2732, lr=0.0100
+[02/20 13:13:16] cifar10-resnet56 INFO: Epoch 138/200, Acc=0.9125, Val Loss=0.3077, lr=0.0100
+[02/20 13:13:51] cifar10-resnet56 INFO: Epoch 139/200, Acc=0.9234, Val Loss=0.2671, lr=0.0100
+[02/20 13:14:26] cifar10-resnet56 INFO: Epoch 140/200, Acc=0.9203, Val Loss=0.2775, lr=0.0100
+[02/20 13:15:01] cifar10-resnet56 INFO: Epoch 141/200, Acc=0.9222, Val Loss=0.2637, lr=0.0100
+[02/20 13:15:37] cifar10-resnet56 INFO: Epoch 142/200, Acc=0.9179, Val Loss=0.2870, lr=0.0100
+[02/20 13:16:13] cifar10-resnet56 INFO: Epoch 143/200, Acc=0.9194, Val Loss=0.2758, lr=0.0100
+[02/20 13:16:48] cifar10-resnet56 INFO: Epoch 144/200, Acc=0.9164, Val Loss=0.2966, lr=0.0100
+[02/20 13:17:24] cifar10-resnet56 INFO: Epoch 145/200, Acc=0.9194, Val Loss=0.2792, lr=0.0100
+[02/20 13:17:59] cifar10-resnet56 INFO: Epoch 146/200, Acc=0.9148, Val Loss=0.2921, lr=0.0100
+[02/20 13:18:35] cifar10-resnet56 INFO: Epoch 147/200, Acc=0.9159, Val Loss=0.2955, lr=0.0100
+[02/20 13:19:10] cifar10-resnet56 INFO: Epoch 148/200, Acc=0.9046, Val Loss=0.3286, lr=0.0100
+[02/20 13:19:46] cifar10-resnet56 INFO: Epoch 149/200, Acc=0.9165, Val Loss=0.2860, lr=0.0100
+[02/20 13:20:21] cifar10-resnet56 INFO: Epoch 150/200, Acc=0.9229, Val Loss=0.2718, lr=0.0100
+[02/20 13:20:56] cifar10-resnet56 INFO: Epoch 151/200, Acc=0.9179, Val Loss=0.2777, lr=0.0100
+[02/20 13:21:31] cifar10-resnet56 INFO: Epoch 152/200, Acc=0.9179, Val Loss=0.2810, lr=0.0100
+[02/20 13:22:06] cifar10-resnet56 INFO: Epoch 153/200, Acc=0.9143, Val Loss=0.2937, lr=0.0100
+[02/20 13:22:41] cifar10-resnet56 INFO: Epoch 154/200, Acc=0.9093, Val Loss=0.3037, lr=0.0100
+[02/20 13:23:16] cifar10-resnet56 INFO: Epoch 155/200, Acc=0.9191, Val Loss=0.2919, lr=0.0100
+[02/20 13:23:51] cifar10-resnet56 INFO: Epoch 156/200, Acc=0.9129, Val Loss=0.2968, lr=0.0100
+[02/20 13:24:26] cifar10-resnet56 INFO: Epoch 157/200, Acc=0.9099, Val Loss=0.3173, lr=0.0100
+[02/20 13:25:01] cifar10-resnet56 INFO: Epoch 158/200, Acc=0.9118, Val Loss=0.3070, lr=0.0100
+[02/20 13:25:36] cifar10-resnet56 INFO: Epoch 159/200, Acc=0.9166, Val Loss=0.2907, lr=0.0100
+[02/20 13:26:11] cifar10-resnet56 INFO: Epoch 160/200, Acc=0.9319, Val Loss=0.2469, lr=0.0010
+[02/20 13:26:46] cifar10-resnet56 INFO: Epoch 161/200, Acc=0.9315, Val Loss=0.2458, lr=0.0010
+[02/20 13:27:20] cifar10-resnet56 INFO: Epoch 162/200, Acc=0.9338, Val Loss=0.2466, lr=0.0010
+[02/20 13:27:55] cifar10-resnet56 INFO: Epoch 163/200, Acc=0.9357, Val Loss=0.2401, lr=0.0010
+[02/20 13:28:30] cifar10-resnet56 INFO: Epoch 164/200, Acc=0.9363, Val Loss=0.2431, lr=0.0010
+[02/20 13:29:04] cifar10-resnet56 INFO: Epoch 165/200, Acc=0.9367, Val Loss=0.2462, lr=0.0010
+[02/20 13:29:39] cifar10-resnet56 INFO: Epoch 166/200, Acc=0.9366, Val Loss=0.2450, lr=0.0010
+[02/20 13:30:14] cifar10-resnet56 INFO: Epoch 167/200, Acc=0.9360, Val Loss=0.2487, lr=0.0010
+[02/20 13:30:49] cifar10-resnet56 INFO: Epoch 168/200, Acc=0.9376, Val Loss=0.2490, lr=0.0010
+[02/20 13:31:24] cifar10-resnet56 INFO: Epoch 169/200, Acc=0.9363, Val Loss=0.2496, lr=0.0010
+[02/20 13:31:59] cifar10-resnet56 INFO: Epoch 170/200, Acc=0.9361, Val Loss=0.2491, lr=0.0010
+[02/20 13:32:34] cifar10-resnet56 INFO: Epoch 171/200, Acc=0.9374, Val Loss=0.2529, lr=0.0010
+[02/20 13:33:10] cifar10-resnet56 INFO: Epoch 172/200, Acc=0.9388, Val Loss=0.2525, lr=0.0010
+[02/20 13:33:45] cifar10-resnet56 INFO: Epoch 173/200, Acc=0.9378, Val Loss=0.2521, lr=0.0010
+[02/20 13:34:20] cifar10-resnet56 INFO: Epoch 174/200, Acc=0.9368, Val Loss=0.2550, lr=0.0010
+[02/20 13:34:54] cifar10-resnet56 INFO: Epoch 175/200, Acc=0.9352, Val Loss=0.2578, lr=0.0010
+[02/20 13:35:30] cifar10-resnet56 INFO: Epoch 176/200, Acc=0.9372, Val Loss=0.2575, lr=0.0010
+[02/20 13:36:05] cifar10-resnet56 INFO: Epoch 177/200, Acc=0.9372, Val Loss=0.2563, lr=0.0010
+[02/20 13:36:39] cifar10-resnet56 INFO: Epoch 178/200, Acc=0.9381, Val Loss=0.2548, lr=0.0010
+[02/20 13:37:14] cifar10-resnet56 INFO: Epoch 179/200, Acc=0.9392, Val Loss=0.2587, lr=0.0010
+[02/20 13:37:49] cifar10-resnet56 INFO: Epoch 180/200, Acc=0.9389, Val Loss=0.2586, lr=0.0001
+[02/20 13:38:24] cifar10-resnet56 INFO: Epoch 181/200, Acc=0.9386, Val Loss=0.2566, lr=0.0001
+[02/20 13:38:59] cifar10-resnet56 INFO: Epoch 182/200, Acc=0.9386, Val Loss=0.2587, lr=0.0001
+[02/20 13:39:34] cifar10-resnet56 INFO: Epoch 183/200, Acc=0.9382, Val Loss=0.2552, lr=0.0001
+[02/20 13:40:12] cifar10-resnet56 INFO: Epoch 184/200, Acc=0.9392, Val Loss=0.2554, lr=0.0001
+[02/20 13:40:47] cifar10-resnet56 INFO: Epoch 185/200, Acc=0.9385, Val Loss=0.2552, lr=0.0001
+[02/20 13:41:21] cifar10-resnet56 INFO: Epoch 186/200, Acc=0.9389, Val Loss=0.2547, lr=0.0001
+[02/20 13:41:56] cifar10-resnet56 INFO: Epoch 187/200, Acc=0.9387, Val Loss=0.2567, lr=0.0001
+[02/20 13:42:31] cifar10-resnet56 INFO: Epoch 188/200, Acc=0.9390, Val Loss=0.2543, lr=0.0001
+[02/20 13:43:06] cifar10-resnet56 INFO: Epoch 189/200, Acc=0.9380, Val Loss=0.2584, lr=0.0001
+[02/20 13:43:41] cifar10-resnet56 INFO: Epoch 190/200, Acc=0.9387, Val Loss=0.2575, lr=0.0001
+[02/20 13:44:16] cifar10-resnet56 INFO: Epoch 191/200, Acc=0.9387, Val Loss=0.2557, lr=0.0001
+[02/20 13:44:51] cifar10-resnet56 INFO: Epoch 192/200, Acc=0.9386, Val Loss=0.2581, lr=0.0001
+[02/20 13:45:27] cifar10-resnet56 INFO: Epoch 193/200, Acc=0.9385, Val Loss=0.2543, lr=0.0001
+[02/20 13:46:02] cifar10-resnet56 INFO: Epoch 194/200, Acc=0.9392, Val Loss=0.2544, lr=0.0001
+[02/20 13:46:38] cifar10-resnet56 INFO: Epoch 195/200, Acc=0.9381, Val Loss=0.2545, lr=0.0001
+[02/20 13:47:13] cifar10-resnet56 INFO: Epoch 196/200, Acc=0.9385, Val Loss=0.2561, lr=0.0001
+[02/20 13:47:48] cifar10-resnet56 INFO: Epoch 197/200, Acc=0.9389, Val Loss=0.2535, lr=0.0001
+[02/20 13:48:23] cifar10-resnet56 INFO: Epoch 198/200, Acc=0.9383, Val Loss=0.2556, lr=0.0001
+[02/20 13:48:59] cifar10-resnet56 INFO: Epoch 199/200, Acc=0.9389, Val Loss=0.2540, lr=0.0001
+[02/20 13:48:59] cifar10-resnet56 INFO: Best Acc=0.9392
+[02/20 13:48:59] cifar10-resnet56 INFO: Params: 0.86 M
+[02/20 13:48:59] cifar10-resnet56 INFO: ops: 127.12 M
+[02/20 13:49:02] cifar10-resnet56 INFO: Acc: 0.9389 Val Loss: 0.2540
+

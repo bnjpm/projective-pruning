@@ -1,0 +1,10 @@
+method,dataset,model,2.0,3.0
+Random,modelnet40,pointnet,0.8517,0.8840
+MagnitudeL2,modelnet40,pointnet,0.8902,0.8886
+Slimming,modelnet40,pointnet,0.8926,0.8934
+FPGM,modelnet40,pointnet,0.8878,0.8870
+EigenDamage,modelnet40,pointnet,0.8912,0.8851
+LAMP,modelnet40,pointnet,0.8906,0.8849
+DepGraph,modelnet40,pointnet,0.8878,0.8886
+DepGraph-SL,modelnet40,pointnet,0.8938,0.8926
+\bf{Projective (ours)},modelnet40,pointnet,0.8966,0.8963

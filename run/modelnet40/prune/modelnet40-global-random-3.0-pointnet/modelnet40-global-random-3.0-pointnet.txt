@@ -1,0 +1,161 @@
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: mode: prune
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: model: pointnet
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: verbose: False
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: dataset: modelnet40
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: dataroot: data
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: batch_size: 32
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: total_epochs: 100
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: lr_decay_milestones: 50,80
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: lr_decay_gamma: 0.1
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: lr: 0.01
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: restore: run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: output_dir: run/modelnet40/prune/modelnet40-global-random-3.0-pointnet
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: finetune: True
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: last_epochs: 100
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: reps: 1
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: method: random
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: speed_up: 3.0
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: max_pruning_ratio: 1.0
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: soft_keeping_ratio: 0.0
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: reg: 1e-05
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: delta_reg: 0.0001
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: weight_decay: 0.0005
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: seed: 1
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: global_pruning: True
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: sl_total_epochs: 100
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: sl_lr: 0.01
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: sl_lr_decay_milestones: 60,80
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: sl_reg_warmup: 0
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: sl_restore: None
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: iterative_steps: 400
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: logger: <Logger modelnet40-global-random-3.0-pointnet (DEBUG)>
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: device: cuda
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: num_classes: 40
+[02/23 01:23:59] modelnet40-global-random-3.0-pointnet INFO: Loading model from run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/23 01:24:00] modelnet40-global-random-3.0-pointnet INFO: Pruning...
+[02/23 01:24:01] modelnet40-global-random-3.0-pointnet INFO: PointNet(
+  (conv1): Conv1d(3, 1, kernel_size=(1,), stride=(1,), bias=False)
+  (conv2): Conv1d(1, 1, kernel_size=(1,), stride=(1,), bias=False)
+  (conv3): Conv1d(1, 1, kernel_size=(1,), stride=(1,), bias=False)
+  (conv4): Conv1d(1, 45, kernel_size=(1,), stride=(1,), bias=False)
+  (conv5): Conv1d(45, 1965, kernel_size=(1,), stride=(1,), bias=False)
+  (bn1): BatchNorm1d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn2): BatchNorm1d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn3): BatchNorm1d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn4): BatchNorm1d(45, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn5): BatchNorm1d(1965, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear1): Linear(in_features=1965, out_features=429, bias=False)
+  (bn6): BatchNorm1d(429, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dp1): Dropout(p=0.5, inplace=False)
+  (linear2): Linear(in_features=429, out_features=40, bias=True)
+)
+[02/23 01:24:02] modelnet40-global-random-3.0-pointnet INFO: Params: 1.35 M => 0.95 M (70.45%)
+[02/23 01:24:02] modelnet40-global-random-3.0-pointnet INFO: FLOPs: 291.33 M => 95.58 M (32.81%, 3.05X )
+[02/23 01:24:02] modelnet40-global-random-3.0-pointnet INFO: Acc: 0.8861 => 0.0405
+[02/23 01:24:02] modelnet40-global-random-3.0-pointnet INFO: Val Loss: 0.3951 => 13.2318
+[02/23 01:24:02] modelnet40-global-random-3.0-pointnet INFO: Finetuning...
+[03/23 01:24:14] modelnet40-global-random-3.0-pointnet INFO: Epoch 0/100, Acc=0.8301, Val Loss=3.3020, lr=0.0100
+[02/23 01:24:25] modelnet40-global-random-3.0-pointnet INFO: Epoch 1/100, Acc=0.8317, Val Loss=3.2546, lr=0.0100
+[02/23 01:24:37] modelnet40-global-random-3.0-pointnet INFO: Epoch 2/100, Acc=0.8256, Val Loss=3.2702, lr=0.0100
+[02/23 01:24:48] modelnet40-global-random-3.0-pointnet INFO: Epoch 3/100, Acc=0.8422, Val Loss=3.2579, lr=0.0100
+[02/23 01:25:00] modelnet40-global-random-3.0-pointnet INFO: Epoch 4/100, Acc=0.8333, Val Loss=3.2855, lr=0.0100
+[02/23 01:25:12] modelnet40-global-random-3.0-pointnet INFO: Epoch 5/100, Acc=0.8528, Val Loss=3.1618, lr=0.0100
+[02/23 01:25:23] modelnet40-global-random-3.0-pointnet INFO: Epoch 6/100, Acc=0.7989, Val Loss=3.3859, lr=0.0100
+[02/23 01:25:35] modelnet40-global-random-3.0-pointnet INFO: Epoch 7/100, Acc=0.8467, Val Loss=3.1498, lr=0.0100
+[02/23 01:25:46] modelnet40-global-random-3.0-pointnet INFO: Epoch 8/100, Acc=0.8499, Val Loss=3.1404, lr=0.0100
+[02/23 01:25:57] modelnet40-global-random-3.0-pointnet INFO: Epoch 9/100, Acc=0.8621, Val Loss=3.1081, lr=0.0100
+[02/23 01:26:09] modelnet40-global-random-3.0-pointnet INFO: Epoch 10/100, Acc=0.8621, Val Loss=3.1099, lr=0.0100
+[02/23 01:26:20] modelnet40-global-random-3.0-pointnet INFO: Epoch 11/100, Acc=0.8613, Val Loss=3.1185, lr=0.0100
+[02/23 01:26:31] modelnet40-global-random-3.0-pointnet INFO: Epoch 12/100, Acc=0.8536, Val Loss=3.1055, lr=0.0100
+[02/23 01:26:42] modelnet40-global-random-3.0-pointnet INFO: Epoch 13/100, Acc=0.8487, Val Loss=3.0863, lr=0.0100
+[02/23 01:26:54] modelnet40-global-random-3.0-pointnet INFO: Epoch 14/100, Acc=0.8661, Val Loss=3.0659, lr=0.0100
+[02/23 01:27:05] modelnet40-global-random-3.0-pointnet INFO: Epoch 15/100, Acc=0.8520, Val Loss=3.1209, lr=0.0100
+[02/23 01:27:16] modelnet40-global-random-3.0-pointnet INFO: Epoch 16/100, Acc=0.8576, Val Loss=3.0857, lr=0.0100
+[02/23 01:27:28] modelnet40-global-random-3.0-pointnet INFO: Epoch 17/100, Acc=0.8584, Val Loss=3.0834, lr=0.0100
+[02/23 01:27:39] modelnet40-global-random-3.0-pointnet INFO: Epoch 18/100, Acc=0.8678, Val Loss=3.0841, lr=0.0100
+[02/23 01:27:50] modelnet40-global-random-3.0-pointnet INFO: Epoch 19/100, Acc=0.8467, Val Loss=3.0995, lr=0.0100
+[02/23 01:28:01] modelnet40-global-random-3.0-pointnet INFO: Epoch 20/100, Acc=0.8520, Val Loss=3.1053, lr=0.0100
+[02/23 01:28:12] modelnet40-global-random-3.0-pointnet INFO: Epoch 21/100, Acc=0.8548, Val Loss=3.0926, lr=0.0100
+[02/23 01:28:23] modelnet40-global-random-3.0-pointnet INFO: Epoch 22/100, Acc=0.8710, Val Loss=3.0935, lr=0.0100
+[02/23 01:28:34] modelnet40-global-random-3.0-pointnet INFO: Epoch 23/100, Acc=0.8682, Val Loss=3.0746, lr=0.0100
+[02/23 01:28:46] modelnet40-global-random-3.0-pointnet INFO: Epoch 24/100, Acc=0.8568, Val Loss=3.1027, lr=0.0100
+[02/23 01:28:57] modelnet40-global-random-3.0-pointnet INFO: Epoch 25/100, Acc=0.8783, Val Loss=3.0937, lr=0.0100
+[02/23 01:29:08] modelnet40-global-random-3.0-pointnet INFO: Epoch 26/100, Acc=0.8548, Val Loss=3.0864, lr=0.0100
+[02/23 01:29:19] modelnet40-global-random-3.0-pointnet INFO: Epoch 27/100, Acc=0.8548, Val Loss=3.0703, lr=0.0100
+[02/23 01:29:30] modelnet40-global-random-3.0-pointnet INFO: Epoch 28/100, Acc=0.8499, Val Loss=3.0995, lr=0.0100
+[02/23 01:29:41] modelnet40-global-random-3.0-pointnet INFO: Epoch 29/100, Acc=0.8609, Val Loss=3.1133, lr=0.0100
+[02/23 01:29:52] modelnet40-global-random-3.0-pointnet INFO: Epoch 30/100, Acc=0.8520, Val Loss=3.0829, lr=0.0100
+[02/23 01:30:03] modelnet40-global-random-3.0-pointnet INFO: Epoch 31/100, Acc=0.8483, Val Loss=3.1030, lr=0.0100
+[02/23 01:30:14] modelnet40-global-random-3.0-pointnet INFO: Epoch 32/100, Acc=0.8507, Val Loss=3.0915, lr=0.0100
+[02/23 01:30:25] modelnet40-global-random-3.0-pointnet INFO: Epoch 33/100, Acc=0.8613, Val Loss=3.1098, lr=0.0100
+[02/23 01:30:36] modelnet40-global-random-3.0-pointnet INFO: Epoch 34/100, Acc=0.8682, Val Loss=3.0962, lr=0.0100
+[02/23 01:30:47] modelnet40-global-random-3.0-pointnet INFO: Epoch 35/100, Acc=0.8568, Val Loss=3.1188, lr=0.0100
+[02/23 01:30:58] modelnet40-global-random-3.0-pointnet INFO: Epoch 36/100, Acc=0.8540, Val Loss=3.1014, lr=0.0100
+[02/23 01:31:09] modelnet40-global-random-3.0-pointnet INFO: Epoch 37/100, Acc=0.8755, Val Loss=3.0671, lr=0.0100
+[02/23 01:31:20] modelnet40-global-random-3.0-pointnet INFO: Epoch 38/100, Acc=0.8200, Val Loss=3.1853, lr=0.0100
+[02/23 01:31:31] modelnet40-global-random-3.0-pointnet INFO: Epoch 39/100, Acc=0.8548, Val Loss=3.0809, lr=0.0100
+[02/23 01:31:42] modelnet40-global-random-3.0-pointnet INFO: Epoch 40/100, Acc=0.8536, Val Loss=3.0866, lr=0.0100
+[02/23 01:31:53] modelnet40-global-random-3.0-pointnet INFO: Epoch 41/100, Acc=0.8840, Val Loss=3.0661, lr=0.0100
+[02/23 01:32:04] modelnet40-global-random-3.0-pointnet INFO: Epoch 42/100, Acc=0.8698, Val Loss=3.0868, lr=0.0100
+[02/23 01:32:15] modelnet40-global-random-3.0-pointnet INFO: Epoch 43/100, Acc=0.8512, Val Loss=3.0870, lr=0.0100
+[02/23 01:32:26] modelnet40-global-random-3.0-pointnet INFO: Epoch 44/100, Acc=0.8641, Val Loss=3.0785, lr=0.0100
+[02/23 01:32:37] modelnet40-global-random-3.0-pointnet INFO: Epoch 45/100, Acc=0.8560, Val Loss=3.0997, lr=0.0100
+[02/23 01:32:48] modelnet40-global-random-3.0-pointnet INFO: Epoch 46/100, Acc=0.8629, Val Loss=3.0804, lr=0.0100
+[02/23 01:32:59] modelnet40-global-random-3.0-pointnet INFO: Epoch 47/100, Acc=0.8475, Val Loss=3.1071, lr=0.0100
+[02/23 01:33:10] modelnet40-global-random-3.0-pointnet INFO: Epoch 48/100, Acc=0.8512, Val Loss=3.1032, lr=0.0100
+[02/23 01:33:21] modelnet40-global-random-3.0-pointnet INFO: Epoch 49/100, Acc=0.8536, Val Loss=3.1007, lr=0.0100
+[02/23 01:33:33] modelnet40-global-random-3.0-pointnet INFO: Epoch 50/100, Acc=0.8532, Val Loss=3.0710, lr=0.0010
+[02/23 01:33:44] modelnet40-global-random-3.0-pointnet INFO: Epoch 51/100, Acc=0.8503, Val Loss=3.0854, lr=0.0010
+[02/23 01:33:55] modelnet40-global-random-3.0-pointnet INFO: Epoch 52/100, Acc=0.8532, Val Loss=3.0849, lr=0.0010
+[02/23 01:34:07] modelnet40-global-random-3.0-pointnet INFO: Epoch 53/100, Acc=0.8548, Val Loss=3.0794, lr=0.0010
+[02/23 01:34:18] modelnet40-global-random-3.0-pointnet INFO: Epoch 54/100, Acc=0.8593, Val Loss=3.0806, lr=0.0010
+[02/23 01:34:29] modelnet40-global-random-3.0-pointnet INFO: Epoch 55/100, Acc=0.8568, Val Loss=3.0750, lr=0.0010
+[02/23 01:34:41] modelnet40-global-random-3.0-pointnet INFO: Epoch 56/100, Acc=0.8532, Val Loss=3.0914, lr=0.0010
+[02/23 01:34:52] modelnet40-global-random-3.0-pointnet INFO: Epoch 57/100, Acc=0.8564, Val Loss=3.0768, lr=0.0010
+[02/23 01:35:03] modelnet40-global-random-3.0-pointnet INFO: Epoch 58/100, Acc=0.8528, Val Loss=3.0848, lr=0.0010
+[02/23 01:35:14] modelnet40-global-random-3.0-pointnet INFO: Epoch 59/100, Acc=0.8556, Val Loss=3.0865, lr=0.0010
+[02/23 01:35:25] modelnet40-global-random-3.0-pointnet INFO: Epoch 60/100, Acc=0.8516, Val Loss=3.0893, lr=0.0010
+[02/23 01:35:36] modelnet40-global-random-3.0-pointnet INFO: Epoch 61/100, Acc=0.8568, Val Loss=3.0831, lr=0.0010
+[02/23 01:35:47] modelnet40-global-random-3.0-pointnet INFO: Epoch 62/100, Acc=0.8588, Val Loss=3.0862, lr=0.0010
+[02/23 01:35:58] modelnet40-global-random-3.0-pointnet INFO: Epoch 63/100, Acc=0.8564, Val Loss=3.0847, lr=0.0010
+[02/23 01:36:09] modelnet40-global-random-3.0-pointnet INFO: Epoch 64/100, Acc=0.8605, Val Loss=3.0773, lr=0.0010
+[02/23 01:36:20] modelnet40-global-random-3.0-pointnet INFO: Epoch 65/100, Acc=0.8641, Val Loss=3.0722, lr=0.0010
+[02/23 01:36:31] modelnet40-global-random-3.0-pointnet INFO: Epoch 66/100, Acc=0.8576, Val Loss=3.0782, lr=0.0010
+[02/23 01:36:42] modelnet40-global-random-3.0-pointnet INFO: Epoch 67/100, Acc=0.8580, Val Loss=3.0686, lr=0.0010
+[02/23 01:36:53] modelnet40-global-random-3.0-pointnet INFO: Epoch 68/100, Acc=0.8548, Val Loss=3.0813, lr=0.0010
+[02/23 01:37:04] modelnet40-global-random-3.0-pointnet INFO: Epoch 69/100, Acc=0.8544, Val Loss=3.0809, lr=0.0010
+[02/23 01:37:15] modelnet40-global-random-3.0-pointnet INFO: Epoch 70/100, Acc=0.8572, Val Loss=3.0761, lr=0.0010
+[02/23 01:37:26] modelnet40-global-random-3.0-pointnet INFO: Epoch 71/100, Acc=0.8633, Val Loss=3.0689, lr=0.0010
+[02/23 01:37:37] modelnet40-global-random-3.0-pointnet INFO: Epoch 72/100, Acc=0.8556, Val Loss=3.0732, lr=0.0010
+[02/23 01:37:48] modelnet40-global-random-3.0-pointnet INFO: Epoch 73/100, Acc=0.8556, Val Loss=3.0715, lr=0.0010
+[02/23 01:37:59] modelnet40-global-random-3.0-pointnet INFO: Epoch 74/100, Acc=0.8560, Val Loss=3.0833, lr=0.0010
+[02/23 01:38:10] modelnet40-global-random-3.0-pointnet INFO: Epoch 75/100, Acc=0.8503, Val Loss=3.0846, lr=0.0010
+[02/23 01:38:21] modelnet40-global-random-3.0-pointnet INFO: Epoch 76/100, Acc=0.8548, Val Loss=3.0745, lr=0.0010
+[02/23 01:38:32] modelnet40-global-random-3.0-pointnet INFO: Epoch 77/100, Acc=0.8584, Val Loss=3.0685, lr=0.0010
+[02/23 01:38:43] modelnet40-global-random-3.0-pointnet INFO: Epoch 78/100, Acc=0.8548, Val Loss=3.0838, lr=0.0010
+[02/23 01:38:54] modelnet40-global-random-3.0-pointnet INFO: Epoch 79/100, Acc=0.8605, Val Loss=3.0746, lr=0.0010
+[02/23 01:39:05] modelnet40-global-random-3.0-pointnet INFO: Epoch 80/100, Acc=0.8564, Val Loss=3.0862, lr=0.0001
+[02/23 01:39:16] modelnet40-global-random-3.0-pointnet INFO: Epoch 81/100, Acc=0.8548, Val Loss=3.0839, lr=0.0001
+[02/23 01:39:27] modelnet40-global-random-3.0-pointnet INFO: Epoch 82/100, Acc=0.8584, Val Loss=3.0765, lr=0.0001
+[02/23 01:39:38] modelnet40-global-random-3.0-pointnet INFO: Epoch 83/100, Acc=0.8548, Val Loss=3.0860, lr=0.0001
+[02/23 01:39:49] modelnet40-global-random-3.0-pointnet INFO: Epoch 84/100, Acc=0.8572, Val Loss=3.0704, lr=0.0001
+[02/23 01:40:00] modelnet40-global-random-3.0-pointnet INFO: Epoch 85/100, Acc=0.8544, Val Loss=3.0790, lr=0.0001
+[02/23 01:40:11] modelnet40-global-random-3.0-pointnet INFO: Epoch 86/100, Acc=0.8540, Val Loss=3.0825, lr=0.0001
+[02/23 01:40:22] modelnet40-global-random-3.0-pointnet INFO: Epoch 87/100, Acc=0.8520, Val Loss=3.0856, lr=0.0001
+[02/23 01:40:33] modelnet40-global-random-3.0-pointnet INFO: Epoch 88/100, Acc=0.8536, Val Loss=3.0796, lr=0.0001
+[02/23 01:40:44] modelnet40-global-random-3.0-pointnet INFO: Epoch 89/100, Acc=0.8552, Val Loss=3.0746, lr=0.0001
+[02/23 01:40:55] modelnet40-global-random-3.0-pointnet INFO: Epoch 90/100, Acc=0.8568, Val Loss=3.0723, lr=0.0001
+[02/23 01:41:06] modelnet40-global-random-3.0-pointnet INFO: Epoch 91/100, Acc=0.8556, Val Loss=3.0713, lr=0.0001
+[02/23 01:41:17] modelnet40-global-random-3.0-pointnet INFO: Epoch 92/100, Acc=0.8597, Val Loss=3.0809, lr=0.0001
+[02/23 01:41:28] modelnet40-global-random-3.0-pointnet INFO: Epoch 93/100, Acc=0.8593, Val Loss=3.0721, lr=0.0001
+[02/23 01:41:39] modelnet40-global-random-3.0-pointnet INFO: Epoch 94/100, Acc=0.8544, Val Loss=3.0841, lr=0.0001
+[02/23 01:41:50] modelnet40-global-random-3.0-pointnet INFO: Epoch 95/100, Acc=0.8548, Val Loss=3.0799, lr=0.0001
+[02/23 01:42:01] modelnet40-global-random-3.0-pointnet INFO: Epoch 96/100, Acc=0.8576, Val Loss=3.0741, lr=0.0001
+[02/23 01:42:12] modelnet40-global-random-3.0-pointnet INFO: Epoch 97/100, Acc=0.8540, Val Loss=3.0807, lr=0.0001
+[02/23 01:42:23] modelnet40-global-random-3.0-pointnet INFO: Epoch 98/100, Acc=0.8564, Val Loss=3.0782, lr=0.0001
+[02/23 01:42:34] modelnet40-global-random-3.0-pointnet INFO: Epoch 99/100, Acc=0.8560, Val Loss=3.0781, lr=0.0001
+[02/23 01:42:34] modelnet40-global-random-3.0-pointnet INFO: Best Acc=0.8783
+[02/23 01:42:34] modelnet40-global-random-3.0-pointnet INFO: Params: 0.95 M
+[02/23 01:42:34] modelnet40-global-random-3.0-pointnet INFO: ops: 95.58 M
+[02/23 01:42:34] modelnet40-global-random-3.0-pointnet INFO: Acc: 0.8560 Val Loss: 3.0781
+

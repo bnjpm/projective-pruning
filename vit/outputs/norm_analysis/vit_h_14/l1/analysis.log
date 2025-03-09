@@ -1,0 +1,67 @@
+2024-10-13 09:38:36,673 Starting analysis outputs/norm_analysis/vit_h_14/l1
+2024-10-13 09:38:36,673 Loading the original model
+2024-10-13 09:38:38,564 Analysing layer 0
+2024-10-13 09:38:58,089 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:38:58,090 Analysing layer 1
+2024-10-13 09:39:17,561 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:39:17,561 Analysing layer 2
+2024-10-13 09:39:37,099 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:39:37,099 Analysing layer 3
+2024-10-13 09:39:56,688 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:39:56,688 Analysing layer 4
+2024-10-13 09:40:16,158 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:40:16,158 Analysing layer 5
+2024-10-13 09:40:35,669 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:40:35,669 Analysing layer 6
+2024-10-13 09:40:55,191 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:40:55,191 Analysing layer 7
+2024-10-13 09:41:14,717 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:41:14,717 Analysing layer 8
+2024-10-13 09:41:34,197 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:41:34,197 Analysing layer 9
+2024-10-13 09:41:53,686 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:41:53,686 Analysing layer 10
+2024-10-13 09:42:13,164 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:42:13,164 Analysing layer 11
+2024-10-13 09:42:32,620 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:42:32,620 Analysing layer 12
+2024-10-13 09:42:52,068 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:42:52,069 Analysing layer 13
+2024-10-13 09:43:11,541 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:43:11,541 Analysing layer 14
+2024-10-13 09:43:31,019 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:43:31,019 Analysing layer 15
+2024-10-13 09:43:50,448 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:43:50,448 Analysing layer 16
+2024-10-13 09:44:09,892 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:44:09,892 Analysing layer 17
+2024-10-13 09:44:29,362 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:44:29,363 Analysing layer 18
+2024-10-13 09:44:48,833 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:44:48,834 Analysing layer 19
+2024-10-13 09:45:08,368 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:45:08,368 Analysing layer 20
+2024-10-13 09:45:27,880 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:45:27,880 Analysing layer 21
+2024-10-13 09:45:47,396 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:45:47,396 Analysing layer 22
+2024-10-13 09:46:06,905 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:46:06,905 Analysing layer 23
+2024-10-13 09:46:26,422 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:46:26,422 Analysing layer 24
+2024-10-13 09:46:45,918 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:46:45,918 Analysing layer 25
+2024-10-13 09:47:05,421 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:47:05,421 Analysing layer 26
+2024-10-13 09:47:24,940 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:47:24,940 Analysing layer 27
+2024-10-13 09:47:44,423 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:47:44,423 Analysing layer 28
+2024-10-13 09:48:03,921 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:48:03,921 Analysing layer 29
+2024-10-13 09:48:23,444 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:48:23,444 Analysing layer 30
+2024-10-13 09:48:42,968 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:48:42,968 Analysing layer 31
+2024-10-13 09:49:02,496 W: torch.Size([5120, 1280]), b: torch.Size([5120]), V: torch.Size([1280, 5120])
+2024-10-13 09:49:02,564 Experiment finished

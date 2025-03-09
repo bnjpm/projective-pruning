@@ -1,0 +1,27 @@
+2024-10-13 09:37:35,044 Starting analysis outputs/norm_analysis/vit_b_32/l1
+2024-10-13 09:37:35,045 Loading the original model
+2024-10-13 09:37:35,482 Analysing layer 0
+2024-10-13 09:37:40,361 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:37:40,361 Analysing layer 1
+2024-10-13 09:37:45,150 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:37:45,150 Analysing layer 2
+2024-10-13 09:37:49,935 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:37:49,935 Analysing layer 3
+2024-10-13 09:37:54,727 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:37:54,727 Analysing layer 4
+2024-10-13 09:37:59,497 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:37:59,497 Analysing layer 5
+2024-10-13 09:38:04,256 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:38:04,256 Analysing layer 6
+2024-10-13 09:38:09,048 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:38:09,048 Analysing layer 7
+2024-10-13 09:38:13,817 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:38:13,817 Analysing layer 8
+2024-10-13 09:38:18,591 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:38:18,591 Analysing layer 9
+2024-10-13 09:38:23,364 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:38:23,364 Analysing layer 10
+2024-10-13 09:38:28,051 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:38:28,051 Analysing layer 11
+2024-10-13 09:38:32,817 W: torch.Size([3072, 768]), b: torch.Size([3072]), V: torch.Size([768, 3072])
+2024-10-13 09:38:32,843 Experiment finished

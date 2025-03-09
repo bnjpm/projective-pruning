@@ -1,0 +1,10 @@
+method,dataset,model,2.0,3.0
+Random,cifar100,vgg19,0.7049,0.6558
+MagnitudeL2,cifar100,vgg19,0.7318,0.7227
+Slimming,cifar100,vgg19,0.738,0.7350
+FPGM,cifar100,vgg19,0.7357,0.7181
+EigenDamage,cifar100,vgg19,0.7403,0.7284
+LAMP,cifar100,vgg19,0.7414,0.7308
+DepGraph,cifar100,vgg19,0.7326,0.7237
+DepGraph-SL,cifar100,vgg19,0.7366,0.7352
+\bf{Projective (ours)},cifar100,vgg19,0.7396,0.7387

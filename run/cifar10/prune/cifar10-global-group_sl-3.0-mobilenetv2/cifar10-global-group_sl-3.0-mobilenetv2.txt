@@ -1,0 +1,100 @@
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: mode: prune
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: model: mobilenetv2
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: verbose: False
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: dataset: cifar10
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: dataroot: data
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: batch_size: 128
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: total_epochs: 100
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: lr_decay_milestones: 60,80
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: lr_decay_gamma: 0.1
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: lr: 0.01
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: restore: run/cifar10/pretrain/cifar10_mobilenetv2.pth
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: output_dir: run/cifar10/prune/cifar10-global-group_sl-3.0-mobilenetv2
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: finetune: True
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: last_epochs: 100
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: reps: 1
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: method: group_sl
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: speed_up: 3.0
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: max_pruning_ratio: 1.0
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: soft_keeping_ratio: 0.0
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: reg: 1e-05
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: delta_reg: 0.0001
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: weight_decay: 0.0005
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: seed: 1
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: global_pruning: True
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: sl_total_epochs: 100
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: sl_lr: 0.01
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: sl_lr_decay_milestones: 60,80
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: sl_reg_warmup: 0
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: sl_restore: None
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: iterative_steps: 400
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: logger: <Logger cifar10-global-group_sl-3.0-mobilenetv2 (DEBUG)>
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: device: cuda
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: num_classes: 10
+[02/26 08:44:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Loading model from run/cifar10/pretrain/cifar10_mobilenetv2.pth
+[02/26 08:44:35] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Regularizing...
+[02/26 08:45:38] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 0/100, Acc=0.8530, Val Loss=0.4319, lr=0.0100
+[02/26 08:46:41] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 1/100, Acc=0.8472, Val Loss=0.4596, lr=0.0100
+[02/26 08:47:43] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 2/100, Acc=0.8593, Val Loss=0.4155, lr=0.0100
+[02/26 08:48:45] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 3/100, Acc=0.8580, Val Loss=0.4211, lr=0.0100
+[02/26 08:49:47] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 4/100, Acc=0.8601, Val Loss=0.4190, lr=0.0100
+[02/26 08:50:49] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 5/100, Acc=0.8635, Val Loss=0.3988, lr=0.0100
+[02/26 08:51:51] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 6/100, Acc=0.8653, Val Loss=0.3978, lr=0.0100
+[02/26 08:52:53] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 7/100, Acc=0.8587, Val Loss=0.4212, lr=0.0100
+[02/26 08:53:55] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 8/100, Acc=0.8626, Val Loss=0.4134, lr=0.0100
+[02/26 08:54:57] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 9/100, Acc=0.8653, Val Loss=0.4005, lr=0.0100
+[02/26 08:56:00] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 10/100, Acc=0.8558, Val Loss=0.4356, lr=0.0100
+[02/26 08:57:03] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 11/100, Acc=0.8611, Val Loss=0.4135, lr=0.0100
+[02/26 08:58:05] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 12/100, Acc=0.8737, Val Loss=0.3859, lr=0.0100
+[02/26 08:59:08] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 13/100, Acc=0.8660, Val Loss=0.4042, lr=0.0100
+[02/26 09:00:11] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 14/100, Acc=0.8664, Val Loss=0.4073, lr=0.0100
+[02/26 09:01:13] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 15/100, Acc=0.8678, Val Loss=0.3940, lr=0.0100
+[02/26 09:02:16] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 16/100, Acc=0.8476, Val Loss=0.4608, lr=0.0100
+[02/26 09:03:19] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 17/100, Acc=0.8642, Val Loss=0.4037, lr=0.0100
+[02/26 09:04:22] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 18/100, Acc=0.8756, Val Loss=0.3757, lr=0.0100
+[02/26 09:05:25] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 19/100, Acc=0.8774, Val Loss=0.3728, lr=0.0100
+[02/26 09:06:28] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 20/100, Acc=0.8738, Val Loss=0.3770, lr=0.0100
+[02/26 09:07:31] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 21/100, Acc=0.8677, Val Loss=0.3962, lr=0.0100
+[02/26 09:08:34] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 22/100, Acc=0.8710, Val Loss=0.3831, lr=0.0100
+[02/26 09:09:36] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 23/100, Acc=0.8711, Val Loss=0.3837, lr=0.0100
+[02/26 09:10:39] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 24/100, Acc=0.8663, Val Loss=0.3949, lr=0.0100
+[02/26 09:11:41] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 25/100, Acc=0.8645, Val Loss=0.3957, lr=0.0100
+[02/26 09:12:44] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 26/100, Acc=0.8660, Val Loss=0.4005, lr=0.0100
+[02/26 09:13:46] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 27/100, Acc=0.8679, Val Loss=0.3905, lr=0.0100
+[02/26 09:14:48] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 28/100, Acc=0.8659, Val Loss=0.4134, lr=0.0100
+[02/26 09:15:51] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 29/100, Acc=0.8726, Val Loss=0.3861, lr=0.0100
+[02/26 09:16:53] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 30/100, Acc=0.8762, Val Loss=0.3655, lr=0.0100
+[02/26 09:17:55] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 31/100, Acc=0.8793, Val Loss=0.3727, lr=0.0100
+[02/26 09:18:58] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 32/100, Acc=0.8758, Val Loss=0.3729, lr=0.0100
+[02/26 09:20:00] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 33/100, Acc=0.8753, Val Loss=0.3681, lr=0.0100
+[02/26 09:21:02] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 34/100, Acc=0.8806, Val Loss=0.3662, lr=0.0100
+[02/26 09:22:04] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 35/100, Acc=0.8746, Val Loss=0.3657, lr=0.0100
+[02/26 09:23:07] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 36/100, Acc=0.8779, Val Loss=0.3629, lr=0.0100
+[02/26 09:24:09] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 37/100, Acc=0.8695, Val Loss=0.3812, lr=0.0100
+[02/26 09:25:11] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 38/100, Acc=0.8778, Val Loss=0.3679, lr=0.0100
+[02/26 09:26:13] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 39/100, Acc=0.8682, Val Loss=0.3863, lr=0.0100
+[02/26 09:27:16] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 40/100, Acc=0.8701, Val Loss=0.3926, lr=0.0100
+[02/26 09:28:18] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 41/100, Acc=0.8692, Val Loss=0.3856, lr=0.0100
+[02/26 09:29:20] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 42/100, Acc=0.8740, Val Loss=0.3747, lr=0.0100
+[02/26 09:30:22] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 43/100, Acc=0.8772, Val Loss=0.3607, lr=0.0100
+[02/26 09:31:24] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 44/100, Acc=0.8833, Val Loss=0.3569, lr=0.0100
+[02/26 09:32:26] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 45/100, Acc=0.8822, Val Loss=0.3519, lr=0.0100
+[02/26 09:33:29] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 46/100, Acc=0.8759, Val Loss=0.3727, lr=0.0100
+[02/26 09:34:32] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 47/100, Acc=0.8829, Val Loss=0.3629, lr=0.0100
+[02/26 09:35:35] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 48/100, Acc=0.8839, Val Loss=0.3494, lr=0.0100
+[02/26 09:36:38] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 49/100, Acc=0.8815, Val Loss=0.3735, lr=0.0100
+[02/26 09:37:42] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 50/100, Acc=0.8829, Val Loss=0.3565, lr=0.0100
+[02/26 09:38:46] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 51/100, Acc=0.8874, Val Loss=0.3542, lr=0.0100
+[02/26 09:39:49] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 52/100, Acc=0.8780, Val Loss=0.3647, lr=0.0100
+[02/26 09:40:52] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 53/100, Acc=0.8781, Val Loss=0.3660, lr=0.0100
+[02/26 09:41:55] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 54/100, Acc=0.8772, Val Loss=0.3776, lr=0.0100
+[02/26 09:42:58] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 55/100, Acc=0.8827, Val Loss=0.3512, lr=0.0100
+[02/26 09:44:01] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 56/100, Acc=0.8860, Val Loss=0.3526, lr=0.0100
+[02/26 09:45:04] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 57/100, Acc=0.8795, Val Loss=0.3677, lr=0.0100
+[02/26 09:46:06] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 58/100, Acc=0.8840, Val Loss=0.3557, lr=0.0100
+[02/26 09:47:09] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 59/100, Acc=0.8821, Val Loss=0.3494, lr=0.0100
+[02/26 09:48:11] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 60/100, Acc=0.8928, Val Loss=0.3129, lr=0.0010
+[02/26 09:49:13] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 61/100, Acc=0.8965, Val Loss=0.3086, lr=0.0010
+[02/26 09:50:16] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 62/100, Acc=0.8975, Val Loss=0.3068, lr=0.0010
+[02/26 09:51:18] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 63/100, Acc=0.8969, Val Loss=0.3099, lr=0.0010
+[02/26 09:52:21] cifar10-global-group_sl-3.0-mobilenetv2 INFO: Epoch 64/100, Acc=0.8977, Val Loss=0.3106, lr=0.0010

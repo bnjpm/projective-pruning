@@ -1,0 +1,240 @@
+[02/20 14:40:20] cifar100-vgg19 INFO: mode: pretrain
+[02/20 14:40:20] cifar100-vgg19 INFO: model: vgg19
+[02/20 14:40:20] cifar100-vgg19 INFO: verbose: False
+[02/20 14:40:20] cifar100-vgg19 INFO: dataset: cifar100
+[02/20 14:40:20] cifar100-vgg19 INFO: dataroot: data
+[02/20 14:40:20] cifar100-vgg19 INFO: batch_size: 128
+[02/20 14:40:20] cifar100-vgg19 INFO: total_epochs: 200
+[02/20 14:40:20] cifar100-vgg19 INFO: lr_decay_milestones: 120,160,180
+[02/20 14:40:20] cifar100-vgg19 INFO: lr_decay_gamma: 0.1
+[02/20 14:40:20] cifar100-vgg19 INFO: lr: 0.1
+[02/20 14:40:20] cifar100-vgg19 INFO: restore: None
+[02/20 14:40:20] cifar100-vgg19 INFO: output_dir: run/cifar100/pretrain
+[02/20 14:40:20] cifar100-vgg19 INFO: finetune: False
+[02/20 14:40:20] cifar100-vgg19 INFO: last_epochs: 100
+[02/20 14:40:20] cifar100-vgg19 INFO: reps: 1
+[02/20 14:40:20] cifar100-vgg19 INFO: method: None
+[02/20 14:40:20] cifar100-vgg19 INFO: speed_up: 2
+[02/20 14:40:20] cifar100-vgg19 INFO: max_pruning_ratio: 1.0
+[02/20 14:40:20] cifar100-vgg19 INFO: soft_keeping_ratio: 0.0
+[02/20 14:40:20] cifar100-vgg19 INFO: reg: 0.0005
+[02/20 14:40:20] cifar100-vgg19 INFO: delta_reg: 0.0001
+[02/20 14:40:20] cifar100-vgg19 INFO: weight_decay: 0.0005
+[02/20 14:40:20] cifar100-vgg19 INFO: seed: 1
+[02/20 14:40:20] cifar100-vgg19 INFO: global_pruning: False
+[02/20 14:40:20] cifar100-vgg19 INFO: sl_total_epochs: 100
+[02/20 14:40:20] cifar100-vgg19 INFO: sl_lr: 0.01
+[02/20 14:40:20] cifar100-vgg19 INFO: sl_lr_decay_milestones: 60,80
+[02/20 14:40:20] cifar100-vgg19 INFO: sl_reg_warmup: 0
+[02/20 14:40:20] cifar100-vgg19 INFO: sl_restore: None
+[02/20 14:40:20] cifar100-vgg19 INFO: iterative_steps: 400
+[02/20 14:40:20] cifar100-vgg19 INFO: logger: <Logger cifar100-vgg19 (DEBUG)>
+[02/20 14:40:20] cifar100-vgg19 INFO: device: cuda
+[02/20 14:40:20] cifar100-vgg19 INFO: num_classes: 100
+[02/20 14:40:20] cifar100-vgg19 INFO: Params: 20.09 M
+[02/20 14:40:20] cifar100-vgg19 INFO: ops: 512.73 M
+[02/20 14:40:47] cifar100-vgg19 INFO: Epoch 0/200, Acc=0.0695, Val Loss=3.9891, lr=0.1000
+[02/20 14:41:14] cifar100-vgg19 INFO: Epoch 1/200, Acc=0.1244, Val Loss=3.6188, lr=0.1000
+[02/20 14:41:41] cifar100-vgg19 INFO: Epoch 2/200, Acc=0.1782, Val Loss=3.2740, lr=0.1000
+[02/20 14:42:09] cifar100-vgg19 INFO: Epoch 3/200, Acc=0.2244, Val Loss=3.1001, lr=0.1000
+[02/20 14:42:37] cifar100-vgg19 INFO: Epoch 4/200, Acc=0.2678, Val Loss=2.8086, lr=0.1000
+[02/20 14:43:05] cifar100-vgg19 INFO: Epoch 5/200, Acc=0.3022, Val Loss=2.6995, lr=0.1000
+[02/20 14:43:33] cifar100-vgg19 INFO: Epoch 6/200, Acc=0.3178, Val Loss=2.6470, lr=0.1000
+[02/20 14:44:00] cifar100-vgg19 INFO: Epoch 7/200, Acc=0.3288, Val Loss=2.6190, lr=0.1000
+[02/20 14:44:28] cifar100-vgg19 INFO: Epoch 8/200, Acc=0.3321, Val Loss=2.6660, lr=0.1000
+[02/20 14:44:55] cifar100-vgg19 INFO: Epoch 9/200, Acc=0.3643, Val Loss=2.4041, lr=0.1000
+[02/20 14:45:23] cifar100-vgg19 INFO: Epoch 10/200, Acc=0.2735, Val Loss=3.2388, lr=0.1000
+[02/20 14:45:50] cifar100-vgg19 INFO: Epoch 11/200, Acc=0.3671, Val Loss=2.4747, lr=0.1000
+[02/20 14:46:17] cifar100-vgg19 INFO: Epoch 12/200, Acc=0.3794, Val Loss=2.4660, lr=0.1000
+[02/20 14:46:46] cifar100-vgg19 INFO: Epoch 13/200, Acc=0.4147, Val Loss=2.2122, lr=0.1000
+[02/20 14:47:13] cifar100-vgg19 INFO: Epoch 14/200, Acc=0.4297, Val Loss=2.1822, lr=0.1000
+[02/20 14:47:41] cifar100-vgg19 INFO: Epoch 15/200, Acc=0.4043, Val Loss=2.3243, lr=0.1000
+[02/20 14:48:09] cifar100-vgg19 INFO: Epoch 16/200, Acc=0.3583, Val Loss=2.6459, lr=0.1000
+[02/20 14:48:36] cifar100-vgg19 INFO: Epoch 17/200, Acc=0.4309, Val Loss=2.2836, lr=0.1000
+[02/20 14:49:03] cifar100-vgg19 INFO: Epoch 18/200, Acc=0.4514, Val Loss=2.0853, lr=0.1000
+[02/20 14:49:31] cifar100-vgg19 INFO: Epoch 19/200, Acc=0.4522, Val Loss=2.0978, lr=0.1000
+[02/20 14:49:59] cifar100-vgg19 INFO: Epoch 20/200, Acc=0.4144, Val Loss=2.3048, lr=0.1000
+[02/20 14:50:27] cifar100-vgg19 INFO: Epoch 21/200, Acc=0.4391, Val Loss=2.2504, lr=0.1000
+[02/20 14:50:54] cifar100-vgg19 INFO: Epoch 22/200, Acc=0.4411, Val Loss=2.2049, lr=0.1000
+[02/20 14:51:21] cifar100-vgg19 INFO: Epoch 23/200, Acc=0.4601, Val Loss=2.0741, lr=0.1000
+[02/20 14:51:49] cifar100-vgg19 INFO: Epoch 24/200, Acc=0.4774, Val Loss=2.0052, lr=0.1000
+[02/20 14:52:17] cifar100-vgg19 INFO: Epoch 25/200, Acc=0.4741, Val Loss=2.0217, lr=0.1000
+[02/20 14:52:44] cifar100-vgg19 INFO: Epoch 26/200, Acc=0.4601, Val Loss=2.1564, lr=0.1000
+[02/20 14:53:12] cifar100-vgg19 INFO: Epoch 27/200, Acc=0.4422, Val Loss=2.2060, lr=0.1000
+[02/20 14:53:39] cifar100-vgg19 INFO: Epoch 28/200, Acc=0.4647, Val Loss=2.1393, lr=0.1000
+[02/20 14:54:05] cifar100-vgg19 INFO: Epoch 29/200, Acc=0.4575, Val Loss=2.1522, lr=0.1000
+[02/20 14:54:33] cifar100-vgg19 INFO: Epoch 30/200, Acc=0.4997, Val Loss=1.9049, lr=0.1000
+[02/20 14:55:00] cifar100-vgg19 INFO: Epoch 31/200, Acc=0.4555, Val Loss=2.1635, lr=0.1000
+[02/20 14:55:28] cifar100-vgg19 INFO: Epoch 32/200, Acc=0.4695, Val Loss=2.0584, lr=0.1000
+[02/20 14:55:56] cifar100-vgg19 INFO: Epoch 33/200, Acc=0.4870, Val Loss=1.9547, lr=0.1000
+[02/20 14:56:24] cifar100-vgg19 INFO: Epoch 34/200, Acc=0.4795, Val Loss=2.0957, lr=0.1000
+[02/20 14:56:52] cifar100-vgg19 INFO: Epoch 35/200, Acc=0.4544, Val Loss=2.1347, lr=0.1000
+[02/20 14:57:19] cifar100-vgg19 INFO: Epoch 36/200, Acc=0.4855, Val Loss=1.9998, lr=0.1000
+[02/20 14:57:47] cifar100-vgg19 INFO: Epoch 37/200, Acc=0.4615, Val Loss=2.1318, lr=0.1000
+[02/20 14:58:14] cifar100-vgg19 INFO: Epoch 38/200, Acc=0.4868, Val Loss=2.0507, lr=0.1000
+[02/20 14:58:42] cifar100-vgg19 INFO: Epoch 39/200, Acc=0.4944, Val Loss=1.9567, lr=0.1000
+[02/20 14:59:09] cifar100-vgg19 INFO: Epoch 40/200, Acc=0.4992, Val Loss=1.9686, lr=0.1000
+[02/20 14:59:37] cifar100-vgg19 INFO: Epoch 41/200, Acc=0.4688, Val Loss=2.1833, lr=0.1000
+[02/20 15:00:04] cifar100-vgg19 INFO: Epoch 42/200, Acc=0.4903, Val Loss=1.9782, lr=0.1000
+[02/20 15:00:32] cifar100-vgg19 INFO: Epoch 43/200, Acc=0.4599, Val Loss=2.2097, lr=0.1000
+[02/20 15:00:58] cifar100-vgg19 INFO: Epoch 44/200, Acc=0.4423, Val Loss=2.3106, lr=0.1000
+[02/20 15:01:26] cifar100-vgg19 INFO: Epoch 45/200, Acc=0.4248, Val Loss=2.3927, lr=0.1000
+[02/20 15:01:53] cifar100-vgg19 INFO: Epoch 46/200, Acc=0.4582, Val Loss=2.1528, lr=0.1000
+[02/20 15:02:20] cifar100-vgg19 INFO: Epoch 47/200, Acc=0.5097, Val Loss=1.9369, lr=0.1000
+[02/20 15:02:48] cifar100-vgg19 INFO: Epoch 48/200, Acc=0.4756, Val Loss=2.0461, lr=0.1000
+[02/20 15:03:15] cifar100-vgg19 INFO: Epoch 49/200, Acc=0.4769, Val Loss=2.1096, lr=0.1000
+[02/20 15:03:43] cifar100-vgg19 INFO: Epoch 50/200, Acc=0.4703, Val Loss=2.1740, lr=0.1000
+[02/20 15:04:11] cifar100-vgg19 INFO: Epoch 51/200, Acc=0.4914, Val Loss=2.0085, lr=0.1000
+[02/20 15:04:38] cifar100-vgg19 INFO: Epoch 52/200, Acc=0.5167, Val Loss=1.8850, lr=0.1000
+[02/20 15:05:05] cifar100-vgg19 INFO: Epoch 53/200, Acc=0.4496, Val Loss=2.2628, lr=0.1000
+[02/20 15:05:33] cifar100-vgg19 INFO: Epoch 54/200, Acc=0.4733, Val Loss=2.0647, lr=0.1000
+[02/20 15:06:00] cifar100-vgg19 INFO: Epoch 55/200, Acc=0.4905, Val Loss=1.9772, lr=0.1000
+[02/20 15:06:28] cifar100-vgg19 INFO: Epoch 56/200, Acc=0.4906, Val Loss=2.0477, lr=0.1000
+[02/20 15:06:55] cifar100-vgg19 INFO: Epoch 57/200, Acc=0.4751, Val Loss=2.1440, lr=0.1000
+[02/20 15:07:23] cifar100-vgg19 INFO: Epoch 58/200, Acc=0.4611, Val Loss=2.1537, lr=0.1000
+[02/20 15:07:50] cifar100-vgg19 INFO: Epoch 59/200, Acc=0.4946, Val Loss=2.0316, lr=0.1000
+[02/20 15:08:18] cifar100-vgg19 INFO: Epoch 60/200, Acc=0.5457, Val Loss=1.7400, lr=0.1000
+[02/20 15:08:45] cifar100-vgg19 INFO: Epoch 61/200, Acc=0.5011, Val Loss=1.9847, lr=0.1000
+[02/20 15:09:13] cifar100-vgg19 INFO: Epoch 62/200, Acc=0.4869, Val Loss=2.0150, lr=0.1000
+[02/20 15:09:40] cifar100-vgg19 INFO: Epoch 63/200, Acc=0.4724, Val Loss=2.1923, lr=0.1000
+[02/20 15:10:08] cifar100-vgg19 INFO: Epoch 64/200, Acc=0.4700, Val Loss=2.2066, lr=0.1000
+[02/20 15:10:35] cifar100-vgg19 INFO: Epoch 65/200, Acc=0.4895, Val Loss=2.0664, lr=0.1000
+[02/20 15:11:04] cifar100-vgg19 INFO: Epoch 66/200, Acc=0.5285, Val Loss=1.8516, lr=0.1000
+[02/20 15:11:31] cifar100-vgg19 INFO: Epoch 67/200, Acc=0.4958, Val Loss=2.0369, lr=0.1000
+[02/20 15:11:59] cifar100-vgg19 INFO: Epoch 68/200, Acc=0.5044, Val Loss=2.0282, lr=0.1000
+[02/20 15:12:26] cifar100-vgg19 INFO: Epoch 69/200, Acc=0.4653, Val Loss=2.1546, lr=0.1000
+[02/20 15:12:54] cifar100-vgg19 INFO: Epoch 70/200, Acc=0.4797, Val Loss=2.0950, lr=0.1000
+[02/20 15:13:21] cifar100-vgg19 INFO: Epoch 71/200, Acc=0.5171, Val Loss=1.9116, lr=0.1000
+[02/20 15:13:50] cifar100-vgg19 INFO: Epoch 72/200, Acc=0.5298, Val Loss=1.8205, lr=0.1000
+[02/20 15:14:17] cifar100-vgg19 INFO: Epoch 73/200, Acc=0.5335, Val Loss=1.8107, lr=0.1000
+[02/20 15:14:44] cifar100-vgg19 INFO: Epoch 74/200, Acc=0.4962, Val Loss=1.9871, lr=0.1000
+[02/20 15:15:12] cifar100-vgg19 INFO: Epoch 75/200, Acc=0.5284, Val Loss=1.8192, lr=0.1000
+[02/20 15:15:40] cifar100-vgg19 INFO: Epoch 76/200, Acc=0.4689, Val Loss=2.2271, lr=0.1000
+[02/20 15:16:07] cifar100-vgg19 INFO: Epoch 77/200, Acc=0.5113, Val Loss=1.9757, lr=0.1000
+[02/20 15:16:34] cifar100-vgg19 INFO: Epoch 78/200, Acc=0.4553, Val Loss=2.2174, lr=0.1000
+[02/20 15:17:02] cifar100-vgg19 INFO: Epoch 79/200, Acc=0.5043, Val Loss=1.9031, lr=0.1000
+[02/20 15:17:30] cifar100-vgg19 INFO: Epoch 80/200, Acc=0.4731, Val Loss=2.0559, lr=0.1000
+[02/20 15:17:58] cifar100-vgg19 INFO: Epoch 81/200, Acc=0.4475, Val Loss=2.3481, lr=0.1000
+[02/20 15:18:25] cifar100-vgg19 INFO: Epoch 82/200, Acc=0.4818, Val Loss=2.0623, lr=0.1000
+[02/20 15:18:52] cifar100-vgg19 INFO: Epoch 83/200, Acc=0.4951, Val Loss=2.0564, lr=0.1000
+[02/20 15:19:20] cifar100-vgg19 INFO: Epoch 84/200, Acc=0.4294, Val Loss=2.3957, lr=0.1000
+[02/20 15:19:47] cifar100-vgg19 INFO: Epoch 85/200, Acc=0.4986, Val Loss=1.9969, lr=0.1000
+[02/20 15:20:15] cifar100-vgg19 INFO: Epoch 86/200, Acc=0.4868, Val Loss=2.1102, lr=0.1000
+[02/20 15:20:43] cifar100-vgg19 INFO: Epoch 87/200, Acc=0.4778, Val Loss=2.0962, lr=0.1000
+[02/20 15:21:11] cifar100-vgg19 INFO: Epoch 88/200, Acc=0.5191, Val Loss=1.8867, lr=0.1000
+[02/20 15:21:38] cifar100-vgg19 INFO: Epoch 89/200, Acc=0.4821, Val Loss=2.0636, lr=0.1000
+[02/20 15:22:06] cifar100-vgg19 INFO: Epoch 90/200, Acc=0.5110, Val Loss=1.9213, lr=0.1000
+[02/20 15:22:34] cifar100-vgg19 INFO: Epoch 91/200, Acc=0.4919, Val Loss=2.0071, lr=0.1000
+[02/20 15:23:01] cifar100-vgg19 INFO: Epoch 92/200, Acc=0.4901, Val Loss=2.0686, lr=0.1000
+[02/20 15:23:29] cifar100-vgg19 INFO: Epoch 93/200, Acc=0.5172, Val Loss=1.9013, lr=0.1000
+[02/20 15:23:56] cifar100-vgg19 INFO: Epoch 94/200, Acc=0.4630, Val Loss=2.2100, lr=0.1000
+[02/20 15:24:24] cifar100-vgg19 INFO: Epoch 95/200, Acc=0.5240, Val Loss=1.8370, lr=0.1000
+[02/20 15:24:52] cifar100-vgg19 INFO: Epoch 96/200, Acc=0.4706, Val Loss=2.1661, lr=0.1000
+[02/20 15:25:20] cifar100-vgg19 INFO: Epoch 97/200, Acc=0.4926, Val Loss=2.0230, lr=0.1000
+[02/20 15:25:49] cifar100-vgg19 INFO: Epoch 98/200, Acc=0.5204, Val Loss=1.9025, lr=0.1000
+[02/20 15:26:16] cifar100-vgg19 INFO: Epoch 99/200, Acc=0.5175, Val Loss=1.9189, lr=0.1000
+[02/20 15:26:44] cifar100-vgg19 INFO: Epoch 100/200, Acc=0.5258, Val Loss=1.8457, lr=0.1000
+[02/20 15:27:11] cifar100-vgg19 INFO: Epoch 101/200, Acc=0.5234, Val Loss=1.8997, lr=0.1000
+[02/20 15:27:40] cifar100-vgg19 INFO: Epoch 102/200, Acc=0.5298, Val Loss=1.8587, lr=0.1000
+[02/20 15:28:07] cifar100-vgg19 INFO: Epoch 103/200, Acc=0.4600, Val Loss=2.2983, lr=0.1000
+[02/20 15:28:34] cifar100-vgg19 INFO: Epoch 104/200, Acc=0.4697, Val Loss=2.1871, lr=0.1000
+[02/20 15:29:01] cifar100-vgg19 INFO: Epoch 105/200, Acc=0.5004, Val Loss=2.0474, lr=0.1000
+[02/20 15:29:28] cifar100-vgg19 INFO: Epoch 106/200, Acc=0.4968, Val Loss=2.0511, lr=0.1000
+[02/20 15:29:56] cifar100-vgg19 INFO: Epoch 107/200, Acc=0.5052, Val Loss=1.9761, lr=0.1000
+[02/20 15:30:24] cifar100-vgg19 INFO: Epoch 108/200, Acc=0.5242, Val Loss=1.9104, lr=0.1000
+[02/20 15:30:51] cifar100-vgg19 INFO: Epoch 109/200, Acc=0.5377, Val Loss=1.8282, lr=0.1000
+[02/20 15:31:18] cifar100-vgg19 INFO: Epoch 110/200, Acc=0.4953, Val Loss=1.9915, lr=0.1000
+[02/20 15:31:45] cifar100-vgg19 INFO: Epoch 111/200, Acc=0.4806, Val Loss=2.1155, lr=0.1000
+[02/20 15:32:12] cifar100-vgg19 INFO: Epoch 112/200, Acc=0.5088, Val Loss=1.9792, lr=0.1000
+[02/20 15:32:39] cifar100-vgg19 INFO: Epoch 113/200, Acc=0.5395, Val Loss=1.7851, lr=0.1000
+[02/20 15:33:07] cifar100-vgg19 INFO: Epoch 114/200, Acc=0.5383, Val Loss=1.8105, lr=0.1000
+[02/20 15:33:36] cifar100-vgg19 INFO: Epoch 115/200, Acc=0.4896, Val Loss=2.0287, lr=0.1000
+[02/20 15:34:05] cifar100-vgg19 INFO: Epoch 116/200, Acc=0.5081, Val Loss=1.9975, lr=0.1000
+[02/20 15:34:32] cifar100-vgg19 INFO: Epoch 117/200, Acc=0.5029, Val Loss=2.0431, lr=0.1000
+[02/20 15:35:00] cifar100-vgg19 INFO: Epoch 118/200, Acc=0.5113, Val Loss=1.9276, lr=0.1000
+[02/20 15:35:27] cifar100-vgg19 INFO: Epoch 119/200, Acc=0.4934, Val Loss=1.9706, lr=0.1000
+[02/20 15:35:55] cifar100-vgg19 INFO: Epoch 120/200, Acc=0.6964, Val Loss=1.0847, lr=0.0100
+[02/20 15:36:23] cifar100-vgg19 INFO: Epoch 121/200, Acc=0.7032, Val Loss=1.0788, lr=0.0100
+[02/20 15:36:51] cifar100-vgg19 INFO: Epoch 122/200, Acc=0.7128, Val Loss=1.0443, lr=0.0100
+[02/20 15:37:19] cifar100-vgg19 INFO: Epoch 123/200, Acc=0.7096, Val Loss=1.0633, lr=0.0100
+[02/20 15:37:47] cifar100-vgg19 INFO: Epoch 124/200, Acc=0.7144, Val Loss=1.0634, lr=0.0100
+[02/20 15:38:15] cifar100-vgg19 INFO: Epoch 125/200, Acc=0.7170, Val Loss=1.0697, lr=0.0100
+[02/20 15:38:43] cifar100-vgg19 INFO: Epoch 126/200, Acc=0.7144, Val Loss=1.0925, lr=0.0100
+[02/20 15:39:11] cifar100-vgg19 INFO: Epoch 127/200, Acc=0.7124, Val Loss=1.1098, lr=0.0100
+[02/20 15:39:39] cifar100-vgg19 INFO: Epoch 128/200, Acc=0.7109, Val Loss=1.1225, lr=0.0100
+[02/20 15:40:07] cifar100-vgg19 INFO: Epoch 129/200, Acc=0.7056, Val Loss=1.1713, lr=0.0100
+[02/20 15:40:34] cifar100-vgg19 INFO: Epoch 130/200, Acc=0.7112, Val Loss=1.1679, lr=0.0100
+[02/20 15:41:02] cifar100-vgg19 INFO: Epoch 131/200, Acc=0.7047, Val Loss=1.2053, lr=0.0100
+[02/20 15:41:29] cifar100-vgg19 INFO: Epoch 132/200, Acc=0.7052, Val Loss=1.2256, lr=0.0100
+[02/20 15:41:57] cifar100-vgg19 INFO: Epoch 133/200, Acc=0.7051, Val Loss=1.2261, lr=0.0100
+[02/20 15:42:25] cifar100-vgg19 INFO: Epoch 134/200, Acc=0.7075, Val Loss=1.2375, lr=0.0100
+[02/20 15:42:53] cifar100-vgg19 INFO: Epoch 135/200, Acc=0.6992, Val Loss=1.2609, lr=0.0100
+[02/20 15:43:21] cifar100-vgg19 INFO: Epoch 136/200, Acc=0.7022, Val Loss=1.2703, lr=0.0100
+[02/20 15:43:49] cifar100-vgg19 INFO: Epoch 137/200, Acc=0.6949, Val Loss=1.3250, lr=0.0100
+[02/20 15:44:17] cifar100-vgg19 INFO: Epoch 138/200, Acc=0.7006, Val Loss=1.2901, lr=0.0100
+[02/20 15:44:45] cifar100-vgg19 INFO: Epoch 139/200, Acc=0.7018, Val Loss=1.2963, lr=0.0100
+[02/20 15:45:13] cifar100-vgg19 INFO: Epoch 140/200, Acc=0.6880, Val Loss=1.3718, lr=0.0100
+[02/20 15:45:42] cifar100-vgg19 INFO: Epoch 141/200, Acc=0.6930, Val Loss=1.3312, lr=0.0100
+[02/20 15:46:10] cifar100-vgg19 INFO: Epoch 142/200, Acc=0.6916, Val Loss=1.3649, lr=0.0100
+[02/20 15:46:38] cifar100-vgg19 INFO: Epoch 143/200, Acc=0.6930, Val Loss=1.3366, lr=0.0100
+[02/20 15:47:06] cifar100-vgg19 INFO: Epoch 144/200, Acc=0.6837, Val Loss=1.3843, lr=0.0100
+[02/20 15:47:34] cifar100-vgg19 INFO: Epoch 145/200, Acc=0.6777, Val Loss=1.4218, lr=0.0100
+[02/20 15:48:03] cifar100-vgg19 INFO: Epoch 146/200, Acc=0.6863, Val Loss=1.3874, lr=0.0100
+[02/20 15:48:31] cifar100-vgg19 INFO: Epoch 147/200, Acc=0.6803, Val Loss=1.4159, lr=0.0100
+[02/20 15:48:59] cifar100-vgg19 INFO: Epoch 148/200, Acc=0.6875, Val Loss=1.3792, lr=0.0100
+[02/20 15:49:27] cifar100-vgg19 INFO: Epoch 149/200, Acc=0.6872, Val Loss=1.3864, lr=0.0100
+[02/20 15:49:54] cifar100-vgg19 INFO: Epoch 150/200, Acc=0.6779, Val Loss=1.4011, lr=0.0100
+[02/20 15:50:22] cifar100-vgg19 INFO: Epoch 151/200, Acc=0.6794, Val Loss=1.4091, lr=0.0100
+[02/20 15:50:50] cifar100-vgg19 INFO: Epoch 152/200, Acc=0.6799, Val Loss=1.4400, lr=0.0100
+[02/20 15:51:17] cifar100-vgg19 INFO: Epoch 153/200, Acc=0.6902, Val Loss=1.3885, lr=0.0100
+[02/20 15:51:45] cifar100-vgg19 INFO: Epoch 154/200, Acc=0.6824, Val Loss=1.4423, lr=0.0100
+[02/20 15:52:13] cifar100-vgg19 INFO: Epoch 155/200, Acc=0.6699, Val Loss=1.4724, lr=0.0100
+[02/20 15:52:40] cifar100-vgg19 INFO: Epoch 156/200, Acc=0.6733, Val Loss=1.4619, lr=0.0100
+[02/20 15:53:08] cifar100-vgg19 INFO: Epoch 157/200, Acc=0.6840, Val Loss=1.4223, lr=0.0100
+[02/20 15:53:35] cifar100-vgg19 INFO: Epoch 158/200, Acc=0.6873, Val Loss=1.4075, lr=0.0100
+[02/20 15:54:03] cifar100-vgg19 INFO: Epoch 159/200, Acc=0.6636, Val Loss=1.5248, lr=0.0100
+[02/20 15:54:31] cifar100-vgg19 INFO: Epoch 160/200, Acc=0.7245, Val Loss=1.2183, lr=0.0010
+[02/20 15:54:59] cifar100-vgg19 INFO: Epoch 161/200, Acc=0.7287, Val Loss=1.2108, lr=0.0010
+[02/20 15:55:26] cifar100-vgg19 INFO: Epoch 162/200, Acc=0.7280, Val Loss=1.2192, lr=0.0010
+[02/20 15:55:54] cifar100-vgg19 INFO: Epoch 163/200, Acc=0.7290, Val Loss=1.2267, lr=0.0010
+[02/20 15:56:23] cifar100-vgg19 INFO: Epoch 164/200, Acc=0.7302, Val Loss=1.2315, lr=0.0010
+[02/20 15:56:51] cifar100-vgg19 INFO: Epoch 165/200, Acc=0.7314, Val Loss=1.2471, lr=0.0010
+[02/20 15:57:19] cifar100-vgg19 INFO: Epoch 166/200, Acc=0.7329, Val Loss=1.2480, lr=0.0010
+[02/20 15:57:47] cifar100-vgg19 INFO: Epoch 167/200, Acc=0.7331, Val Loss=1.2502, lr=0.0010
+[02/20 15:58:15] cifar100-vgg19 INFO: Epoch 168/200, Acc=0.7346, Val Loss=1.2510, lr=0.0010
+[02/20 15:58:44] cifar100-vgg19 INFO: Epoch 169/200, Acc=0.7335, Val Loss=1.2554, lr=0.0010
+[02/20 15:59:13] cifar100-vgg19 INFO: Epoch 170/200, Acc=0.7341, Val Loss=1.2604, lr=0.0010
+[02/20 15:59:41] cifar100-vgg19 INFO: Epoch 171/200, Acc=0.7352, Val Loss=1.2612, lr=0.0010
+[02/20 16:00:09] cifar100-vgg19 INFO: Epoch 172/200, Acc=0.7354, Val Loss=1.2690, lr=0.0010
+[02/20 16:00:38] cifar100-vgg19 INFO: Epoch 173/200, Acc=0.7353, Val Loss=1.2649, lr=0.0010
+[02/20 16:01:06] cifar100-vgg19 INFO: Epoch 174/200, Acc=0.7362, Val Loss=1.2669, lr=0.0010
+[02/20 16:01:35] cifar100-vgg19 INFO: Epoch 175/200, Acc=0.7341, Val Loss=1.2695, lr=0.0010
+[02/20 16:02:03] cifar100-vgg19 INFO: Epoch 176/200, Acc=0.7369, Val Loss=1.2726, lr=0.0010
+[02/20 16:02:31] cifar100-vgg19 INFO: Epoch 177/200, Acc=0.7368, Val Loss=1.2799, lr=0.0010
+[02/20 16:02:59] cifar100-vgg19 INFO: Epoch 178/200, Acc=0.7365, Val Loss=1.2755, lr=0.0010
+[02/20 16:03:27] cifar100-vgg19 INFO: Epoch 179/200, Acc=0.7373, Val Loss=1.2727, lr=0.0010
+[02/20 16:03:55] cifar100-vgg19 INFO: Epoch 180/200, Acc=0.7364, Val Loss=1.2738, lr=0.0001
+[02/20 16:04:23] cifar100-vgg19 INFO: Epoch 181/200, Acc=0.7360, Val Loss=1.2692, lr=0.0001
+[02/20 16:04:51] cifar100-vgg19 INFO: Epoch 182/200, Acc=0.7369, Val Loss=1.2786, lr=0.0001
+[02/20 16:05:18] cifar100-vgg19 INFO: Epoch 183/200, Acc=0.7372, Val Loss=1.2711, lr=0.0001
+[02/20 16:05:46] cifar100-vgg19 INFO: Epoch 184/200, Acc=0.7367, Val Loss=1.2732, lr=0.0001
+[02/20 16:06:15] cifar100-vgg19 INFO: Epoch 185/200, Acc=0.7366, Val Loss=1.2770, lr=0.0001
+[02/20 16:06:43] cifar100-vgg19 INFO: Epoch 186/200, Acc=0.7360, Val Loss=1.2734, lr=0.0001
+[02/20 16:07:12] cifar100-vgg19 INFO: Epoch 187/200, Acc=0.7367, Val Loss=1.2747, lr=0.0001
+[02/20 16:07:40] cifar100-vgg19 INFO: Epoch 188/200, Acc=0.7367, Val Loss=1.2749, lr=0.0001
+[02/20 16:08:08] cifar100-vgg19 INFO: Epoch 189/200, Acc=0.7360, Val Loss=1.2738, lr=0.0001
+[02/20 16:08:36] cifar100-vgg19 INFO: Epoch 190/200, Acc=0.7365, Val Loss=1.2723, lr=0.0001
+[02/20 16:09:04] cifar100-vgg19 INFO: Epoch 191/200, Acc=0.7366, Val Loss=1.2735, lr=0.0001
+[02/20 16:09:33] cifar100-vgg19 INFO: Epoch 192/200, Acc=0.7374, Val Loss=1.2723, lr=0.0001
+[02/20 16:10:01] cifar100-vgg19 INFO: Epoch 193/200, Acc=0.7372, Val Loss=1.2743, lr=0.0001
+[02/20 16:10:29] cifar100-vgg19 INFO: Epoch 194/200, Acc=0.7366, Val Loss=1.2729, lr=0.0001
+[02/20 16:10:57] cifar100-vgg19 INFO: Epoch 195/200, Acc=0.7372, Val Loss=1.2782, lr=0.0001
+[02/20 16:11:26] cifar100-vgg19 INFO: Epoch 196/200, Acc=0.7375, Val Loss=1.2737, lr=0.0001
+[02/20 16:11:54] cifar100-vgg19 INFO: Epoch 197/200, Acc=0.7377, Val Loss=1.2744, lr=0.0001
+[02/20 16:12:23] cifar100-vgg19 INFO: Epoch 198/200, Acc=0.7373, Val Loss=1.2753, lr=0.0001
+[02/20 16:12:51] cifar100-vgg19 INFO: Epoch 199/200, Acc=0.7377, Val Loss=1.2789, lr=0.0001
+[02/20 16:12:51] cifar100-vgg19 INFO: Best Acc=0.7377
+[02/20 16:12:51] cifar100-vgg19 INFO: Params: 20.09 M
+[02/20 16:12:51] cifar100-vgg19 INFO: ops: 512.73 M
+[02/20 16:12:54] cifar100-vgg19 INFO: Acc: 0.7377 Val Loss: 1.2789
+

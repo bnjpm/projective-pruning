@@ -1,0 +1,389 @@
+[02/20 17:30:40] modelnet40-dgcnn INFO: mode: pretrain
+[02/20 17:30:40] modelnet40-dgcnn INFO: model: dgcnn
+[02/20 17:30:40] modelnet40-dgcnn INFO: verbose: False
+[02/20 17:30:40] modelnet40-dgcnn INFO: dataset: modelnet40
+[02/20 17:30:40] modelnet40-dgcnn INFO: dataroot: data
+[02/20 17:30:40] modelnet40-dgcnn INFO: batch_size: 32
+[02/20 17:30:40] modelnet40-dgcnn INFO: total_epochs: 250
+[02/20 17:30:40] modelnet40-dgcnn INFO: lr_decay_milestones: 100,160,200
+[02/20 17:30:40] modelnet40-dgcnn INFO: lr_decay_gamma: 0.1
+[02/20 17:30:40] modelnet40-dgcnn INFO: lr: 0.1
+[02/20 17:30:40] modelnet40-dgcnn INFO: restore: None
+[02/20 17:30:40] modelnet40-dgcnn INFO: output_dir: run/modelnet40/pretrain
+[02/20 17:30:40] modelnet40-dgcnn INFO: finetune: False
+[02/20 17:30:40] modelnet40-dgcnn INFO: last_epochs: 100
+[02/20 17:30:40] modelnet40-dgcnn INFO: reps: 1
+[02/20 17:30:40] modelnet40-dgcnn INFO: method: None
+[02/20 17:30:40] modelnet40-dgcnn INFO: speed_up: 2
+[02/20 17:30:40] modelnet40-dgcnn INFO: max_pruning_ratio: 1.0
+[02/20 17:30:40] modelnet40-dgcnn INFO: soft_keeping_ratio: 0.0
+[02/20 17:30:40] modelnet40-dgcnn INFO: reg: 0.0005
+[02/20 17:30:40] modelnet40-dgcnn INFO: delta_reg: 0.0001
+[02/20 17:30:40] modelnet40-dgcnn INFO: weight_decay: 0.0005
+[02/20 17:30:40] modelnet40-dgcnn INFO: seed: 1
+[02/20 17:30:40] modelnet40-dgcnn INFO: global_pruning: False
+[02/20 17:30:40] modelnet40-dgcnn INFO: sl_total_epochs: 100
+[02/20 17:30:40] modelnet40-dgcnn INFO: sl_lr: 0.01
+[02/20 17:30:40] modelnet40-dgcnn INFO: sl_lr_decay_milestones: 60,80
+[02/20 17:30:40] modelnet40-dgcnn INFO: sl_reg_warmup: 0
+[02/20 17:30:40] modelnet40-dgcnn INFO: sl_restore: None
+[02/20 17:30:40] modelnet40-dgcnn INFO: iterative_steps: 400
+[02/20 17:30:40] modelnet40-dgcnn INFO: logger: <Logger modelnet40-dgcnn (DEBUG)>
+[02/20 17:30:40] modelnet40-dgcnn INFO: device: cuda
+[02/20 17:30:40] modelnet40-dgcnn INFO: num_classes: 40
+[02/20 17:31:57] modelnet40-dgcnn INFO: mode: pretrain
+[02/20 17:31:57] modelnet40-dgcnn INFO: model: dgcnn
+[02/20 17:31:57] modelnet40-dgcnn INFO: verbose: False
+[02/20 17:31:57] modelnet40-dgcnn INFO: dataset: modelnet40
+[02/20 17:31:57] modelnet40-dgcnn INFO: dataroot: data
+[02/20 17:31:57] modelnet40-dgcnn INFO: batch_size: 32
+[02/20 17:31:57] modelnet40-dgcnn INFO: total_epochs: 250
+[02/20 17:31:57] modelnet40-dgcnn INFO: lr_decay_milestones: 100,160,200
+[02/20 17:31:57] modelnet40-dgcnn INFO: lr_decay_gamma: 0.1
+[02/20 17:31:57] modelnet40-dgcnn INFO: lr: 0.1
+[02/20 17:31:57] modelnet40-dgcnn INFO: restore: None
+[02/20 17:31:57] modelnet40-dgcnn INFO: output_dir: run/modelnet40/pretrain
+[02/20 17:31:57] modelnet40-dgcnn INFO: finetune: False
+[02/20 17:31:57] modelnet40-dgcnn INFO: last_epochs: 100
+[02/20 17:31:57] modelnet40-dgcnn INFO: reps: 1
+[02/20 17:31:57] modelnet40-dgcnn INFO: method: None
+[02/20 17:31:57] modelnet40-dgcnn INFO: speed_up: 2
+[02/20 17:31:57] modelnet40-dgcnn INFO: max_pruning_ratio: 1.0
+[02/20 17:31:57] modelnet40-dgcnn INFO: soft_keeping_ratio: 0.0
+[02/20 17:31:57] modelnet40-dgcnn INFO: reg: 0.0005
+[02/20 17:31:57] modelnet40-dgcnn INFO: delta_reg: 0.0001
+[02/20 17:31:57] modelnet40-dgcnn INFO: weight_decay: 0.0005
+[02/20 17:31:57] modelnet40-dgcnn INFO: seed: 1
+[02/20 17:31:57] modelnet40-dgcnn INFO: global_pruning: False
+[02/20 17:31:57] modelnet40-dgcnn INFO: sl_total_epochs: 100
+[02/20 17:31:57] modelnet40-dgcnn INFO: sl_lr: 0.01
+[02/20 17:31:57] modelnet40-dgcnn INFO: sl_lr_decay_milestones: 60,80
+[02/20 17:31:57] modelnet40-dgcnn INFO: sl_reg_warmup: 0
+[02/20 17:31:57] modelnet40-dgcnn INFO: sl_restore: None
+[02/20 17:31:57] modelnet40-dgcnn INFO: iterative_steps: 400
+[02/20 17:31:57] modelnet40-dgcnn INFO: logger: <Logger modelnet40-dgcnn (DEBUG)>
+[02/20 17:31:57] modelnet40-dgcnn INFO: device: cuda
+[02/20 17:31:57] modelnet40-dgcnn INFO: num_classes: 40
+[02/20 17:34:30] modelnet40-dgcnn INFO: mode: pretrain
+[02/20 17:34:30] modelnet40-dgcnn INFO: model: dgcnn
+[02/20 17:34:30] modelnet40-dgcnn INFO: verbose: False
+[02/20 17:34:30] modelnet40-dgcnn INFO: dataset: modelnet40
+[02/20 17:34:30] modelnet40-dgcnn INFO: dataroot: data
+[02/20 17:34:30] modelnet40-dgcnn INFO: batch_size: 32
+[02/20 17:34:30] modelnet40-dgcnn INFO: total_epochs: 250
+[02/20 17:34:30] modelnet40-dgcnn INFO: lr_decay_milestones: 100,160,200
+[02/20 17:34:30] modelnet40-dgcnn INFO: lr_decay_gamma: 0.1
+[02/20 17:34:30] modelnet40-dgcnn INFO: lr: 0.1
+[02/20 17:34:30] modelnet40-dgcnn INFO: restore: None
+[02/20 17:34:30] modelnet40-dgcnn INFO: output_dir: run/modelnet40/pretrain
+[02/20 17:34:30] modelnet40-dgcnn INFO: finetune: False
+[02/20 17:34:30] modelnet40-dgcnn INFO: last_epochs: 100
+[02/20 17:34:30] modelnet40-dgcnn INFO: reps: 1
+[02/20 17:34:30] modelnet40-dgcnn INFO: method: None
+[02/20 17:34:30] modelnet40-dgcnn INFO: speed_up: 2
+[02/20 17:34:30] modelnet40-dgcnn INFO: max_pruning_ratio: 1.0
+[02/20 17:34:30] modelnet40-dgcnn INFO: soft_keeping_ratio: 0.0
+[02/20 17:34:30] modelnet40-dgcnn INFO: reg: 0.0005
+[02/20 17:34:30] modelnet40-dgcnn INFO: delta_reg: 0.0001
+[02/20 17:34:30] modelnet40-dgcnn INFO: weight_decay: 0.0005
+[02/20 17:34:30] modelnet40-dgcnn INFO: seed: 1
+[02/20 17:34:30] modelnet40-dgcnn INFO: global_pruning: False
+[02/20 17:34:30] modelnet40-dgcnn INFO: sl_total_epochs: 100
+[02/20 17:34:30] modelnet40-dgcnn INFO: sl_lr: 0.01
+[02/20 17:34:30] modelnet40-dgcnn INFO: sl_lr_decay_milestones: 60,80
+[02/20 17:34:30] modelnet40-dgcnn INFO: sl_reg_warmup: 0
+[02/20 17:34:30] modelnet40-dgcnn INFO: sl_restore: None
+[02/20 17:34:30] modelnet40-dgcnn INFO: iterative_steps: 400
+[02/20 17:34:30] modelnet40-dgcnn INFO: logger: <Logger modelnet40-dgcnn (DEBUG)>
+[02/20 17:34:30] modelnet40-dgcnn INFO: device: cuda
+[02/20 17:34:30] modelnet40-dgcnn INFO: num_classes: 40
+[02/20 17:34:54] modelnet40-dgcnn INFO: mode: pretrain
+[02/20 17:34:54] modelnet40-dgcnn INFO: model: dgcnn
+[02/20 17:34:54] modelnet40-dgcnn INFO: verbose: False
+[02/20 17:34:54] modelnet40-dgcnn INFO: dataset: modelnet40
+[02/20 17:34:54] modelnet40-dgcnn INFO: dataroot: data
+[02/20 17:34:54] modelnet40-dgcnn INFO: batch_size: 32
+[02/20 17:34:54] modelnet40-dgcnn INFO: total_epochs: 250
+[02/20 17:34:54] modelnet40-dgcnn INFO: lr_decay_milestones: 100,160,200
+[02/20 17:34:54] modelnet40-dgcnn INFO: lr_decay_gamma: 0.1
+[02/20 17:34:54] modelnet40-dgcnn INFO: lr: 0.1
+[02/20 17:34:54] modelnet40-dgcnn INFO: restore: None
+[02/20 17:34:54] modelnet40-dgcnn INFO: output_dir: run/modelnet40/pretrain
+[02/20 17:34:54] modelnet40-dgcnn INFO: finetune: False
+[02/20 17:34:54] modelnet40-dgcnn INFO: last_epochs: 100
+[02/20 17:34:54] modelnet40-dgcnn INFO: reps: 1
+[02/20 17:34:54] modelnet40-dgcnn INFO: method: None
+[02/20 17:34:54] modelnet40-dgcnn INFO: speed_up: 2
+[02/20 17:34:54] modelnet40-dgcnn INFO: max_pruning_ratio: 1.0
+[02/20 17:34:54] modelnet40-dgcnn INFO: soft_keeping_ratio: 0.0
+[02/20 17:34:54] modelnet40-dgcnn INFO: reg: 0.0005
+[02/20 17:34:54] modelnet40-dgcnn INFO: delta_reg: 0.0001
+[02/20 17:34:54] modelnet40-dgcnn INFO: weight_decay: 0.0005
+[02/20 17:34:54] modelnet40-dgcnn INFO: seed: 1
+[02/20 17:34:54] modelnet40-dgcnn INFO: global_pruning: False
+[02/20 17:34:54] modelnet40-dgcnn INFO: sl_total_epochs: 100
+[02/20 17:34:54] modelnet40-dgcnn INFO: sl_lr: 0.01
+[02/20 17:34:54] modelnet40-dgcnn INFO: sl_lr_decay_milestones: 60,80
+[02/20 17:34:54] modelnet40-dgcnn INFO: sl_reg_warmup: 0
+[02/20 17:34:54] modelnet40-dgcnn INFO: sl_restore: None
+[02/20 17:34:54] modelnet40-dgcnn INFO: iterative_steps: 400
+[02/20 17:34:54] modelnet40-dgcnn INFO: logger: <Logger modelnet40-dgcnn (DEBUG)>
+[02/20 17:34:54] modelnet40-dgcnn INFO: device: cuda
+[02/20 17:34:54] modelnet40-dgcnn INFO: num_classes: 40
+[02/20 17:34:55] modelnet40-dgcnn INFO: Params: 1.81 M
+[02/20 17:34:55] modelnet40-dgcnn INFO: ops: 2426.02 M
+[02/20 17:36:20] modelnet40-dgcnn INFO: Epoch 0/250, Acc=0.5166, Val Loss=1.5126, lr=0.1000
+[02/20 17:37:45] modelnet40-dgcnn INFO: Epoch 1/250, Acc=0.5344, Val Loss=1.4364, lr=0.1000
+[02/20 17:39:09] modelnet40-dgcnn INFO: Epoch 2/250, Acc=0.7131, Val Loss=0.9194, lr=0.1000
+[02/20 17:40:34] modelnet40-dgcnn INFO: Epoch 3/250, Acc=0.7164, Val Loss=0.8901, lr=0.1000
+[02/20 17:41:59] modelnet40-dgcnn INFO: Epoch 4/250, Acc=0.7569, Val Loss=0.7884, lr=0.1000
+[02/20 17:43:23] modelnet40-dgcnn INFO: Epoch 5/250, Acc=0.7593, Val Loss=0.7507, lr=0.1000
+[02/20 17:44:48] modelnet40-dgcnn INFO: Epoch 6/250, Acc=0.7472, Val Loss=0.8325, lr=0.1000
+[02/20 17:46:13] modelnet40-dgcnn INFO: Epoch 7/250, Acc=0.7678, Val Loss=0.7389, lr=0.1000
+[02/20 17:47:37] modelnet40-dgcnn INFO: Epoch 8/250, Acc=0.7950, Val Loss=0.6982, lr=0.1000
+[02/20 17:49:02] modelnet40-dgcnn INFO: Epoch 9/250, Acc=0.6268, Val Loss=1.5372, lr=0.1000
+[02/20 17:50:27] modelnet40-dgcnn INFO: Epoch 10/250, Acc=0.7516, Val Loss=0.8450, lr=0.1000
+[02/20 17:51:51] modelnet40-dgcnn INFO: Epoch 11/250, Acc=0.7889, Val Loss=0.6843, lr=0.1000
+[02/20 17:53:16] modelnet40-dgcnn INFO: Epoch 12/250, Acc=0.7723, Val Loss=0.7207, lr=0.1000
+[02/20 17:54:41] modelnet40-dgcnn INFO: Epoch 13/250, Acc=0.6896, Val Loss=1.0013, lr=0.1000
+[02/20 17:56:05] modelnet40-dgcnn INFO: Epoch 14/250, Acc=0.7261, Val Loss=0.8917, lr=0.1000
+[02/20 17:57:30] modelnet40-dgcnn INFO: Epoch 15/250, Acc=0.7800, Val Loss=0.7015, lr=0.1000
+[02/20 17:58:54] modelnet40-dgcnn INFO: Epoch 16/250, Acc=0.7553, Val Loss=0.7470, lr=0.1000
+[02/20 18:00:19] modelnet40-dgcnn INFO: Epoch 17/250, Acc=0.6605, Val Loss=1.1363, lr=0.1000
+[02/20 18:01:44] modelnet40-dgcnn INFO: Epoch 18/250, Acc=0.7524, Val Loss=0.8568, lr=0.1000
+[02/20 18:03:08] modelnet40-dgcnn INFO: Epoch 19/250, Acc=0.7046, Val Loss=1.0555, lr=0.1000
+[02/20 18:04:33] modelnet40-dgcnn INFO: Epoch 20/250, Acc=0.7686, Val Loss=0.7291, lr=0.1000
+[02/20 18:05:58] modelnet40-dgcnn INFO: Epoch 21/250, Acc=0.7658, Val Loss=0.7513, lr=0.1000
+[02/20 18:07:22] modelnet40-dgcnn INFO: Epoch 22/250, Acc=0.7216, Val Loss=0.9147, lr=0.1000
+[02/20 18:08:47] modelnet40-dgcnn INFO: Epoch 23/250, Acc=0.7804, Val Loss=0.6867, lr=0.1000
+[02/20 18:10:11] modelnet40-dgcnn INFO: Epoch 24/250, Acc=0.7788, Val Loss=0.7097, lr=0.1000
+[02/20 18:11:36] modelnet40-dgcnn INFO: Epoch 25/250, Acc=0.7265, Val Loss=0.8288, lr=0.1000
+[02/20 18:13:01] modelnet40-dgcnn INFO: Epoch 26/250, Acc=0.7054, Val Loss=1.0561, lr=0.1000
+[02/20 18:14:25] modelnet40-dgcnn INFO: Epoch 27/250, Acc=0.8006, Val Loss=0.6077, lr=0.1000
+[02/20 18:15:50] modelnet40-dgcnn INFO: Epoch 28/250, Acc=0.5632, Val Loss=1.5640, lr=0.1000
+[02/20 18:17:15] modelnet40-dgcnn INFO: Epoch 29/250, Acc=0.7447, Val Loss=0.8312, lr=0.1000
+[02/20 18:18:39] modelnet40-dgcnn INFO: Epoch 30/250, Acc=0.8088, Val Loss=0.6453, lr=0.1000
+[02/20 18:20:04] modelnet40-dgcnn INFO: Epoch 31/250, Acc=0.6698, Val Loss=1.0280, lr=0.1000
+[02/20 18:21:29] modelnet40-dgcnn INFO: Epoch 32/250, Acc=0.7557, Val Loss=0.7861, lr=0.1000
+[02/20 18:22:53] modelnet40-dgcnn INFO: Epoch 33/250, Acc=0.7946, Val Loss=0.6729, lr=0.1000
+[02/20 18:24:18] modelnet40-dgcnn INFO: Epoch 34/250, Acc=0.7853, Val Loss=0.6516, lr=0.1000
+[02/20 18:25:43] modelnet40-dgcnn INFO: Epoch 35/250, Acc=0.7767, Val Loss=0.7682, lr=0.1000
+[02/20 18:27:07] modelnet40-dgcnn INFO: Epoch 36/250, Acc=0.7488, Val Loss=0.8723, lr=0.1000
+[02/20 18:28:32] modelnet40-dgcnn INFO: Epoch 37/250, Acc=0.7978, Val Loss=0.6860, lr=0.1000
+[02/20 18:29:57] modelnet40-dgcnn INFO: Epoch 38/250, Acc=0.8193, Val Loss=0.5758, lr=0.1000
+[02/20 18:31:21] modelnet40-dgcnn INFO: Epoch 39/250, Acc=0.7731, Val Loss=0.7310, lr=0.1000
+[02/20 18:32:46] modelnet40-dgcnn INFO: Epoch 40/250, Acc=0.7731, Val Loss=0.7282, lr=0.1000
+[02/20 18:34:11] modelnet40-dgcnn INFO: Epoch 41/250, Acc=0.7719, Val Loss=0.7214, lr=0.1000
+[02/20 18:35:35] modelnet40-dgcnn INFO: Epoch 42/250, Acc=0.7658, Val Loss=0.7364, lr=0.1000
+[02/20 18:37:00] modelnet40-dgcnn INFO: Epoch 43/250, Acc=0.7237, Val Loss=0.9328, lr=0.1000
+[02/20 18:38:24] modelnet40-dgcnn INFO: Epoch 44/250, Acc=0.7885, Val Loss=0.7339, lr=0.1000
+[02/20 18:39:49] modelnet40-dgcnn INFO: Epoch 45/250, Acc=0.7168, Val Loss=0.9459, lr=0.1000
+[02/20 18:41:14] modelnet40-dgcnn INFO: Epoch 46/250, Acc=0.7472, Val Loss=0.8333, lr=0.1000
+[02/20 18:42:38] modelnet40-dgcnn INFO: Epoch 47/250, Acc=0.7642, Val Loss=0.7992, lr=0.1000
+[02/20 18:44:03] modelnet40-dgcnn INFO: Epoch 48/250, Acc=0.6917, Val Loss=1.0035, lr=0.1000
+[02/20 18:45:28] modelnet40-dgcnn INFO: Epoch 49/250, Acc=0.8136, Val Loss=0.6189, lr=0.1000
+[02/20 18:46:52] modelnet40-dgcnn INFO: Epoch 50/250, Acc=0.7966, Val Loss=0.6740, lr=0.1000
+[02/20 18:48:17] modelnet40-dgcnn INFO: Epoch 51/250, Acc=0.7314, Val Loss=0.8503, lr=0.1000
+[02/20 18:49:42] modelnet40-dgcnn INFO: Epoch 52/250, Acc=0.8173, Val Loss=0.5950, lr=0.1000
+[02/20 18:51:06] modelnet40-dgcnn INFO: Epoch 53/250, Acc=0.7800, Val Loss=0.7245, lr=0.1000
+[02/20 18:52:31] modelnet40-dgcnn INFO: Epoch 54/250, Acc=0.7994, Val Loss=0.6934, lr=0.1000
+[02/20 18:53:56] modelnet40-dgcnn INFO: Epoch 55/250, Acc=0.7241, Val Loss=0.8425, lr=0.1000
+[02/20 18:55:20] modelnet40-dgcnn INFO: Epoch 56/250, Acc=0.7512, Val Loss=0.8289, lr=0.1000
+[02/20 18:56:45] modelnet40-dgcnn INFO: Epoch 57/250, Acc=0.7079, Val Loss=0.9238, lr=0.1000
+[02/20 18:58:10] modelnet40-dgcnn INFO: Epoch 58/250, Acc=0.6637, Val Loss=1.0915, lr=0.1000
+[02/20 18:59:34] modelnet40-dgcnn INFO: Epoch 59/250, Acc=0.7541, Val Loss=0.7887, lr=0.1000
+[02/20 19:00:59] modelnet40-dgcnn INFO: Epoch 60/250, Acc=0.7905, Val Loss=0.6433, lr=0.1000
+[02/20 19:02:24] modelnet40-dgcnn INFO: Epoch 61/250, Acc=0.7731, Val Loss=0.7209, lr=0.1000
+[02/20 19:03:48] modelnet40-dgcnn INFO: Epoch 62/250, Acc=0.7569, Val Loss=0.7801, lr=0.1000
+[02/20 19:05:13] modelnet40-dgcnn INFO: Epoch 63/250, Acc=0.7853, Val Loss=0.7073, lr=0.1000
+[02/20 19:06:37] modelnet40-dgcnn INFO: Epoch 64/250, Acc=0.7480, Val Loss=0.7774, lr=0.1000
+[02/20 19:08:02] modelnet40-dgcnn INFO: Epoch 65/250, Acc=0.8067, Val Loss=0.6103, lr=0.1000
+[02/20 19:09:27] modelnet40-dgcnn INFO: Epoch 66/250, Acc=0.6519, Val Loss=1.2267, lr=0.1000
+[02/20 19:10:51] modelnet40-dgcnn INFO: Epoch 67/250, Acc=0.6860, Val Loss=1.1494, lr=0.1000
+[02/20 19:12:16] modelnet40-dgcnn INFO: Epoch 68/250, Acc=0.7338, Val Loss=0.8258, lr=0.1000
+[02/20 19:13:41] modelnet40-dgcnn INFO: Epoch 69/250, Acc=0.6767, Val Loss=1.1919, lr=0.1000
+[02/20 19:15:05] modelnet40-dgcnn INFO: Epoch 70/250, Acc=0.8177, Val Loss=0.6104, lr=0.1000
+[02/20 19:16:30] modelnet40-dgcnn INFO: Epoch 71/250, Acc=0.8197, Val Loss=0.5500, lr=0.1000
+[02/20 19:17:55] modelnet40-dgcnn INFO: Epoch 72/250, Acc=0.7650, Val Loss=0.7262, lr=0.1000
+[02/20 19:19:19] modelnet40-dgcnn INFO: Epoch 73/250, Acc=0.7119, Val Loss=0.8777, lr=0.1000
+[02/20 19:20:44] modelnet40-dgcnn INFO: Epoch 74/250, Acc=0.7942, Val Loss=0.6343, lr=0.1000
+[02/20 19:22:09] modelnet40-dgcnn INFO: Epoch 75/250, Acc=0.6357, Val Loss=1.2710, lr=0.1000
+[02/20 19:23:33] modelnet40-dgcnn INFO: Epoch 76/250, Acc=0.5620, Val Loss=1.4963, lr=0.1000
+[02/20 19:24:58] modelnet40-dgcnn INFO: Epoch 77/250, Acc=0.7982, Val Loss=0.6694, lr=0.1000
+[02/20 19:26:23] modelnet40-dgcnn INFO: Epoch 78/250, Acc=0.8067, Val Loss=0.6369, lr=0.1000
+[02/20 19:27:47] modelnet40-dgcnn INFO: Epoch 79/250, Acc=0.7447, Val Loss=0.8652, lr=0.1000
+[02/20 19:29:12] modelnet40-dgcnn INFO: Epoch 80/250, Acc=0.7739, Val Loss=0.7504, lr=0.1000
+[02/20 19:30:37] modelnet40-dgcnn INFO: Epoch 81/250, Acc=0.7423, Val Loss=0.8136, lr=0.1000
+[02/20 19:32:01] modelnet40-dgcnn INFO: Epoch 82/250, Acc=0.8169, Val Loss=0.5584, lr=0.1000
+[02/20 19:33:26] modelnet40-dgcnn INFO: Epoch 83/250, Acc=0.7674, Val Loss=0.8073, lr=0.1000
+[02/20 19:34:51] modelnet40-dgcnn INFO: Epoch 84/250, Acc=0.7310, Val Loss=0.8193, lr=0.1000
+[02/20 19:36:15] modelnet40-dgcnn INFO: Epoch 85/250, Acc=0.6811, Val Loss=1.2204, lr=0.1000
+[02/20 19:37:40] modelnet40-dgcnn INFO: Epoch 86/250, Acc=0.6544, Val Loss=1.1575, lr=0.1000
+[02/20 19:39:04] modelnet40-dgcnn INFO: Epoch 87/250, Acc=0.6596, Val Loss=1.1594, lr=0.1000
+[02/20 19:40:29] modelnet40-dgcnn INFO: Epoch 88/250, Acc=0.6831, Val Loss=1.1887, lr=0.1000
+[02/20 19:41:54] modelnet40-dgcnn INFO: Epoch 89/250, Acc=0.7439, Val Loss=0.8329, lr=0.1000
+[02/20 19:43:18] modelnet40-dgcnn INFO: Epoch 90/250, Acc=0.7848, Val Loss=0.6882, lr=0.1000
+[02/20 19:44:43] modelnet40-dgcnn INFO: Epoch 91/250, Acc=0.7990, Val Loss=0.6851, lr=0.1000
+[02/20 19:46:08] modelnet40-dgcnn INFO: Epoch 92/250, Acc=0.7658, Val Loss=0.8283, lr=0.1000
+[02/20 19:47:32] modelnet40-dgcnn INFO: Epoch 93/250, Acc=0.7188, Val Loss=0.9936, lr=0.1000
+[02/20 19:48:57] modelnet40-dgcnn INFO: Epoch 94/250, Acc=0.7921, Val Loss=0.6665, lr=0.1000
+[02/20 19:50:22] modelnet40-dgcnn INFO: Epoch 95/250, Acc=0.7597, Val Loss=0.8103, lr=0.1000
+[02/20 19:51:46] modelnet40-dgcnn INFO: Epoch 96/250, Acc=0.6945, Val Loss=1.0101, lr=0.1000
+[02/20 19:53:11] modelnet40-dgcnn INFO: Epoch 97/250, Acc=0.6471, Val Loss=1.3489, lr=0.1000
+[02/20 19:54:36] modelnet40-dgcnn INFO: Epoch 98/250, Acc=0.6548, Val Loss=1.2104, lr=0.1000
+[02/20 19:56:00] modelnet40-dgcnn INFO: Epoch 99/250, Acc=0.7796, Val Loss=0.6651, lr=0.1000
+[02/20 19:57:25] modelnet40-dgcnn INFO: Epoch 100/250, Acc=0.8910, Val Loss=0.3388, lr=0.0100
+[02/20 19:58:50] modelnet40-dgcnn INFO: Epoch 101/250, Acc=0.8967, Val Loss=0.3298, lr=0.0100
+[02/20 20:00:14] modelnet40-dgcnn INFO: Epoch 102/250, Acc=0.8967, Val Loss=0.3146, lr=0.0100
+[02/20 20:01:39] modelnet40-dgcnn INFO: Epoch 103/250, Acc=0.9028, Val Loss=0.3049, lr=0.0100
+[02/20 20:03:04] modelnet40-dgcnn INFO: Epoch 104/250, Acc=0.8955, Val Loss=0.3125, lr=0.0100
+[02/20 20:04:28] modelnet40-dgcnn INFO: Epoch 105/250, Acc=0.8991, Val Loss=0.2889, lr=0.0100
+[02/20 20:05:53] modelnet40-dgcnn INFO: Epoch 106/250, Acc=0.8967, Val Loss=0.3048, lr=0.0100
+[02/20 20:07:18] modelnet40-dgcnn INFO: Epoch 107/250, Acc=0.9028, Val Loss=0.2858, lr=0.0100
+[02/20 20:08:42] modelnet40-dgcnn INFO: Epoch 108/250, Acc=0.9028, Val Loss=0.2954, lr=0.0100
+[02/20 20:10:07] modelnet40-dgcnn INFO: Epoch 109/250, Acc=0.9072, Val Loss=0.2795, lr=0.0100
+[02/20 20:11:32] modelnet40-dgcnn INFO: Epoch 110/250, Acc=0.9096, Val Loss=0.2831, lr=0.0100
+[02/20 20:12:56] modelnet40-dgcnn INFO: Epoch 111/250, Acc=0.9137, Val Loss=0.2777, lr=0.0100
+[02/20 20:14:21] modelnet40-dgcnn INFO: Epoch 112/250, Acc=0.9028, Val Loss=0.2913, lr=0.0100
+[02/20 20:15:46] modelnet40-dgcnn INFO: Epoch 113/250, Acc=0.9040, Val Loss=0.2883, lr=0.0100
+[02/20 20:17:10] modelnet40-dgcnn INFO: Epoch 114/250, Acc=0.9117, Val Loss=0.2673, lr=0.0100
+[02/20 20:18:35] modelnet40-dgcnn INFO: Epoch 115/250, Acc=0.9015, Val Loss=0.2893, lr=0.0100
+[02/20 20:20:00] modelnet40-dgcnn INFO: Epoch 116/250, Acc=0.9048, Val Loss=0.2884, lr=0.0100
+[02/20 20:21:24] modelnet40-dgcnn INFO: Epoch 117/250, Acc=0.9028, Val Loss=0.2957, lr=0.0100
+[02/20 20:22:49] modelnet40-dgcnn INFO: Epoch 118/250, Acc=0.9068, Val Loss=0.2943, lr=0.0100
+[02/20 20:24:14] modelnet40-dgcnn INFO: Epoch 119/250, Acc=0.9117, Val Loss=0.2783, lr=0.0100
+[02/20 20:25:38] modelnet40-dgcnn INFO: Epoch 120/250, Acc=0.9060, Val Loss=0.2893, lr=0.0100
+[02/20 20:27:03] modelnet40-dgcnn INFO: Epoch 121/250, Acc=0.9080, Val Loss=0.2814, lr=0.0100
+[02/20 20:28:28] modelnet40-dgcnn INFO: Epoch 122/250, Acc=0.9040, Val Loss=0.3053, lr=0.0100
+[02/20 20:29:52] modelnet40-dgcnn INFO: Epoch 123/250, Acc=0.9011, Val Loss=0.3006, lr=0.0100
+[02/20 20:31:17] modelnet40-dgcnn INFO: Epoch 124/250, Acc=0.9028, Val Loss=0.2946, lr=0.0100
+[02/20 20:32:42] modelnet40-dgcnn INFO: Epoch 125/250, Acc=0.9028, Val Loss=0.2978, lr=0.0100
+[02/20 20:34:06] modelnet40-dgcnn INFO: Epoch 126/250, Acc=0.9011, Val Loss=0.2939, lr=0.0100
+[02/20 20:35:31] modelnet40-dgcnn INFO: Epoch 127/250, Acc=0.8987, Val Loss=0.3042, lr=0.0100
+[02/20 20:36:56] modelnet40-dgcnn INFO: Epoch 128/250, Acc=0.9048, Val Loss=0.2920, lr=0.0100
+[02/20 20:38:20] modelnet40-dgcnn INFO: Epoch 129/250, Acc=0.8926, Val Loss=0.3325, lr=0.0100
+[02/20 20:39:45] modelnet40-dgcnn INFO: Epoch 130/250, Acc=0.8991, Val Loss=0.3142, lr=0.0100
+[02/20 20:41:10] modelnet40-dgcnn INFO: Epoch 131/250, Acc=0.9064, Val Loss=0.2813, lr=0.0100
+[02/20 20:42:34] modelnet40-dgcnn INFO: Epoch 132/250, Acc=0.9117, Val Loss=0.2853, lr=0.0100
+[02/20 20:43:59] modelnet40-dgcnn INFO: Epoch 133/250, Acc=0.8995, Val Loss=0.3291, lr=0.0100
+[02/20 20:45:24] modelnet40-dgcnn INFO: Epoch 134/250, Acc=0.8947, Val Loss=0.3467, lr=0.0100
+[02/20 20:46:48] modelnet40-dgcnn INFO: Epoch 135/250, Acc=0.9048, Val Loss=0.2960, lr=0.0100
+[02/20 20:48:13] modelnet40-dgcnn INFO: Epoch 136/250, Acc=0.9040, Val Loss=0.2987, lr=0.0100
+[02/20 20:49:38] modelnet40-dgcnn INFO: Epoch 137/250, Acc=0.8995, Val Loss=0.2990, lr=0.0100
+[02/20 20:51:02] modelnet40-dgcnn INFO: Epoch 138/250, Acc=0.9019, Val Loss=0.2977, lr=0.0100
+[02/20 20:52:27] modelnet40-dgcnn INFO: Epoch 139/250, Acc=0.8930, Val Loss=0.3193, lr=0.0100
+[02/20 20:53:52] modelnet40-dgcnn INFO: Epoch 140/250, Acc=0.9060, Val Loss=0.3093, lr=0.0100
+[02/20 20:55:16] modelnet40-dgcnn INFO: Epoch 141/250, Acc=0.9080, Val Loss=0.2730, lr=0.0100
+[02/20 20:56:41] modelnet40-dgcnn INFO: Epoch 142/250, Acc=0.8959, Val Loss=0.3339, lr=0.0100
+[02/20 20:58:06] modelnet40-dgcnn INFO: Epoch 143/250, Acc=0.9088, Val Loss=0.2740, lr=0.0100
+[02/20 20:59:30] modelnet40-dgcnn INFO: Epoch 144/250, Acc=0.8951, Val Loss=0.3430, lr=0.0100
+[02/20 21:00:55] modelnet40-dgcnn INFO: Epoch 145/250, Acc=0.8975, Val Loss=0.3299, lr=0.0100
+[02/20 21:02:20] modelnet40-dgcnn INFO: Epoch 146/250, Acc=0.8918, Val Loss=0.3362, lr=0.0100
+[02/20 21:03:44] modelnet40-dgcnn INFO: Epoch 147/250, Acc=0.8975, Val Loss=0.3002, lr=0.0100
+[02/20 21:05:09] modelnet40-dgcnn INFO: Epoch 148/250, Acc=0.8955, Val Loss=0.3267, lr=0.0100
+[02/20 21:06:34] modelnet40-dgcnn INFO: Epoch 149/250, Acc=0.8914, Val Loss=0.3460, lr=0.0100
+[02/20 21:07:58] modelnet40-dgcnn INFO: Epoch 150/250, Acc=0.8776, Val Loss=0.3723, lr=0.0100
+[02/20 21:09:23] modelnet40-dgcnn INFO: Epoch 151/250, Acc=0.9048, Val Loss=0.2955, lr=0.0100
+[02/20 21:10:48] modelnet40-dgcnn INFO: Epoch 152/250, Acc=0.8991, Val Loss=0.3077, lr=0.0100
+[02/20 21:12:12] modelnet40-dgcnn INFO: Epoch 153/250, Acc=0.8898, Val Loss=0.3468, lr=0.0100
+[02/20 21:13:37] modelnet40-dgcnn INFO: Epoch 154/250, Acc=0.8967, Val Loss=0.3346, lr=0.0100
+[02/20 21:15:02] modelnet40-dgcnn INFO: Epoch 155/250, Acc=0.9052, Val Loss=0.3085, lr=0.0100
+[02/20 21:16:26] modelnet40-dgcnn INFO: Epoch 156/250, Acc=0.8967, Val Loss=0.3206, lr=0.0100
+[02/20 21:17:51] modelnet40-dgcnn INFO: Epoch 157/250, Acc=0.9015, Val Loss=0.3161, lr=0.0100
+[02/20 21:19:16] modelnet40-dgcnn INFO: Epoch 158/250, Acc=0.8902, Val Loss=0.3489, lr=0.0100
+[02/20 21:20:40] modelnet40-dgcnn INFO: Epoch 159/250, Acc=0.9064, Val Loss=0.3034, lr=0.0100
+[02/20 21:22:05] modelnet40-dgcnn INFO: Epoch 160/250, Acc=0.9198, Val Loss=0.2626, lr=0.0010
+[02/20 21:23:30] modelnet40-dgcnn INFO: Epoch 161/250, Acc=0.9226, Val Loss=0.2552, lr=0.0010
+[02/20 21:24:54] modelnet40-dgcnn INFO: Epoch 162/250, Acc=0.9177, Val Loss=0.2595, lr=0.0010
+[02/20 21:26:19] modelnet40-dgcnn INFO: Epoch 163/250, Acc=0.9222, Val Loss=0.2508, lr=0.0010
+[02/20 21:27:44] modelnet40-dgcnn INFO: Epoch 164/250, Acc=0.9206, Val Loss=0.2586, lr=0.0010
+[02/20 21:29:08] modelnet40-dgcnn INFO: Epoch 165/250, Acc=0.9234, Val Loss=0.2495, lr=0.0010
+[02/20 21:30:33] modelnet40-dgcnn INFO: Epoch 166/250, Acc=0.9133, Val Loss=0.2620, lr=0.0010
+[02/20 21:31:58] modelnet40-dgcnn INFO: Epoch 167/250, Acc=0.9182, Val Loss=0.2604, lr=0.0010
+[02/20 21:33:22] modelnet40-dgcnn INFO: Epoch 168/250, Acc=0.9190, Val Loss=0.2594, lr=0.0010
+[02/20 21:34:47] modelnet40-dgcnn INFO: Epoch 169/250, Acc=0.9222, Val Loss=0.2622, lr=0.0010
+[02/20 21:36:12] modelnet40-dgcnn INFO: Epoch 170/250, Acc=0.9214, Val Loss=0.2574, lr=0.0010
+[02/20 21:37:36] modelnet40-dgcnn INFO: Epoch 171/250, Acc=0.9234, Val Loss=0.2552, lr=0.0010
+[02/20 21:39:01] modelnet40-dgcnn INFO: Epoch 172/250, Acc=0.9202, Val Loss=0.2564, lr=0.0010
+[02/20 21:40:26] modelnet40-dgcnn INFO: Epoch 173/250, Acc=0.9161, Val Loss=0.2696, lr=0.0010
+[02/20 21:41:50] modelnet40-dgcnn INFO: Epoch 174/250, Acc=0.9177, Val Loss=0.2594, lr=0.0010
+[02/20 21:43:15] modelnet40-dgcnn INFO: Epoch 175/250, Acc=0.9190, Val Loss=0.2598, lr=0.0010
+[02/20 21:44:40] modelnet40-dgcnn INFO: Epoch 176/250, Acc=0.9141, Val Loss=0.2640, lr=0.0010
+[02/20 21:46:04] modelnet40-dgcnn INFO: Epoch 177/250, Acc=0.9182, Val Loss=0.2616, lr=0.0010
+[02/20 21:47:29] modelnet40-dgcnn INFO: Epoch 178/250, Acc=0.9206, Val Loss=0.2604, lr=0.0010
+[02/20 21:48:54] modelnet40-dgcnn INFO: Epoch 179/250, Acc=0.9161, Val Loss=0.2635, lr=0.0010
+[02/20 21:50:18] modelnet40-dgcnn INFO: Epoch 180/250, Acc=0.9177, Val Loss=0.2637, lr=0.0010
+[02/20 21:51:43] modelnet40-dgcnn INFO: Epoch 181/250, Acc=0.9186, Val Loss=0.2657, lr=0.0010
+[02/20 21:53:08] modelnet40-dgcnn INFO: Epoch 182/250, Acc=0.9190, Val Loss=0.2597, lr=0.0010
+[02/20 21:54:32] modelnet40-dgcnn INFO: Epoch 183/250, Acc=0.9161, Val Loss=0.2700, lr=0.0010
+[02/20 21:55:57] modelnet40-dgcnn INFO: Epoch 184/250, Acc=0.9177, Val Loss=0.2659, lr=0.0010
+[02/20 21:57:22] modelnet40-dgcnn INFO: Epoch 185/250, Acc=0.9165, Val Loss=0.2691, lr=0.0010
+[02/20 21:58:46] modelnet40-dgcnn INFO: Epoch 186/250, Acc=0.9206, Val Loss=0.2586, lr=0.0010
+[02/20 22:00:11] modelnet40-dgcnn INFO: Epoch 187/250, Acc=0.9182, Val Loss=0.2578, lr=0.0010
+[02/20 22:01:36] modelnet40-dgcnn INFO: Epoch 188/250, Acc=0.9153, Val Loss=0.2631, lr=0.0010
+[02/20 22:03:01] modelnet40-dgcnn INFO: Epoch 189/250, Acc=0.9218, Val Loss=0.2596, lr=0.0010
+[02/20 22:04:25] modelnet40-dgcnn INFO: Epoch 190/250, Acc=0.9218, Val Loss=0.2535, lr=0.0010
+[02/20 22:05:50] modelnet40-dgcnn INFO: Epoch 191/250, Acc=0.9161, Val Loss=0.2638, lr=0.0010
+[02/20 22:07:15] modelnet40-dgcnn INFO: Epoch 192/250, Acc=0.9210, Val Loss=0.2637, lr=0.0010
+[02/20 22:08:39] modelnet40-dgcnn INFO: Epoch 193/250, Acc=0.9177, Val Loss=0.2723, lr=0.0010
+[02/20 22:10:04] modelnet40-dgcnn INFO: Epoch 194/250, Acc=0.9165, Val Loss=0.2633, lr=0.0010
+[02/20 22:11:29] modelnet40-dgcnn INFO: Epoch 195/250, Acc=0.9161, Val Loss=0.2698, lr=0.0010
+[02/20 22:12:53] modelnet40-dgcnn INFO: Epoch 196/250, Acc=0.9214, Val Loss=0.2665, lr=0.0010
+[02/20 22:14:18] modelnet40-dgcnn INFO: Epoch 197/250, Acc=0.9226, Val Loss=0.2662, lr=0.0010
+[02/20 22:15:43] modelnet40-dgcnn INFO: Epoch 198/250, Acc=0.9190, Val Loss=0.2764, lr=0.0010
+[02/20 22:17:07] modelnet40-dgcnn INFO: Epoch 199/250, Acc=0.9206, Val Loss=0.2608, lr=0.0010
+[02/20 22:18:32] modelnet40-dgcnn INFO: Epoch 200/250, Acc=0.9190, Val Loss=0.2643, lr=0.0001
+[02/20 22:19:57] modelnet40-dgcnn INFO: Epoch 201/250, Acc=0.9238, Val Loss=0.2602, lr=0.0001
+[02/20 22:21:21] modelnet40-dgcnn INFO: Epoch 202/250, Acc=0.9206, Val Loss=0.2693, lr=0.0001
+[02/20 22:22:46] modelnet40-dgcnn INFO: Epoch 203/250, Acc=0.9194, Val Loss=0.2702, lr=0.0001
+[02/20 22:24:11] modelnet40-dgcnn INFO: Epoch 204/250, Acc=0.9177, Val Loss=0.2689, lr=0.0001
+[02/20 22:25:35] modelnet40-dgcnn INFO: Epoch 205/250, Acc=0.9190, Val Loss=0.2635, lr=0.0001
+[02/20 22:27:00] modelnet40-dgcnn INFO: Epoch 206/250, Acc=0.9202, Val Loss=0.2653, lr=0.0001
+[02/20 22:28:25] modelnet40-dgcnn INFO: Epoch 207/250, Acc=0.9194, Val Loss=0.2650, lr=0.0001
+[02/20 22:29:49] modelnet40-dgcnn INFO: Epoch 208/250, Acc=0.9214, Val Loss=0.2618, lr=0.0001
+[02/20 22:31:14] modelnet40-dgcnn INFO: Epoch 209/250, Acc=0.9190, Val Loss=0.2642, lr=0.0001
+[02/20 22:32:39] modelnet40-dgcnn INFO: Epoch 210/250, Acc=0.9186, Val Loss=0.2642, lr=0.0001
+[02/20 22:34:03] modelnet40-dgcnn INFO: Epoch 211/250, Acc=0.9198, Val Loss=0.2664, lr=0.0001
+[02/20 22:35:28] modelnet40-dgcnn INFO: Epoch 212/250, Acc=0.9165, Val Loss=0.2655, lr=0.0001
+[02/20 22:36:53] modelnet40-dgcnn INFO: Epoch 213/250, Acc=0.9222, Val Loss=0.2624, lr=0.0001
+[02/20 22:38:18] modelnet40-dgcnn INFO: Epoch 214/250, Acc=0.9218, Val Loss=0.2669, lr=0.0001
+[02/20 22:39:42] modelnet40-dgcnn INFO: Epoch 215/250, Acc=0.9153, Val Loss=0.2682, lr=0.0001
+[02/20 22:41:07] modelnet40-dgcnn INFO: Epoch 216/250, Acc=0.9210, Val Loss=0.2652, lr=0.0001
+[02/20 22:42:31] modelnet40-dgcnn INFO: Epoch 217/250, Acc=0.9214, Val Loss=0.2643, lr=0.0001
+[02/20 22:43:56] modelnet40-dgcnn INFO: Epoch 218/250, Acc=0.9194, Val Loss=0.2625, lr=0.0001
+[02/20 22:45:21] modelnet40-dgcnn INFO: Epoch 219/250, Acc=0.9214, Val Loss=0.2670, lr=0.0001
+[02/20 22:46:46] modelnet40-dgcnn INFO: Epoch 220/250, Acc=0.9186, Val Loss=0.2661, lr=0.0001
+[02/20 22:48:10] modelnet40-dgcnn INFO: Epoch 221/250, Acc=0.9194, Val Loss=0.2626, lr=0.0001
+[02/20 22:49:35] modelnet40-dgcnn INFO: Epoch 222/250, Acc=0.9206, Val Loss=0.2609, lr=0.0001
+[02/20 22:51:00] modelnet40-dgcnn INFO: Epoch 223/250, Acc=0.9210, Val Loss=0.2668, lr=0.0001
+[02/20 22:52:24] modelnet40-dgcnn INFO: Epoch 224/250, Acc=0.9186, Val Loss=0.2681, lr=0.0001
+[02/20 22:53:49] modelnet40-dgcnn INFO: Epoch 225/250, Acc=0.9206, Val Loss=0.2644, lr=0.0001
+[02/20 22:55:14] modelnet40-dgcnn INFO: Epoch 226/250, Acc=0.9206, Val Loss=0.2654, lr=0.0001
+[02/20 22:56:38] modelnet40-dgcnn INFO: Epoch 227/250, Acc=0.9194, Val Loss=0.2673, lr=0.0001
+[02/20 22:58:03] modelnet40-dgcnn INFO: Epoch 228/250, Acc=0.9206, Val Loss=0.2635, lr=0.0001
+[02/20 22:59:28] modelnet40-dgcnn INFO: Epoch 229/250, Acc=0.9214, Val Loss=0.2676, lr=0.0001
+[02/20 23:00:52] modelnet40-dgcnn INFO: Epoch 230/250, Acc=0.9214, Val Loss=0.2599, lr=0.0001
+[02/20 23:02:17] modelnet40-dgcnn INFO: Epoch 231/250, Acc=0.9218, Val Loss=0.2664, lr=0.0001
+[02/20 23:03:42] modelnet40-dgcnn INFO: Epoch 232/250, Acc=0.9202, Val Loss=0.2623, lr=0.0001
+[02/20 23:05:06] modelnet40-dgcnn INFO: Epoch 233/250, Acc=0.9190, Val Loss=0.2695, lr=0.0001
+[02/20 23:06:31] modelnet40-dgcnn INFO: Epoch 234/250, Acc=0.9230, Val Loss=0.2650, lr=0.0001
+[02/20 23:07:56] modelnet40-dgcnn INFO: Epoch 235/250, Acc=0.9226, Val Loss=0.2643, lr=0.0001
+[02/20 23:09:20] modelnet40-dgcnn INFO: Epoch 236/250, Acc=0.9186, Val Loss=0.2693, lr=0.0001
+[02/20 23:10:45] modelnet40-dgcnn INFO: Epoch 237/250, Acc=0.9169, Val Loss=0.2690, lr=0.0001
+[02/20 23:12:10] modelnet40-dgcnn INFO: Epoch 238/250, Acc=0.9202, Val Loss=0.2678, lr=0.0001
+[02/20 23:13:35] modelnet40-dgcnn INFO: Epoch 239/250, Acc=0.9214, Val Loss=0.2653, lr=0.0001
+[02/20 23:14:59] modelnet40-dgcnn INFO: Epoch 240/250, Acc=0.9198, Val Loss=0.2653, lr=0.0001
+[02/20 23:16:24] modelnet40-dgcnn INFO: Epoch 241/250, Acc=0.9214, Val Loss=0.2643, lr=0.0001
+[02/20 23:17:49] modelnet40-dgcnn INFO: Epoch 242/250, Acc=0.9198, Val Loss=0.2654, lr=0.0001
+[02/20 23:19:13] modelnet40-dgcnn INFO: Epoch 243/250, Acc=0.9202, Val Loss=0.2653, lr=0.0001
+[02/20 23:20:38] modelnet40-dgcnn INFO: Epoch 244/250, Acc=0.9230, Val Loss=0.2656, lr=0.0001
+[02/20 23:22:03] modelnet40-dgcnn INFO: Epoch 245/250, Acc=0.9202, Val Loss=0.2650, lr=0.0001
+[02/20 23:23:27] modelnet40-dgcnn INFO: Epoch 246/250, Acc=0.9173, Val Loss=0.2649, lr=0.0001
+[02/20 23:24:52] modelnet40-dgcnn INFO: Epoch 247/250, Acc=0.9218, Val Loss=0.2654, lr=0.0001
+[02/20 23:26:17] modelnet40-dgcnn INFO: Epoch 248/250, Acc=0.9157, Val Loss=0.2737, lr=0.0001
+[02/20 23:27:41] modelnet40-dgcnn INFO: Epoch 249/250, Acc=0.9198, Val Loss=0.2697, lr=0.0001
+[02/20 23:27:41] modelnet40-dgcnn INFO: Best Acc=0.9238
+[02/20 23:27:41] modelnet40-dgcnn INFO: Params: 1.81 M
+[02/20 23:27:41] modelnet40-dgcnn INFO: ops: 2426.02 M
+[02/20 23:27:51] modelnet40-dgcnn INFO: Acc: 0.9198 Val Loss: 0.2697
+

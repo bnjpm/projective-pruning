@@ -1,0 +1,388 @@
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: mode: prune
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: model: resnet56
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: verbose: False
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: dataset: cifar100
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: dataroot: data
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: batch_size: 128
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: total_epochs: 100
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: lr_decay_milestones: 60,80
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: lr_decay_gamma: 0.1
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: lr: 0.01
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: restore: run/cifar100/pretrain/cifar10_resnet56.pth
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: output_dir: run/cifar100/prune/cifar100-global-l2-2.0-resnet56
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: finetune: True
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: last_epochs: 100
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: reps: 1
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: method: l2
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: speed_up: 2.0
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: max_pruning_ratio: 1.0
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: soft_keeping_ratio: 0.0
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: reg: 1e-05
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: delta_reg: 0.0001
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: weight_decay: 0.0005
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: seed: 1
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: global_pruning: True
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: sl_total_epochs: 100
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: sl_lr: 0.01
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: sl_lr_decay_milestones: 60,80
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: sl_reg_warmup: 0
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: sl_restore: None
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: iterative_steps: 400
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: logger: <Logger cifar100-global-l2-2.0-resnet56 (DEBUG)>
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: device: cuda
+[02/21 12:30:00] cifar100-global-l2-2.0-resnet56 INFO: num_classes: 100
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: mode: prune
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: model: resnet56
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: verbose: False
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: dataset: cifar100
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: dataroot: data
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: batch_size: 128
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: total_epochs: 100
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: lr_decay_milestones: 60,80
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: lr_decay_gamma: 0.1
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: lr: 0.01
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: restore: run/cifar100/pretrain/cifar100_resnet56.pth
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: output_dir: run/cifar100/prune/cifar100-global-l2-2.0-resnet56
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: finetune: True
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: last_epochs: 100
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: reps: 1
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: method: l2
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: speed_up: 2.0
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: max_pruning_ratio: 1.0
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: soft_keeping_ratio: 0.0
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: reg: 1e-05
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: delta_reg: 0.0001
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: weight_decay: 0.0005
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: seed: 1
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: global_pruning: True
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: sl_total_epochs: 100
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: sl_lr: 0.01
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: sl_lr_decay_milestones: 60,80
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: sl_reg_warmup: 0
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: sl_restore: None
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: iterative_steps: 400
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: logger: <Logger cifar100-global-l2-2.0-resnet56 (DEBUG)>
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: device: cuda
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: num_classes: 100
+[02/21 15:05:08] cifar100-global-l2-2.0-resnet56 INFO: Loading model from run/cifar100/pretrain/cifar100_resnet56.pth
+[02/21 15:05:11] cifar100-global-l2-2.0-resnet56 INFO: Pruning...
+[02/21 15:05:21] cifar100-global-l2-2.0-resnet56 INFO: ResNet(
+  (conv1): Conv2d(3, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(11, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(6, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(11, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(1, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(11, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(4, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(4, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(11, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(2, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(2, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(11, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(2, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(2, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (5): BasicBlock(
+      (conv1): Conv2d(11, 5, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(5, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(5, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (6): BasicBlock(
+      (conv1): Conv2d(11, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(6, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (7): BasicBlock(
+      (conv1): Conv2d(11, 2, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(2, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(2, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (8): BasicBlock(
+      (conv1): Conv2d(11, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(6, 11, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(11, 25, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(25, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(11, 22, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(22, 19, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(19, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(19, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(22, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(22, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(22, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(17, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(17, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(22, 20, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(20, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (5): BasicBlock(
+      (conv1): Conv2d(22, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(22, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (6): BasicBlock(
+      (conv1): Conv2d(22, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(24, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (7): BasicBlock(
+      (conv1): Conv2d(22, 10, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(10, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(10, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (8): BasicBlock(
+      (conv1): Conv2d(22, 14, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(14, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(14, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(22, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(22, 56, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(56, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(56, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(22, 64, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 51, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(51, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(64, 59, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(59, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(59, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(64, 62, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(62, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(62, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (5): BasicBlock(
+      (conv1): Conv2d(64, 60, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(60, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(60, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (6): BasicBlock(
+      (conv1): Conv2d(64, 62, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(62, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(62, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (7): BasicBlock(
+      (conv1): Conv2d(64, 62, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(62, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(62, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (8): BasicBlock(
+      (conv1): Conv2d(64, 63, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(63, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(63, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=8, padding=0)
+  (fc): Linear(in_features=64, out_features=100, bias=True)
+)
+[02/21 15:05:24] cifar100-global-l2-2.0-resnet56 INFO: Params: 0.86 M => 0.68 M (79.43%)
+[02/21 15:05:24] cifar100-global-l2-2.0-resnet56 INFO: FLOPs: 127.12 M => 63.42 M (49.89%, 2.00X )
+[02/21 15:05:24] cifar100-global-l2-2.0-resnet56 INFO: Acc: 0.7269 => 0.0168
+[02/21 15:05:24] cifar100-global-l2-2.0-resnet56 INFO: Val Loss: 1.1578 => 14.3494
+[02/21 15:05:24] cifar100-global-l2-2.0-resnet56 INFO: Finetuning...
+[02/21 15:05:52] cifar100-global-l2-2.0-resnet56 INFO: Epoch 0/100, Acc=0.5982, Val Loss=1.6272, lr=0.0100
+[02/21 15:06:20] cifar100-global-l2-2.0-resnet56 INFO: Epoch 1/100, Acc=0.6372, Val Loss=1.4221, lr=0.0100
+[02/21 15:06:48] cifar100-global-l2-2.0-resnet56 INFO: Epoch 2/100, Acc=0.6444, Val Loss=1.3491, lr=0.0100
+[02/21 15:07:16] cifar100-global-l2-2.0-resnet56 INFO: Epoch 3/100, Acc=0.6434, Val Loss=1.3872, lr=0.0100
+[02/21 15:07:43] cifar100-global-l2-2.0-resnet56 INFO: Epoch 4/100, Acc=0.6442, Val Loss=1.3610, lr=0.0100
+[02/21 15:08:11] cifar100-global-l2-2.0-resnet56 INFO: Epoch 5/100, Acc=0.6505, Val Loss=1.3419, lr=0.0100
+[02/21 15:08:39] cifar100-global-l2-2.0-resnet56 INFO: Epoch 6/100, Acc=0.6518, Val Loss=1.3818, lr=0.0100
+[02/21 15:09:07] cifar100-global-l2-2.0-resnet56 INFO: Epoch 7/100, Acc=0.6399, Val Loss=1.3979, lr=0.0100
+[02/21 15:09:35] cifar100-global-l2-2.0-resnet56 INFO: Epoch 8/100, Acc=0.6401, Val Loss=1.4349, lr=0.0100
+[02/21 15:10:03] cifar100-global-l2-2.0-resnet56 INFO: Epoch 9/100, Acc=0.6385, Val Loss=1.4463, lr=0.0100
+[02/21 15:10:31] cifar100-global-l2-2.0-resnet56 INFO: Epoch 10/100, Acc=0.6453, Val Loss=1.4176, lr=0.0100
+[02/21 15:10:59] cifar100-global-l2-2.0-resnet56 INFO: Epoch 11/100, Acc=0.6603, Val Loss=1.3529, lr=0.0100
+[02/21 15:11:27] cifar100-global-l2-2.0-resnet56 INFO: Epoch 12/100, Acc=0.6454, Val Loss=1.3645, lr=0.0100
+[02/21 15:11:54] cifar100-global-l2-2.0-resnet56 INFO: Epoch 13/100, Acc=0.6685, Val Loss=1.2940, lr=0.0100
+[02/21 15:12:22] cifar100-global-l2-2.0-resnet56 INFO: Epoch 14/100, Acc=0.6541, Val Loss=1.3383, lr=0.0100
+[02/21 15:12:49] cifar100-global-l2-2.0-resnet56 INFO: Epoch 15/100, Acc=0.6589, Val Loss=1.3137, lr=0.0100
+[02/21 15:13:17] cifar100-global-l2-2.0-resnet56 INFO: Epoch 16/100, Acc=0.6522, Val Loss=1.3770, lr=0.0100
+[02/21 15:13:44] cifar100-global-l2-2.0-resnet56 INFO: Epoch 17/100, Acc=0.6499, Val Loss=1.4049, lr=0.0100
+[02/21 15:14:12] cifar100-global-l2-2.0-resnet56 INFO: Epoch 18/100, Acc=0.6572, Val Loss=1.3429, lr=0.0100
+[02/21 15:14:39] cifar100-global-l2-2.0-resnet56 INFO: Epoch 19/100, Acc=0.6575, Val Loss=1.3525, lr=0.0100
+[02/21 15:15:07] cifar100-global-l2-2.0-resnet56 INFO: Epoch 20/100, Acc=0.6501, Val Loss=1.4187, lr=0.0100
+[02/21 15:15:35] cifar100-global-l2-2.0-resnet56 INFO: Epoch 21/100, Acc=0.6624, Val Loss=1.3619, lr=0.0100
+[02/21 15:16:02] cifar100-global-l2-2.0-resnet56 INFO: Epoch 22/100, Acc=0.6477, Val Loss=1.4178, lr=0.0100
+[02/21 15:16:30] cifar100-global-l2-2.0-resnet56 INFO: Epoch 23/100, Acc=0.6469, Val Loss=1.4225, lr=0.0100
+[02/21 15:16:57] cifar100-global-l2-2.0-resnet56 INFO: Epoch 24/100, Acc=0.6583, Val Loss=1.3751, lr=0.0100
+[02/21 15:17:25] cifar100-global-l2-2.0-resnet56 INFO: Epoch 25/100, Acc=0.6555, Val Loss=1.3779, lr=0.0100
+[02/21 15:17:52] cifar100-global-l2-2.0-resnet56 INFO: Epoch 26/100, Acc=0.6644, Val Loss=1.3203, lr=0.0100
+[02/21 15:18:20] cifar100-global-l2-2.0-resnet56 INFO: Epoch 27/100, Acc=0.6497, Val Loss=1.4455, lr=0.0100
+[02/21 15:18:48] cifar100-global-l2-2.0-resnet56 INFO: Epoch 28/100, Acc=0.6557, Val Loss=1.4034, lr=0.0100
+[02/21 15:19:15] cifar100-global-l2-2.0-resnet56 INFO: Epoch 29/100, Acc=0.6585, Val Loss=1.3909, lr=0.0100
+[02/21 15:19:43] cifar100-global-l2-2.0-resnet56 INFO: Epoch 30/100, Acc=0.6476, Val Loss=1.4350, lr=0.0100
+[02/21 15:20:11] cifar100-global-l2-2.0-resnet56 INFO: Epoch 31/100, Acc=0.6465, Val Loss=1.4493, lr=0.0100
+[02/21 15:20:39] cifar100-global-l2-2.0-resnet56 INFO: Epoch 32/100, Acc=0.6400, Val Loss=1.4926, lr=0.0100
+[02/21 15:21:06] cifar100-global-l2-2.0-resnet56 INFO: Epoch 33/100, Acc=0.6489, Val Loss=1.4466, lr=0.0100
+[02/21 15:21:34] cifar100-global-l2-2.0-resnet56 INFO: Epoch 34/100, Acc=0.6568, Val Loss=1.3642, lr=0.0100
+[02/21 15:22:01] cifar100-global-l2-2.0-resnet56 INFO: Epoch 35/100, Acc=0.6549, Val Loss=1.4088, lr=0.0100
+[02/21 15:22:29] cifar100-global-l2-2.0-resnet56 INFO: Epoch 36/100, Acc=0.6526, Val Loss=1.4264, lr=0.0100
+[02/21 15:22:56] cifar100-global-l2-2.0-resnet56 INFO: Epoch 37/100, Acc=0.6534, Val Loss=1.4127, lr=0.0100
+[02/21 15:23:24] cifar100-global-l2-2.0-resnet56 INFO: Epoch 38/100, Acc=0.6407, Val Loss=1.5247, lr=0.0100
+[02/21 15:23:51] cifar100-global-l2-2.0-resnet56 INFO: Epoch 39/100, Acc=0.6576, Val Loss=1.3666, lr=0.0100
+[02/21 15:24:19] cifar100-global-l2-2.0-resnet56 INFO: Epoch 40/100, Acc=0.6564, Val Loss=1.3890, lr=0.0100
+[02/21 15:24:47] cifar100-global-l2-2.0-resnet56 INFO: Epoch 41/100, Acc=0.6653, Val Loss=1.3819, lr=0.0100
+[02/21 15:25:14] cifar100-global-l2-2.0-resnet56 INFO: Epoch 42/100, Acc=0.6521, Val Loss=1.4542, lr=0.0100
+[02/21 15:25:42] cifar100-global-l2-2.0-resnet56 INFO: Epoch 43/100, Acc=0.6459, Val Loss=1.4401, lr=0.0100
+[02/21 15:26:10] cifar100-global-l2-2.0-resnet56 INFO: Epoch 44/100, Acc=0.6562, Val Loss=1.3969, lr=0.0100
+[02/21 15:26:38] cifar100-global-l2-2.0-resnet56 INFO: Epoch 45/100, Acc=0.6554, Val Loss=1.4042, lr=0.0100
+[02/21 15:27:05] cifar100-global-l2-2.0-resnet56 INFO: Epoch 46/100, Acc=0.6553, Val Loss=1.3923, lr=0.0100
+[02/21 15:27:33] cifar100-global-l2-2.0-resnet56 INFO: Epoch 47/100, Acc=0.6509, Val Loss=1.4204, lr=0.0100
+[02/21 15:28:01] cifar100-global-l2-2.0-resnet56 INFO: Epoch 48/100, Acc=0.6538, Val Loss=1.4237, lr=0.0100
+[02/21 15:28:28] cifar100-global-l2-2.0-resnet56 INFO: Epoch 49/100, Acc=0.6360, Val Loss=1.5108, lr=0.0100
+[02/21 15:28:56] cifar100-global-l2-2.0-resnet56 INFO: Epoch 50/100, Acc=0.6587, Val Loss=1.4021, lr=0.0100
+[02/21 15:29:23] cifar100-global-l2-2.0-resnet56 INFO: Epoch 51/100, Acc=0.6520, Val Loss=1.4317, lr=0.0100
+[02/21 15:29:51] cifar100-global-l2-2.0-resnet56 INFO: Epoch 52/100, Acc=0.6470, Val Loss=1.4806, lr=0.0100
+[02/21 15:30:19] cifar100-global-l2-2.0-resnet56 INFO: Epoch 53/100, Acc=0.6505, Val Loss=1.4494, lr=0.0100
+[02/21 15:30:46] cifar100-global-l2-2.0-resnet56 INFO: Epoch 54/100, Acc=0.6446, Val Loss=1.4972, lr=0.0100
+[02/21 15:31:14] cifar100-global-l2-2.0-resnet56 INFO: Epoch 55/100, Acc=0.6566, Val Loss=1.4094, lr=0.0100
+[02/21 15:31:41] cifar100-global-l2-2.0-resnet56 INFO: Epoch 56/100, Acc=0.6433, Val Loss=1.4739, lr=0.0100
+[02/21 15:32:09] cifar100-global-l2-2.0-resnet56 INFO: Epoch 57/100, Acc=0.6427, Val Loss=1.5209, lr=0.0100
+[02/21 15:32:36] cifar100-global-l2-2.0-resnet56 INFO: Epoch 58/100, Acc=0.6541, Val Loss=1.4109, lr=0.0100
+[02/21 15:33:04] cifar100-global-l2-2.0-resnet56 INFO: Epoch 59/100, Acc=0.6500, Val Loss=1.4689, lr=0.0100
+[02/21 15:33:31] cifar100-global-l2-2.0-resnet56 INFO: Epoch 60/100, Acc=0.7111, Val Loss=1.1621, lr=0.0010
+[02/21 15:33:59] cifar100-global-l2-2.0-resnet56 INFO: Epoch 61/100, Acc=0.7143, Val Loss=1.1721, lr=0.0010
+[02/21 15:34:27] cifar100-global-l2-2.0-resnet56 INFO: Epoch 62/100, Acc=0.7114, Val Loss=1.1738, lr=0.0010
+[02/21 15:34:54] cifar100-global-l2-2.0-resnet56 INFO: Epoch 63/100, Acc=0.7118, Val Loss=1.1840, lr=0.0010
+[02/21 15:35:22] cifar100-global-l2-2.0-resnet56 INFO: Epoch 64/100, Acc=0.7125, Val Loss=1.1893, lr=0.0010
+[02/21 15:35:49] cifar100-global-l2-2.0-resnet56 INFO: Epoch 65/100, Acc=0.7113, Val Loss=1.1897, lr=0.0010
+[02/21 15:36:17] cifar100-global-l2-2.0-resnet56 INFO: Epoch 66/100, Acc=0.7108, Val Loss=1.2034, lr=0.0010
+[02/21 15:36:45] cifar100-global-l2-2.0-resnet56 INFO: Epoch 67/100, Acc=0.7101, Val Loss=1.2024, lr=0.0010
+[02/21 15:37:12] cifar100-global-l2-2.0-resnet56 INFO: Epoch 68/100, Acc=0.7094, Val Loss=1.2094, lr=0.0010
+[02/21 15:37:40] cifar100-global-l2-2.0-resnet56 INFO: Epoch 69/100, Acc=0.7095, Val Loss=1.2142, lr=0.0010
+[02/21 15:38:07] cifar100-global-l2-2.0-resnet56 INFO: Epoch 70/100, Acc=0.7117, Val Loss=1.2134, lr=0.0010
+[02/21 15:38:35] cifar100-global-l2-2.0-resnet56 INFO: Epoch 71/100, Acc=0.7118, Val Loss=1.2181, lr=0.0010
+[02/21 15:39:03] cifar100-global-l2-2.0-resnet56 INFO: Epoch 72/100, Acc=0.7095, Val Loss=1.2272, lr=0.0010
+[02/21 15:39:30] cifar100-global-l2-2.0-resnet56 INFO: Epoch 73/100, Acc=0.7083, Val Loss=1.2405, lr=0.0010
+[02/21 15:39:58] cifar100-global-l2-2.0-resnet56 INFO: Epoch 74/100, Acc=0.7089, Val Loss=1.2303, lr=0.0010
+[02/21 15:40:25] cifar100-global-l2-2.0-resnet56 INFO: Epoch 75/100, Acc=0.7123, Val Loss=1.2335, lr=0.0010
+[02/21 15:40:53] cifar100-global-l2-2.0-resnet56 INFO: Epoch 76/100, Acc=0.7110, Val Loss=1.2417, lr=0.0010
+[02/21 15:41:20] cifar100-global-l2-2.0-resnet56 INFO: Epoch 77/100, Acc=0.7085, Val Loss=1.2452, lr=0.0010
+[02/21 15:41:48] cifar100-global-l2-2.0-resnet56 INFO: Epoch 78/100, Acc=0.7073, Val Loss=1.2525, lr=0.0010
+[02/21 15:42:15] cifar100-global-l2-2.0-resnet56 INFO: Epoch 79/100, Acc=0.7123, Val Loss=1.2543, lr=0.0010
+[02/21 15:42:43] cifar100-global-l2-2.0-resnet56 INFO: Epoch 80/100, Acc=0.7106, Val Loss=1.2446, lr=0.0001
+[02/21 15:43:10] cifar100-global-l2-2.0-resnet56 INFO: Epoch 81/100, Acc=0.7113, Val Loss=1.2447, lr=0.0001
+[02/21 15:43:38] cifar100-global-l2-2.0-resnet56 INFO: Epoch 82/100, Acc=0.7106, Val Loss=1.2429, lr=0.0001
+[02/21 15:44:06] cifar100-global-l2-2.0-resnet56 INFO: Epoch 83/100, Acc=0.7100, Val Loss=1.2452, lr=0.0001
+[02/21 15:44:33] cifar100-global-l2-2.0-resnet56 INFO: Epoch 84/100, Acc=0.7100, Val Loss=1.2492, lr=0.0001
+[02/21 15:45:01] cifar100-global-l2-2.0-resnet56 INFO: Epoch 85/100, Acc=0.7091, Val Loss=1.2445, lr=0.0001
+[02/21 15:45:29] cifar100-global-l2-2.0-resnet56 INFO: Epoch 86/100, Acc=0.7102, Val Loss=1.2494, lr=0.0001
+[02/21 15:45:56] cifar100-global-l2-2.0-resnet56 INFO: Epoch 87/100, Acc=0.7098, Val Loss=1.2508, lr=0.0001
+[02/21 15:46:24] cifar100-global-l2-2.0-resnet56 INFO: Epoch 88/100, Acc=0.7087, Val Loss=1.2434, lr=0.0001
+[02/21 15:46:51] cifar100-global-l2-2.0-resnet56 INFO: Epoch 89/100, Acc=0.7105, Val Loss=1.2468, lr=0.0001
+[02/21 15:47:19] cifar100-global-l2-2.0-resnet56 INFO: Epoch 90/100, Acc=0.7078, Val Loss=1.2442, lr=0.0001
+[02/21 15:47:46] cifar100-global-l2-2.0-resnet56 INFO: Epoch 91/100, Acc=0.7080, Val Loss=1.2556, lr=0.0001
+[02/21 15:48:14] cifar100-global-l2-2.0-resnet56 INFO: Epoch 92/100, Acc=0.7097, Val Loss=1.2467, lr=0.0001
+[02/21 15:48:41] cifar100-global-l2-2.0-resnet56 INFO: Epoch 93/100, Acc=0.7100, Val Loss=1.2496, lr=0.0001
+[02/21 15:49:09] cifar100-global-l2-2.0-resnet56 INFO: Epoch 94/100, Acc=0.7104, Val Loss=1.2455, lr=0.0001
+[02/21 15:49:37] cifar100-global-l2-2.0-resnet56 INFO: Epoch 95/100, Acc=0.7096, Val Loss=1.2512, lr=0.0001
+[02/21 15:50:04] cifar100-global-l2-2.0-resnet56 INFO: Epoch 96/100, Acc=0.7114, Val Loss=1.2543, lr=0.0001
+[02/21 15:50:32] cifar100-global-l2-2.0-resnet56 INFO: Epoch 97/100, Acc=0.7093, Val Loss=1.2486, lr=0.0001
+[02/21 15:51:00] cifar100-global-l2-2.0-resnet56 INFO: Epoch 98/100, Acc=0.7108, Val Loss=1.2494, lr=0.0001
+[02/21 15:51:28] cifar100-global-l2-2.0-resnet56 INFO: Epoch 99/100, Acc=0.7089, Val Loss=1.2498, lr=0.0001
+[02/21 15:51:28] cifar100-global-l2-2.0-resnet56 INFO: Best Acc=0.7143
+[02/21 15:51:28] cifar100-global-l2-2.0-resnet56 INFO: Params: 0.68 M
+[02/21 15:51:28] cifar100-global-l2-2.0-resnet56 INFO: ops: 63.42 M
+[02/21 15:51:31] cifar100-global-l2-2.0-resnet56 INFO: Acc: 0.7089 Val Loss: 1.2498
+

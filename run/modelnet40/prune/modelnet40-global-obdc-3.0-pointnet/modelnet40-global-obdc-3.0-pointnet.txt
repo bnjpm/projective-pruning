@@ -1,0 +1,161 @@
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: mode: prune
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: model: pointnet
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: verbose: False
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: dataset: modelnet40
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: dataroot: data
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: batch_size: 32
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: total_epochs: 100
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: lr_decay_milestones: 50,80
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: lr_decay_gamma: 0.1
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: lr: 0.01
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: restore: run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: output_dir: run/modelnet40/prune/modelnet40-global-obdc-3.0-pointnet
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: finetune: True
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: last_epochs: 100
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: reps: 1
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: method: obdc
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: speed_up: 3.0
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: max_pruning_ratio: 1.0
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: soft_keeping_ratio: 0.0
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: reg: 1e-05
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: delta_reg: 0.0001
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: weight_decay: 0.0005
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: seed: 1
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: global_pruning: True
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: sl_total_epochs: 100
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: sl_lr: 0.01
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: sl_lr_decay_milestones: 60,80
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: sl_reg_warmup: 0
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: sl_restore: None
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: iterative_steps: 400
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: logger: <Logger modelnet40-global-obdc-3.0-pointnet (DEBUG)>
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: device: cuda
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: num_classes: 40
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: Loading model from run/modelnet40/pretrain/modelnet40_pointnet.pth
+[02/23 02:20:36] modelnet40-global-obdc-3.0-pointnet INFO: Pruning...
+[02/23 02:20:48] modelnet40-global-obdc-3.0-pointnet INFO: PointNet(
+  (conv1): Conv1d(3, 58, kernel_size=(1,), stride=(1,), bias=False)
+  (conv2): Conv1d(58, 64, kernel_size=(1,), stride=(1,), bias=False)
+  (conv3): Conv1d(64, 59, kernel_size=(1,), stride=(1,), bias=False)
+  (conv4): Conv1d(59, 126, kernel_size=(1,), stride=(1,), bias=False)
+  (conv5): Conv1d(126, 613, kernel_size=(1,), stride=(1,), bias=False)
+  (bn1): BatchNorm1d(58, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn2): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn3): BatchNorm1d(59, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn4): BatchNorm1d(126, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bn5): BatchNorm1d(613, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linear1): Linear(in_features=613, out_features=188, bias=False)
+  (bn6): BatchNorm1d(188, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dp1): Dropout(p=0.5, inplace=False)
+  (linear2): Linear(in_features=188, out_features=40, bias=True)
+)
+[02/23 02:21:50] modelnet40-global-obdc-3.0-pointnet INFO: Params: 1.35 M => 0.22 M (16.06%)
+[02/23 02:21:50] modelnet40-global-obdc-3.0-pointnet INFO: FLOPs: 291.33 M => 96.56 M (33.14%, 3.02X )
+[02/23 02:21:50] modelnet40-global-obdc-3.0-pointnet INFO: Acc: 0.8861 => 0.1609
+[02/23 02:21:50] modelnet40-global-obdc-3.0-pointnet INFO: Val Loss: 0.3951 => 9.1020
+[02/23 02:21:50] modelnet40-global-obdc-3.0-pointnet INFO: Finetuning...
+[02/23 02:22:03] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 0/100, Acc=0.8248, Val Loss=0.5877, lr=0.0100
+[02/23 02:22:14] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 1/100, Acc=0.7871, Val Loss=0.6816, lr=0.0100
+[02/23 02:22:25] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 2/100, Acc=0.8138, Val Loss=0.6033, lr=0.0100
+[02/23 02:22:36] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 3/100, Acc=0.8288, Val Loss=0.5572, lr=0.0100
+[02/23 02:22:47] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 4/100, Acc=0.8085, Val Loss=0.6161, lr=0.0100
+[02/23 02:22:58] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 5/100, Acc=0.8470, Val Loss=0.5341, lr=0.0100
+[02/23 02:23:09] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 6/100, Acc=0.8130, Val Loss=0.5878, lr=0.0100
+[02/23 02:23:20] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 7/100, Acc=0.8418, Val Loss=0.5333, lr=0.0100
+[02/23 02:23:31] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 8/100, Acc=0.8316, Val Loss=0.5341, lr=0.0100
+[02/23 02:23:42] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 9/100, Acc=0.8264, Val Loss=0.5705, lr=0.0100
+[02/23 02:23:53] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 10/100, Acc=0.8102, Val Loss=0.5984, lr=0.0100
+[02/23 02:24:04] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 11/100, Acc=0.8154, Val Loss=0.6255, lr=0.0100
+[02/23 02:24:15] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 12/100, Acc=0.8069, Val Loss=0.6222, lr=0.0100
+[02/23 02:24:27] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 13/100, Acc=0.8033, Val Loss=0.6194, lr=0.0100
+[02/23 02:24:39] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 14/100, Acc=0.8410, Val Loss=0.5405, lr=0.0100
+[02/23 02:24:50] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 15/100, Acc=0.8426, Val Loss=0.5354, lr=0.0100
+[02/23 02:25:02] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 16/100, Acc=0.8462, Val Loss=0.4932, lr=0.0100
+[02/23 02:25:13] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 17/100, Acc=0.8312, Val Loss=0.5567, lr=0.0100
+[02/23 02:25:25] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 18/100, Acc=0.8183, Val Loss=0.5899, lr=0.0100
+[02/23 02:25:36] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 19/100, Acc=0.8410, Val Loss=0.5419, lr=0.0100
+[02/23 02:25:48] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 20/100, Acc=0.8333, Val Loss=0.5329, lr=0.0100
+[02/23 02:25:59] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 21/100, Acc=0.8373, Val Loss=0.5297, lr=0.0100
+[02/23 02:26:11] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 22/100, Acc=0.8106, Val Loss=0.6047, lr=0.0100
+[02/23 02:26:22] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 23/100, Acc=0.8442, Val Loss=0.5161, lr=0.0100
+[02/23 02:26:34] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 24/100, Acc=0.8171, Val Loss=0.5522, lr=0.0100
+[02/23 02:26:45] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 25/100, Acc=0.8345, Val Loss=0.5688, lr=0.0100
+[02/23 02:26:56] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 26/100, Acc=0.8235, Val Loss=0.5663, lr=0.0100
+[02/23 02:27:10] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 27/100, Acc=0.8438, Val Loss=0.5012, lr=0.0100
+[02/23 02:27:19] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 28/100, Acc=0.8454, Val Loss=0.5083, lr=0.0100
+[02/23 02:27:30] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 29/100, Acc=0.8142, Val Loss=0.6142, lr=0.0100
+[02/23 02:27:41] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 30/100, Acc=0.8248, Val Loss=0.6172, lr=0.0100
+[02/23 02:27:53] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 31/100, Acc=0.8199, Val Loss=0.5696, lr=0.0100
+[02/23 02:28:04] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 32/100, Acc=0.8353, Val Loss=0.5258, lr=0.0100
+[02/23 02:28:15] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 33/100, Acc=0.8422, Val Loss=0.5356, lr=0.0100
+[02/23 02:28:26] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 34/100, Acc=0.8256, Val Loss=0.5697, lr=0.0100
+[02/23 02:28:38] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 35/100, Acc=0.8252, Val Loss=0.5663, lr=0.0100
+[02/23 02:28:49] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 36/100, Acc=0.8418, Val Loss=0.5368, lr=0.0100
+[02/23 02:28:60] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 37/100, Acc=0.8150, Val Loss=0.6018, lr=0.0100
+[02/23 02:29:11] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 38/100, Acc=0.8272, Val Loss=0.5436, lr=0.0100
+[02/23 02:29:22] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 39/100, Acc=0.8357, Val Loss=0.5455, lr=0.0100
+[02/23 02:29:33] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 40/100, Acc=0.8365, Val Loss=0.5666, lr=0.0100
+[02/23 02:29:45] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 41/100, Acc=0.8402, Val Loss=0.5271, lr=0.0100
+[02/23 02:29:56] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 42/100, Acc=0.8142, Val Loss=0.5786, lr=0.0100
+[02/23 02:30:07] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 43/100, Acc=0.8535, Val Loss=0.4884, lr=0.0100
+[02/23 02:30:18] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 44/100, Acc=0.8377, Val Loss=0.5507, lr=0.0100
+[02/23 02:30:29] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 45/100, Acc=0.8539, Val Loss=0.4824, lr=0.0100
+[02/23 02:30:40] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 46/100, Acc=0.8191, Val Loss=0.5699, lr=0.0100
+[02/23 02:30:51] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 47/100, Acc=0.8106, Val Loss=0.5964, lr=0.0100
+[02/23 02:31:02] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 48/100, Acc=0.7624, Val Loss=0.6783, lr=0.0100
+[02/23 02:31:13] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 49/100, Acc=0.8369, Val Loss=0.5059, lr=0.0100
+[02/23 02:31:24] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 50/100, Acc=0.8742, Val Loss=0.4276, lr=0.0010
+[02/23 02:31:35] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 51/100, Acc=0.8754, Val Loss=0.4170, lr=0.0010
+[02/23 02:31:46] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 52/100, Acc=0.8778, Val Loss=0.4177, lr=0.0010
+[02/23 02:31:57] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 53/100, Acc=0.8734, Val Loss=0.4164, lr=0.0010
+[02/23 02:32:10] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 54/100, Acc=0.8758, Val Loss=0.4147, lr=0.0010
+[02/23 02:32:19] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 55/100, Acc=0.8790, Val Loss=0.4050, lr=0.0010
+[02/23 02:32:30] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 56/100, Acc=0.8770, Val Loss=0.4074, lr=0.0010
+[02/23 02:32:41] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 57/100, Acc=0.8811, Val Loss=0.3998, lr=0.0010
+[02/23 02:32:52] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 58/100, Acc=0.8754, Val Loss=0.4074, lr=0.0010
+[02/23 02:33:03] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 59/100, Acc=0.8766, Val Loss=0.4108, lr=0.0010
+[02/23 02:33:14] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 60/100, Acc=0.8790, Val Loss=0.4003, lr=0.0010
+[02/23 02:33:25] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 61/100, Acc=0.8819, Val Loss=0.3969, lr=0.0010
+[02/23 02:33:36] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 62/100, Acc=0.8843, Val Loss=0.3965, lr=0.0010
+[02/23 02:33:48] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 63/100, Acc=0.8799, Val Loss=0.4011, lr=0.0010
+[02/23 02:33:59] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 64/100, Acc=0.8786, Val Loss=0.4011, lr=0.0010
+[02/23 02:34:10] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 65/100, Acc=0.8778, Val Loss=0.4068, lr=0.0010
+[02/23 02:34:21] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 66/100, Acc=0.8762, Val Loss=0.4123, lr=0.0010
+[02/23 02:34:33] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 67/100, Acc=0.8811, Val Loss=0.4004, lr=0.0010
+[02/23 02:34:44] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 68/100, Acc=0.8815, Val Loss=0.3990, lr=0.0010
+[02/23 02:34:55] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 69/100, Acc=0.8778, Val Loss=0.4008, lr=0.0010
+[02/23 02:35:07] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 70/100, Acc=0.8799, Val Loss=0.3931, lr=0.0010
+[02/23 02:35:18] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 71/100, Acc=0.8790, Val Loss=0.3919, lr=0.0010
+[02/23 02:35:29] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 72/100, Acc=0.8847, Val Loss=0.3900, lr=0.0010
+[02/23 02:35:41] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 73/100, Acc=0.8786, Val Loss=0.3988, lr=0.0010
+[02/23 02:35:52] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 74/100, Acc=0.8795, Val Loss=0.3927, lr=0.0010
+[02/23 02:36:03] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 75/100, Acc=0.8750, Val Loss=0.4017, lr=0.0010
+[02/23 02:36:15] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 76/100, Acc=0.8803, Val Loss=0.3945, lr=0.0010
+[02/23 02:36:26] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 77/100, Acc=0.8758, Val Loss=0.4040, lr=0.0010
+[02/23 02:36:37] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 78/100, Acc=0.8774, Val Loss=0.3923, lr=0.0010
+[02/23 02:36:48] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 79/100, Acc=0.8782, Val Loss=0.3956, lr=0.0010
+[02/23 02:36:59] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 80/100, Acc=0.8811, Val Loss=0.3896, lr=0.0001
+[02/23 02:37:10] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 81/100, Acc=0.8819, Val Loss=0.3866, lr=0.0001
+[02/23 02:37:21] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 82/100, Acc=0.8803, Val Loss=0.3902, lr=0.0001
+[02/23 02:37:32] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 83/100, Acc=0.8811, Val Loss=0.3883, lr=0.0001
+[02/23 02:37:43] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 84/100, Acc=0.8799, Val Loss=0.3881, lr=0.0001
+[02/23 02:37:54] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 85/100, Acc=0.8823, Val Loss=0.3886, lr=0.0001
+[02/23 02:38:05] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 86/100, Acc=0.8803, Val Loss=0.3858, lr=0.0001
+[02/23 02:38:16] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 87/100, Acc=0.8835, Val Loss=0.3845, lr=0.0001
+[02/23 02:38:28] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 88/100, Acc=0.8815, Val Loss=0.3883, lr=0.0001
+[02/23 02:38:39] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 89/100, Acc=0.8835, Val Loss=0.3873, lr=0.0001
+[02/23 02:38:50] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 90/100, Acc=0.8790, Val Loss=0.3874, lr=0.0001
+[02/23 02:39:01] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 91/100, Acc=0.8827, Val Loss=0.3855, lr=0.0001
+[02/23 02:39:12] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 92/100, Acc=0.8851, Val Loss=0.3810, lr=0.0001
+[02/23 02:39:23] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 93/100, Acc=0.8811, Val Loss=0.3815, lr=0.0001
+[02/23 02:39:34] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 94/100, Acc=0.8799, Val Loss=0.3855, lr=0.0001
+[02/23 02:39:45] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 95/100, Acc=0.8815, Val Loss=0.3882, lr=0.0001
+[02/23 02:39:56] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 96/100, Acc=0.8778, Val Loss=0.3888, lr=0.0001
+[02/23 02:40:07] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 97/100, Acc=0.8815, Val Loss=0.3852, lr=0.0001
+[02/23 02:40:18] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 98/100, Acc=0.8827, Val Loss=0.3870, lr=0.0001
+[02/23 02:40:29] modelnet40-global-obdc-3.0-pointnet INFO: Epoch 99/100, Acc=0.8799, Val Loss=0.3842, lr=0.0001
+[02/23 02:40:29] modelnet40-global-obdc-3.0-pointnet INFO: Best Acc=0.8851
+[02/23 02:40:29] modelnet40-global-obdc-3.0-pointnet INFO: Params: 0.22 M
+[02/23 02:40:29] modelnet40-global-obdc-3.0-pointnet INFO: ops: 96.56 M
+[02/23 02:40:30] modelnet40-global-obdc-3.0-pointnet INFO: Acc: 0.8799 Val Loss: 0.3842
+

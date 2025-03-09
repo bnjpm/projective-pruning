@@ -1,0 +1,10 @@
+method,dataset,model,2.0,3.0
+Random,cifar100,resnet56,0.7099,0.6708
+MagnitudeL2,cifar100,resnet56,0.7143,0.6900
+Slimming,cifar100,resnet56,0.7213,0.7257
+FPGM,cifar100,resnet56,0.7076,0.6919
+EigenDamage,cifar100,resnet56,0.6739,0.6369
+LAMP,cifar100,resnet56,0.675,0.6378
+DepGraph,cifar100,resnet56,0.7177,0.6925
+DepGraph-SL,cifar100,resnet56,0.7239,0.7253
+\bf{Projective (ours)},cifar100,resnet56,0.7256,0.7242
