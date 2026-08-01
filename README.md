@@ -142,7 +142,13 @@ To process experiment logs and generate summary tables, use [`scripts/parse_logs
 python scripts/parse_logs.py
 ```
 
-All pretraining and pruning logs are in [`run/`](run/). Due to storage limits, PyTorch Module checkpoints are compressed in [`ckpts/`](ckpts/).
+All pretraining and pruning logs are in [`run/`](run/). Due to storage limits, PyTorch Module checkpoints are published as compressed archives in the [`ckpts-v1` release](https://github.com/bnjpm/projective-pruning/releases/tag/ckpts-v1). Download and extract them into `ckpts/`:
+
+```bash
+mkdir -p ckpts/
+gh release download ckpts-v1 --repo bnjpm/projective-pruning --dir ckpts/
+for f in ckpts/part-*.zip; do unzip -q -o "$f" -d ckpts/; done
+```
 
 <img src="./assets/cifars.svg" width="640">
 
